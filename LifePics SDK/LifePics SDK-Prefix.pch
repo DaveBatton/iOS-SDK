@@ -1,0 +1,17 @@
+//
+//  LifePics SDK Prefix.pch
+//  LifePics SDK
+//
+//  Created by Dave Batton on 2/12/14.
+//  Copyright (c) 2014 Taylor Corp. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#endif

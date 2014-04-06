@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02B0C8E518D3A81000295A4A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60CA9CC18AC552E000812A5 /* ImageIO.framework */; };
+		02B4560418C69BF30034C6D9 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 020D1AA418C5258B00509F43 /* libxml2.dylib */; };
+		02CD4EF018EE866500396677 /* TCSimpleImageDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CD4EEF18EE866500396677 /* TCSimpleImageDataSource.m */; };
+		02FEDFCF18B5738A0013FC07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FEDFCE18B5738A0013FC07 /* SystemConfiguration.framework */; };
+		02FEDFD218B573CB0013FC07 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FEDFD118B573CB0013FC07 /* MobileCoreServices.framework */; };
+		66F5F18014DB420E0068FD20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F5F17F14DB420E0068FD20 /* UIKit.framework */; };
+		66F5F18214DB420E0068FD20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F5F18114DB420E0068FD20 /* Foundation.framework */; };
+		66F5F18414DB420E0068FD20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F5F18314DB420E0068FD20 /* CoreGraphics.framework */; };
+		B60CA9C318AC492B000812A5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60CA9C218AC492B000812A5 /* Security.framework */; };
+		B60CA9C518AC5039000812A5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60CA9C418AC5039000812A5 /* QuartzCore.framework */; };
+		B60CA9CF18AC5554000812A5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60CA9CE18AC5554000812A5 /* Accelerate.framework */; };
+		B630650618A9834B00CCAA28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B630650418A9834B00CCAA28 /* main.m */; };
+		B63D8AF418AA010F00599514 /* TCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B63D8AF118AA010F00599514 /* TCAppDelegate.m */; };
+		B63D8AF518AA010F00599514 /* TCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63D8AF318AA010F00599514 /* TCViewController.m */; };
+		B63D8AFA18AA016C00599514 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63D8AF918AA016C00599514 /* Images.xcassets */; };
+		B63D8B0018AA01D800599514 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63D8AFD18AA01D800599514 /* Main_iPhone.storyboard */; };
+		B64AB7C618AA91EE003A5218 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64AB7C518AA91EE003A5218 /* CFNetwork.framework */; };
+		B64AB7CB18AA9226003A5218 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B64AB7CA18AA9226003A5218 /* libz.dylib */; };
+		B64EB50518B81DE000516A97 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B64EB50418B81DE000516A97 /* libsqlite3.dylib */; };
+		B663887C18F1DB9600222B83 /* simple-one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887618F1DB9600222B83 /* simple-one.jpg */; };
+		B663887D18F1DB9600222B83 /* simple-three-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887718F1DB9600222B83 /* simple-three-thumb.jpg */; };
+		B663887E18F1DB9600222B83 /* simple-one-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887818F1DB9600222B83 /* simple-one-thumb.jpg */; };
+		B663887F18F1DB9600222B83 /* simple-three.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887918F1DB9600222B83 /* simple-three.jpg */; };
+		B663888018F1DB9600222B83 /* simple-two-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887A18F1DB9600222B83 /* simple-two-thumb.jpg */; };
+		B663888118F1DB9600222B83 /* simple-two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887B18F1DB9600222B83 /* simple-two.jpg */; };
+		B694A9FB18F0BD3D007D3D4D /* LifePics.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B694A9FA18F0BD3D007D3D4D /* LifePics.bundle */; };
+		B6A2141B18EFBE6E00B2EC4F /* LifePics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A2141A18EFBE6E00B2EC4F /* LifePics.framework */; };
+		B6A2142118EFBF4100B2EC4F /* ISColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A2141E18EFBF4100B2EC4F /* ISColorWheel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B6A2142218EFBF4100B2EC4F /* TCColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A2142018EFBF4100B2EC4F /* TCColorPickerViewController.m */; };
+		B6D37CE418A996F8008822FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6D37CE218A996F8008822FD /* InfoPlist.strings */; };
+		B6E76F2418AD743D006C936D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E76F2318AD743D006C936D /* MapKit.framework */; };
+		B6E76F2718AD9268006C936D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E76F2618AD9268006C936D /* CoreLocation.framework */; };
+		B6F31C6418ABFF4E00670AB1 /* TCDevTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F31C6318ABFF4E00670AB1 /* TCDevTools.m */; };
+		B6F31C6618AC02F500670AB1 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F31C6518AC02F500670AB1 /* AssetsLibrary.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		020D1AA418C5258B00509F43 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		02107ADB18D779EC000AD220 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		02107ADE18D77A89000AD220 /* libcorecrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcorecrypto.dylib; path = usr/lib/system/libcorecrypto.dylib; sourceTree = SDKROOT; };
+		02CD4EEE18EE866500396677 /* TCSimpleImageDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSimpleImageDataSource.h; sourceTree = "<group>"; };
+		02CD4EEF18EE866500396677 /* TCSimpleImageDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSimpleImageDataSource.m; sourceTree = "<group>"; };
+		02FEDFCE18B5738A0013FC07 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		02FEDFD118B573CB0013FC07 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		66F5F17B14DB420E0068FD20 /* LifePics SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LifePics SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F5F17F14DB420E0068FD20 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66F5F18114DB420E0068FD20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66F5F18314DB420E0068FD20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B60CA9C218AC492B000812A5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B60CA9C418AC5039000812A5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B60CA9CA18AC5519000812A5 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		B60CA9CC18AC552E000812A5 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B60CA9CE18AC5554000812A5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B630650218A9834B00CCAA28 /* LifePics SDK-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "LifePics SDK-Info.plist"; path = "LifePics SDK/LifePics SDK-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B630650318A9834B00CCAA28 /* LifePics SDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LifePics SDK-Prefix.pch"; path = "LifePics SDK/LifePics SDK-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		B630650418A9834B00CCAA28 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "LifePics SDK/main.m"; sourceTree = SOURCE_ROOT; };
+		B63D8AF018AA010F00599514 /* TCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
+		B63D8AF118AA010F00599514 /* TCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAppDelegate.m; sourceTree = "<group>"; };
+		B63D8AF218AA010F00599514 /* TCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCViewController.h; sourceTree = "<group>"; };
+		B63D8AF318AA010F00599514 /* TCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCViewController.m; sourceTree = "<group>"; };
+		B63D8AF918AA016C00599514 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B63D8AFE18AA01D800599514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B64AB7C518AA91EE003A5218 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B64AB7CA18AA9226003A5218 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B64EB50418B81DE000516A97 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B663887618F1DB9600222B83 /* simple-one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-one.jpg"; sourceTree = "<group>"; };
+		B663887718F1DB9600222B83 /* simple-three-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-three-thumb.jpg"; sourceTree = "<group>"; };
+		B663887818F1DB9600222B83 /* simple-one-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-one-thumb.jpg"; sourceTree = "<group>"; };
+		B663887918F1DB9600222B83 /* simple-three.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-three.jpg"; sourceTree = "<group>"; };
+		B663887A18F1DB9600222B83 /* simple-two-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-two-thumb.jpg"; sourceTree = "<group>"; };
+		B663887B18F1DB9600222B83 /* simple-two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-two.jpg"; sourceTree = "<group>"; };
+		B694A9FA18F0BD3D007D3D4D /* LifePics.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LifePics.bundle; sourceTree = SOURCE_ROOT; };
+		B6A2141A18EFBE6E00B2EC4F /* LifePics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LifePics.framework; sourceTree = "<group>"; };
+		B6A2141D18EFBF4100B2EC4F /* ISColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISColorWheel.h; sourceTree = "<group>"; };
+		B6A2141E18EFBF4100B2EC4F /* ISColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISColorWheel.m; sourceTree = "<group>"; };
+		B6A2141F18EFBF4100B2EC4F /* TCColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCColorPickerViewController.h; sourceTree = "<group>"; };
+		B6A2142018EFBF4100B2EC4F /* TCColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCColorPickerViewController.m; sourceTree = "<group>"; };
+		B6D37CE318A996F8008822FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6E76F2318AD743D006C936D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B6E76F2618AD9268006C936D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B6F31C6218ABFF4E00670AB1 /* TCDevTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDevTools.h; sourceTree = "<group>"; };
+		B6F31C6318ABFF4E00670AB1 /* TCDevTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDevTools.m; sourceTree = "<group>"; };
+		B6F31C6518AC02F500670AB1 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66F5F17814DB420E0068FD20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A2141B18EFBE6E00B2EC4F /* LifePics.framework in Frameworks */,
+				02B0C8E518D3A81000295A4A /* ImageIO.framework in Frameworks */,
+				02B4560418C69BF30034C6D9 /* libxml2.dylib in Frameworks */,
+				B64EB50518B81DE000516A97 /* libsqlite3.dylib in Frameworks */,
+				02FEDFD218B573CB0013FC07 /* MobileCoreServices.framework in Frameworks */,
+				02FEDFCF18B5738A0013FC07 /* SystemConfiguration.framework in Frameworks */,
+				B6E76F2718AD9268006C936D /* CoreLocation.framework in Frameworks */,
+				B6E76F2418AD743D006C936D /* MapKit.framework in Frameworks */,
+				B60CA9CF18AC5554000812A5 /* Accelerate.framework in Frameworks */,
+				B60CA9C518AC5039000812A5 /* QuartzCore.framework in Frameworks */,
+				B60CA9C318AC492B000812A5 /* Security.framework in Frameworks */,
+				B6F31C6618AC02F500670AB1 /* AssetsLibrary.framework in Frameworks */,
+				B64AB7CB18AA9226003A5218 /* libz.dylib in Frameworks */,
+				B64AB7C618AA91EE003A5218 /* CFNetwork.framework in Frameworks */,
+				66F5F18014DB420E0068FD20 /* UIKit.framework in Frameworks */,
+				66F5F18214DB420E0068FD20 /* Foundation.framework in Frameworks */,
+				66F5F18414DB420E0068FD20 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02CD4EF218EE8E5400396677 /* Simple Images */ = {
+			isa = PBXGroup;
+			children = (
+				B663887618F1DB9600222B83 /* simple-one.jpg */,
+				B663887818F1DB9600222B83 /* simple-one-thumb.jpg */,
+				B663887B18F1DB9600222B83 /* simple-two.jpg */,
+				B663887A18F1DB9600222B83 /* simple-two-thumb.jpg */,
+				B663887918F1DB9600222B83 /* simple-three.jpg */,
+				B663887718F1DB9600222B83 /* simple-three-thumb.jpg */,
+			);
+			name = "Simple Images";
+			sourceTree = "<group>";
+		};
+		66F5F17014DB420E0068FD20 = {
+			isa = PBXGroup;
+			children = (
+				66F5F18514DB420E0068FD20 /* LifePics SDK */,
+				66F5F17E14DB420E0068FD20 /* Frameworks */,
+				66F5F17C14DB420E0068FD20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66F5F17C14DB420E0068FD20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66F5F17B14DB420E0068FD20 /* LifePics SDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66F5F17E14DB420E0068FD20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2141A18EFBE6E00B2EC4F /* LifePics.framework */,
+				02107ADE18D77A89000AD220 /* libcorecrypto.dylib */,
+				02107ADB18D779EC000AD220 /* libcommonCrypto.dylib */,
+				020D1AA418C5258B00509F43 /* libxml2.dylib */,
+				B64EB50418B81DE000516A97 /* libsqlite3.dylib */,
+				02FEDFD118B573CB0013FC07 /* MobileCoreServices.framework */,
+				02FEDFCE18B5738A0013FC07 /* SystemConfiguration.framework */,
+				B6E76F2618AD9268006C936D /* CoreLocation.framework */,
+				B6E76F2318AD743D006C936D /* MapKit.framework */,
+				B60CA9CE18AC5554000812A5 /* Accelerate.framework */,
+				B60CA9CC18AC552E000812A5 /* ImageIO.framework */,
+				B60CA9CA18AC5519000812A5 /* CoreImage.framework */,
+				B60CA9C418AC5039000812A5 /* QuartzCore.framework */,
+				B60CA9C218AC492B000812A5 /* Security.framework */,
+				B6F31C6518AC02F500670AB1 /* AssetsLibrary.framework */,
+				B64AB7CA18AA9226003A5218 /* libz.dylib */,
+				B64AB7C518AA91EE003A5218 /* CFNetwork.framework */,
+				66F5F17F14DB420E0068FD20 /* UIKit.framework */,
+				66F5F18114DB420E0068FD20 /* Foundation.framework */,
+				66F5F18314DB420E0068FD20 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66F5F18514DB420E0068FD20 /* LifePics SDK */ = {
+			isa = PBXGroup;
+			children = (
+				B63D8AFD18AA01D800599514 /* Main_iPhone.storyboard */,
+				B63D8AF018AA010F00599514 /* TCAppDelegate.h */,
+				B63D8AF118AA010F00599514 /* TCAppDelegate.m */,
+				B63D8AF218AA010F00599514 /* TCViewController.h */,
+				B63D8AF318AA010F00599514 /* TCViewController.m */,
+				02CD4EEE18EE866500396677 /* TCSimpleImageDataSource.h */,
+				02CD4EEF18EE866500396677 /* TCSimpleImageDataSource.m */,
+				B6F31C6218ABFF4E00670AB1 /* TCDevTools.h */,
+				B6F31C6318ABFF4E00670AB1 /* TCDevTools.m */,
+				B694A9FA18F0BD3D007D3D4D /* LifePics.bundle */,
+				B6A2141C18EFBF2200B2EC4F /* Color Picker */,
+				02CD4EF218EE8E5400396677 /* Simple Images */,
+				66F5F18614DB420E0068FD20 /* Supporting Files */,
+				B63D8AF918AA016C00599514 /* Images.xcassets */,
+			);
+			path = "LifePics SDK";
+			sourceTree = "<group>";
+		};
+		66F5F18614DB420E0068FD20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B630650218A9834B00CCAA28 /* LifePics SDK-Info.plist */,
+				B630650318A9834B00CCAA28 /* LifePics SDK-Prefix.pch */,
+				B630650418A9834B00CCAA28 /* main.m */,
+				B6D37CE218A996F8008822FD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6A2141C18EFBF2200B2EC4F /* Color Picker */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2141D18EFBF4100B2EC4F /* ISColorWheel.h */,
+				B6A2141E18EFBF4100B2EC4F /* ISColorWheel.m */,
+				B6A2141F18EFBF4100B2EC4F /* TCColorPickerViewController.h */,
+				B6A2142018EFBF4100B2EC4F /* TCColorPickerViewController.m */,
+			);
+			name = "Color Picker";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66F5F17A14DB420E0068FD20 /* LifePics SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66F5F19314DB420E0068FD20 /* Build configuration list for PBXNativeTarget "LifePics SDK" */;
+			buildPhases = (
+				66F5F17714DB420E0068FD20 /* Sources */,
+				66F5F17814DB420E0068FD20 /* Frameworks */,
+				66F5F17914DB420E0068FD20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LifePics SDK";
+			productName = "LifePics SDK";
+			productReference = 66F5F17B14DB420E0068FD20 /* LifePics SDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66F5F17214DB420E0068FD20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Taylor Corp";
+				TargetAttributes = {
+					66F5F17A14DB420E0068FD20 = {
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 66F5F17514DB420E0068FD20 /* Build configuration list for PBXProject "LifePics SDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66F5F17014DB420E0068FD20;
+			productRefGroup = 66F5F17C14DB420E0068FD20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66F5F17A14DB420E0068FD20 /* LifePics SDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66F5F17914DB420E0068FD20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B663887C18F1DB9600222B83 /* simple-one.jpg in Resources */,
+				B63D8AFA18AA016C00599514 /* Images.xcassets in Resources */,
+				B663888018F1DB9600222B83 /* simple-two-thumb.jpg in Resources */,
+				B663887E18F1DB9600222B83 /* simple-one-thumb.jpg in Resources */,
+				B663887D18F1DB9600222B83 /* simple-three-thumb.jpg in Resources */,
+				B63D8B0018AA01D800599514 /* Main_iPhone.storyboard in Resources */,
+				B663887F18F1DB9600222B83 /* simple-three.jpg in Resources */,
+				B694A9FB18F0BD3D007D3D4D /* LifePics.bundle in Resources */,
+				B663888118F1DB9600222B83 /* simple-two.jpg in Resources */,
+				B6D37CE418A996F8008822FD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66F5F17714DB420E0068FD20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B63D8AF418AA010F00599514 /* TCAppDelegate.m in Sources */,
+				B6A2142118EFBF4100B2EC4F /* ISColorWheel.m in Sources */,
+				B630650618A9834B00CCAA28 /* main.m in Sources */,
+				B6A2142218EFBF4100B2EC4F /* TCColorPickerViewController.m in Sources */,
+				B6F31C6418ABFF4E00670AB1 /* TCDevTools.m in Sources */,
+				02CD4EF018EE866500396677 /* TCSimpleImageDataSource.m in Sources */,
+				B63D8AF518AA010F00599514 /* TCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B63D8AFD18AA01D800599514 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B63D8AFE18AA01D800599514 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B6D37CE218A996F8008822FD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D37CE318A996F8008822FD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66F5F19114DB420E0068FD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66F5F19214DB420E0068FD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66F5F19414DB420E0068FD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/**",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LifePics SDK/LifePics SDK-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "LifePics SDK/LifePics SDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "LifePics SDK";
+				PROVISIONING_PROFILE = "759F9569-5547-4815-994A-A02E987E5BDC";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		66F5F19514DB420E0068FD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/**",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LifePics SDK/LifePics SDK-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "LifePics SDK/LifePics SDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "LifePics SDK";
+				PROVISIONING_PROFILE = "759F9569-5547-4815-994A-A02E987E5BDC";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66F5F17514DB420E0068FD20 /* Build configuration list for PBXProject "LifePics SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F5F19114DB420E0068FD20 /* Debug */,
+				66F5F19214DB420E0068FD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66F5F19314DB420E0068FD20 /* Build configuration list for PBXNativeTarget "LifePics SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F5F19414DB420E0068FD20 /* Debug */,
+				66F5F19514DB420E0068FD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66F5F17214DB420E0068FD20 /* Project object */;
+}

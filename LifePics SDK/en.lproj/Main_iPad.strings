@@ -1,0 +1,12 @@
+
+/* Class = "IBUILabel"; text = "This is the LifePics iOS SDK demo/test app. Just touch the button below. After that, everything you see is handled by the LifePics framework."; ObjectID = "5AB-Lv-xqU"; */
+"5AB-Lv-xqU.text" = "This is the LifePics iOS SDK demo/test app. Just touch the button below. After that, everything you see is handled by the LifePics framework.";
+
+/* Class = "IBUILabel"; text = "LifePics iOS SDK"; ObjectID = "Fj2-q8-1HE"; */
+"Fj2-q8-1HE.text" = "LifePics iOS SDK";
+
+/* Class = "IBUIButton"; normalTitle = "Order Prints"; ObjectID = "IMb-xI-yYw"; */
+"IMb-xI-yYw.normalTitle" = "Order Prints";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "h3b-9G-mVR"; */
+"h3b-9G-mVR.text" = "Label";
