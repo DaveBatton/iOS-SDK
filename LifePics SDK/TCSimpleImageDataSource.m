@@ -31,7 +31,7 @@
 }
 
 
-- (void)imageRepresentations:(void (^)(NSArray *imageRepresentations))completed
+- (void)imageRepresentations:(void (^)(NSArray *imageRepresentations))completion
 {
     // we simple use dictionaries that point at the image files stored in the app
     NSDictionary *simpleOne = @{@"thumb": @"simple-one-thumb.jpg", @"full": @"simple-one.jpg"};
@@ -39,23 +39,23 @@
     NSDictionary *simpleThree = @{@"thumb": @"simple-three-thumb.jpg", @"full": @"simple-three.jpg"};
 
     // return all the images
-    if (completed) {
-        completed(@[simpleOne, simpleTwo, simpleThree]);
+    if (completion) {
+        completion(@[simpleOne, simpleTwo, simpleThree]);
     }
 }
 
 
-- (void)fetchThumbnailForImageRepresentation:(id)imageRepresentation completion:(void (^)(UIImage *thumbnailImage))completed
+- (void)fetchThumbnailForImageRepresentation:(id)imageRepresentation completion:(void (^)(UIImage *thumbnailImage))completion
 {
     // open the thumbnail image file and call the block with it
-    completed([UIImage imageNamed:[imageRepresentation objectForKey:@"thumb"]]);
+    completion([UIImage imageNamed:[imageRepresentation objectForKey:@"thumb"]]);
 }
 
 
-- (void)fetchFullSizeImageRepresentation:(id)imageRepresentation completion:(void (^)(UIImage *fullImage))completed
+- (void)fetchFullSizeImageRepresentation:(id)imageRepresentation completion:(void (^)(UIImage *fullImage))completion
 {
     // open the full image file and call the block with it
-    completed([UIImage imageNamed:[imageRepresentation objectForKey:@"full"]]);
+    completion([UIImage imageNamed:[imageRepresentation objectForKey:@"full"]]);
 }
 
 

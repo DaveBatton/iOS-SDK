@@ -31,14 +31,14 @@
         return [LPFOrderViewController openURL:url sourceApplication:sourceApplication];
     }
 
-    // facebook handling
+    // Facebook handling
     NSString *facebookKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"FacebookAppID"];
     NSString *facebookUrlPrefix = [NSString stringWithFormat:@"fb%@://", facebookKey];
     if ([[url absoluteString] hasPrefix:facebookUrlPrefix]) {
         return [LPFOrderViewController openURL:url sourceApplication:sourceApplication];
     }
 
-    // flickr handling
+    // Flickr handling
     NSString *flickrKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"LPFFlickrKey"];
     NSString *flickrUrlPrefix = [NSString stringWithFormat:@"flickr%@://", flickrKey];
     if ([[url absoluteString] hasPrefix:flickrUrlPrefix]) {
