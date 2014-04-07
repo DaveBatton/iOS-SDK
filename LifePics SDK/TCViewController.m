@@ -2,7 +2,6 @@
 //  TCViewController.m
 //  LifePicsDemo
 //
-//  Created by Dave Batton on 1/29/14.
 //  Copyright (c) 2014 Taylor Corp. All rights reserved.
 //
 
@@ -71,17 +70,20 @@
                          otherButtonTitles:nil] show];
     }
     else {
-        [[LPFSessionManager sharedManager] beginPartnerSessionWithID:partnerID sourceID:sourceID password:password completion:^(NSError *error) {
-            if ([error code] != 0) {
-                self.orderPrintsButton.enabled = NO;
-                self.orderPrintsButton.backgroundColor = [UIColor colorWithWhite:0.9f alpha:1.0f];  // Fake disabled look.
-                [[[UIAlertView alloc] initWithTitle:[error localizedDescription]
-                                            message:nil
-                                           delegate:nil
-                                  cancelButtonTitle:@"OK"
-                                  otherButtonTitles:nil] show];
-            }
-        }];
+        [[LPFSessionManager sharedManager] beginPartnerSessionWithID:partnerID
+                                                            sourceID:sourceID
+                                                            password:password
+                                                          completion:^(NSError *error) {
+                                                              if ([error code] != 0) {
+                                                                  self.orderPrintsButton.enabled = NO;
+                                                                  self.orderPrintsButton.backgroundColor = [UIColor colorWithWhite:0.9f alpha:1.0f];  // Fake disabled look.
+                                                                  [[[UIAlertView alloc] initWithTitle:[error localizedDescription]
+                                                                                              message:nil
+                                                                                             delegate:nil
+                                                                                    cancelButtonTitle:@"OK"
+                                                                                    otherButtonTitles:nil] show];
+                                                              }
+                                                          }];
     }
 }
 
@@ -118,6 +120,7 @@
     TCSimpleImageDataSource *imageDataSource = [[TCSimpleImageDataSource alloc] init];
     LPFOrderViewController *vc = [[LPFOrderViewController alloc] initWithImageDataSource:imageDataSource];
     vc.primaryColor = self.primaryColorButton.currentTitleColor;
+    vc.secondaryColor = self.secondaryColorButton.currentTitleColor;
     [self presentViewController:vc animated:YES completion:NULL];
 }
 

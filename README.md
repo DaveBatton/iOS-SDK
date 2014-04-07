@@ -1,5 +1,5 @@
-iOS-SDK
-=======
+LifePics iOS SDK Version 1.0
+============================
 
 
 Overview
@@ -7,9 +7,10 @@ Overview
 
 LifePics is the market leader in providing retail photofinishers with the latest online imaging services and technologies to conduct business on the Web.
 
-The LifePics OPEN (Open Photo Ecommerce Network) program allows app developers to drive consumer photo orders through the LifePics Network. We will allow you to link your app into our network, and we will pay you a revenue share percentage for every order your app or web site generates.
+The LifePics OPEN (Open Photo Ecommerce Network) program allows app developers to drive consumer photo orders through the LifePics Network. We will allow you to link your app into our network, and we will pay you a revenue share percentage for every order your app generates.
 
-To learn more about developer revenue share please read the enclosed LifePics Developer Agreement and review Schedule 1.
+To learn more about developer revenue share please read the enclosed [LifePics Developer Agreement](https://github.com/LifePics/iOS-SDK/LifePics%20Developer%20Agreement.pdf)
+ and review Schedule 1.
 
 To request developer keys from LifePics please email a complete signed copy of the LifePics Developer Agreement to busdev@lifepics.com. LifePics will generate a set of developer keys and email them back to you. Please see Schedule 1 in the LifePics Developer Agreement on documents to send to LifePics to be eligible for developer revenue share payments.
 
@@ -20,273 +21,95 @@ The LifePics iOS SDK
 --------------------
 The LifePics SDK allows your iPhone users to select images and have them printed locally at nearby photofinishers.
 
+Users can select images from their photo library, images provided by your application, or, optionally, images from their Facebook, Instagram, Google, or Flickr accounts.
+
+![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen1.png) ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen2.png)
+![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen3.png) ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen4.png)
+
+![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen5.png) ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen6.png)
+![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen7.png) ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen8.png)
+
+
+Prerequisites
+------------
+
+You will need a free LifePics developer key. Details are in the Overview section above.
+
+The SDK supports iOS 7.0 and later.
 
 
 Installation 
 ------------
 
-The easiest way to install the LifePics SDK is using [Cocoapods](http://cocoapods.org). Unfortunately the spec file is not yet complete. We'll make that available soon.
+The easiest way to install the LifePics SDK is using [CocoaPods](http://cocoapods.org). Unfortunately the spec file is not yet complete. We'll make that available soon.
 
+For now, put a copy of the LifePics.framework and LifePics.bundle files anywhere in your project folder. 
 
-### Include the code
+In Xcode, select your project in the Project Navigator.<br>
+Select your app target.<br>
+Select the Build Phases tab.<br>
+Expand Link Binary With Libraries.<br>
+Click the + button, then Add Other, to select and add the LifePics.framework file.
 
-You have a few options:
+Next, add the following system frameworks (if they're not already linked to your project:
 
-- Copy the evernote-sdk-ios folder into your Xcode project.
-- Build the evernote-sdk-ios as a static library and include the .h's and .a. (Make sure to add the `-ObjC` flag to your "Other Linker flags" if you choose this option). 
-More info [here](http://developer.apple.com/library/ios/#technotes/iOSStaticLibraries/Articles/configuration.html#/apple_ref/doc/uid/TP40012554-CH3-SW2). 
-- Use [cocoapods](http://cocoapods.org), a nice Objective-C dependency manager. Our pod name is "Evernote-SDK-iOS".
+* Accelerate
+* AssetsLibrary
+* CFNetwork
+* CoreGraphics
+* CoreImage
+* ImageIO
+* MapKit
+* MobileCoreServices
+* QuartzCore
+* Security
+* SystemConfiguration
 
-### Link with frameworks
+And these libraries:
 
-The LifePics SDK depends on some Cocoa frameworks, so you'll need to add them to any target's "Link Binary With Libraries" Build Phase.
+* libsqlite3.dylib
+* libxml2.dylib
+* libz.dylib
 
-Add the following frameworks in the "Link Binary With Libraries" phase
+![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/LinkBinaries.png)
 
-- Security.framework
-- StoreKit.framework
-- MobileCoreServices.framework
-- libxml2.dylib
+Now switch to the Build Settings tab and find the Other Linker Flags setting. Add "-ObjC" here, for both Debug and Release.
 
-### Add header search path
+![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/OtherLinkerFlags.png)
 
-Add `${SDKROOT}/usr/include/libxml2` to your header search path.
 
-![Add '${SDKROOT}/usr/include/libxml2'](AddHeaderSearchPath.png)
+Import the LifePics headers:
 
+    #import <LifePics/LifePics.h>
 
-### Modify your application's main plist file
 
-Create an array key called URL types with a single array sub-item called URL Schemes. Give this a single item with your consumer key prefixed with 'en-'
+Connect to the LifePics network by providing your Partner ID, Source ID, and password:
 
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLName</key>
-			<string></string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>en-<consumer key></string>
-			</array>
-		</dict>
-	</array>
-	
-### Add the header file to any file that uses the Evernote SDK
-
-    #import "EvernoteSDK.h"
-
-### Modify your AppDelegate
-
-First you set up the shared EvernoteSession, configuring it with your consumer key and secret. 
-
-The SDK now supports the Yinxiang Biji service by default. Please make sure your consumer key has been [activated](http://dev.evernote.com/support/) for the China service.
-
-Do something like this in your AppDelegate's `application:didFinishLaunchingWithOptions:` method.
-
-	- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-	{
-		// Initial development is done on the sandbox service
-		// Change this to BootstrapServerBaseURLStringUS to use the production Evernote service
-		// Change this to BootstrapServerBaseURLStringCN to use the Yinxiang Biji production service
-		// Bootstrapping is supported by default with either BootstrapServerBaseURLStringUS or BootstrapServerBaseURLStringCN
-		// BootstrapServerBaseURLStringSandbox does not support the  Yinxiang Biji service
-		NSString *EVERNOTE_HOST = BootstrapServerBaseURLStringSandbox;
-    
-		// Fill in the consumer key and secret with the values that you received from Evernote
-		// To get an API key, visit http://dev.evernote.com/documentation/cloud/
-		NSString *CONSUMER_KEY = @"your key";
-		NSString *CONSUMER_SECRET = @"your secret";
-    
-		// set up Evernote session singleton
-		[EvernoteSession setSharedSessionHost:EVERNOTE_HOST
-					  consumerKey:CONSUMER_KEY  
-				       consumerSecret:CONSUMER_SECRET];
-	}
+    [[LPFSessionManager sharedManager] beginPartnerSessionWithID:@"partnerID"
+                                                        sourceID:@"sourceID"
+                                                        password:@"password"
+                                                      completion:^(NSError *error) {
+                                                          if ([error code] != 0) {
+                                                              // Handle error here.
+                                                          }
+                                                      }];
 
-Do something like this in your AppDelegate's `application:openURL:sourceApplication:annotation:` method
+Finally, present the LifePics Order View controller:
 
-	- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-		BOOL canHandle = NO;
-		if ([[NSString stringWithFormat:@"en-%@", [[EvernoteSession sharedSession] consumerKey]] isEqualToString:[url scheme]] == YES) {
-		canHandle = [[EvernoteSession sharedSession] canHandleOpenURL:url];
-		}
-		return canHandle;
-	}
+    LPFOrderViewController *vc = [[LPFOrderViewController alloc] initWithImageDataSource:imageDataSource];
+    [self presentViewController:vc animated:YES completion:NULL];
 
-Do something like this in your AppDelegate's `applicationDidBecomeActive:` method
-	
-	- (void)applicationDidBecomeActive:(UIApplication *)application
-	{
-    		// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    		[[EvernoteSession sharedSession] handleDidBecomeActive];
-	}
 
-Now you're good to go.
+Customization
+-------------
 
-Using the Evernote SDK from your code
--------------------------------------
+You can customize the colors used by the LifePics Order View Controller by setting the primary and secondary colors before presenting it:
 
-### Authenticate
+    LPFOrderViewController *vc = [[LPFOrderViewController alloc] initWithImageDataSource:imageDataSource];
+    vc.primaryColor = [UIColor blueColor];
+    vc.secondaryColor = [UIColor purpleColor];
+    [self presentViewController:vc animated:YES completion:NULL];
 
-Somewhere in your code, you'll need to authenticate the `EvernoteSession`, passing in your view controller.
+Further interface customizations can be made using the UIAppearance protocol.
 
-A normal place to do this would be a "link to Evernote" button action.
-
-    EvernoteSession *session = [EvernoteSession sharedSession];
-    [session authenticateWithViewController:self completionHandler:^(NSError *error) {
-        if (error || !session.isAuthenticated) {
-            // authentication failed :(
-            // show an alert, etc
-            // ...
-        } else {
-            // authentication succeeded :)
-            // do something now that we're authenticated
-            // ... 
-        } 
-    }];
-
-Calling authenticateWithViewController:completionHandler: will start the OAuth process. EvernoteSession will open a new modal view controller, to display Evernote's OAuth web page and handle all the back-and-forth OAuth handshaking. When the user finishes this process, Evernote's modal view controller will be dismissed.
-
-### Use EvernoteNoteStore and EvernoteUserStore for asynchronous calls to the Evernote API
-
-Both `EvernoteNoteStore` and `EvernoteUserStore` have a convenience constructor that uses the shared `EvernoteSession`.  
-All API calls are asynchronous, occurring on a background GCD queue. You provide the success and failure callback blocks.
-E.g.,
-
-    EvernoteNoteStore *noteStore = [EvernoteNoteStore noteStore];
-    [noteStore listNotebooksWithSuccess:^(NSArray *notebooks) {
-                                    // success... so do something with the returned objects
-                                    NSLog(@"notebooks: %@", notebooks);
-                                }
-                                failure:^(NSError *error) {
-                                    // failure... show error notification, etc
-                                    if([EvernoteSession isTokenExpiredWithError:error]) {
-                                        // trigger auth again
-                                        // auth code is shown in the Authenticate section
-                                    }
-                                    NSLog(@"error %@", error);                                            
-                                }];
-                                
-Full information on the Evernote NoteStore and UserStore API is available on the [Evernote Developers portal page](http://dev.evernote.com/documentation/cloud/).
-
-### Creating note content
-
-The SDK includes an ENML writer that helps you write notes. This is useful to write styled notes,supports adding resources like images to the note and also supports writing encrypted fields to Evernote.
-E.g.,
-
-    ENMLWriter* myWriter = [[ENMLWriter alloc] init];
-    [myWriter startDocument];
-    [myWriter startElement:@"span"];
-    [myWriter startElement:@"br"];
-    [myWriter endElement];
-    [myWriter writeResource:resource];
-    [myWriter endElement];
-    [myWriter endDocument];
-    EDAMNote *newNote = [[EDAMNote alloc] init];
-    newNote.content = myWriter.contents;
-    newNote.title = "Test note";
-    newNote.contentLength = myWriter.contents.length;
-
-`resource` is of type EDAMResource. For more examples, please see the sample app code.
-
-### Prompting the user to install the Evernote for iOS app
-
-If you need to check if the Evernote for iOS app is installed, you can use the following :
-
-    [[EvernoteSession sharedSession] isEvernoteInstalled]
-
-If you need to prompt the user to install the Evernote for iOS app, you can use the following :
-
-    [[EvernoteSession sharedSession] installEvernoteAppUsingViewController:self]
-
-The preferred way for using any of the Evernote for iOS related functions is :
-
-    if([[EvernoteSession sharedSession] isEvernoteInstalled]) {
-    // Invoke Evernote for iOS related function
-    }
-    else {
-    // Prompt user to install the app
-    [[EvernoteSession sharedSession] installEvernoteAppUsingViewController:self];
-    }
-
-
-### Use the Evernote for iOS App to create/view Notes
-
-For this to work, the latest Evernote for iOS app needs to be installed. You can send text/html or text/plain types of content. You can also send attachments.
-
-To make a new note:
-
-    EDAMNote *note = <create a new note here>
-    [[EvernoteSession sharedSession] setDelegate:self];
-    [[EvernoteNoteStore noteStore] saveNewNoteToEvernoteApp:note withType:@"text/html"];
-
-To view a note:
-
-    EDAMNote *noteToBeViewed : <Get the note that you want to view>
-    [[EvernoteNoteStore noteStore] viewNoteInEvernote:noteToBeViewed];
-
-You can also see sample for this in the sample app.
-
-
-### Viewing notes
-
-You can use this to view notes within your app. You will need to include `ENMLUtitlity.h`
-
-Here is an example. The example requires you to setup a web view or any other html renderer. 
-
-    [[EvernoteNoteStore noteStore] getNoteWithGuid:<guid of note to be displayed> withContent:YES withResourcesData:YES withResourcesRecognition:NO withResourcesAlternateData:NO success:^(EDAMNote *note) {
-                ENMLUtility *utltility = [[ENMLUtility alloc] init];
-                [utltility convertENMLToHTML:note.content withResources:note.resources completionBlock:^(NSString *html, NSError *error) {
-                    if(error == nil) {
-                        [self.webView loadHTMLString:html baseURL:nil];
-                    }
-                }];
-            } failure:^(NSError *error) {
-                NSLog(@"Failed to get note : %@",error);
-            }];
-Check the Note browser in the sample app for some sample code.
-
-### Handling expired Authentication tokens
-
-You should check for expired auth tokens and trigger authentication again if the authentication token is expired or revoked by the user.
-
-You can check for expired using `if(EvernoteSession isTokenExpiredWithError:error])` in the error block. 
-
-FAQ
----
-
-### Does the Evernote SDK support ARC?
-
-Yes. To use the SDK in a non-ARC project, please use the -fobjc-arc compiler flag on all the files in the Evernote SDK.
-
-### What if I want to do my own Evernote Thrift coding?
-
-`EvernoteNoteStore` and `EvernoteUserStore` are an abstraction layer on top of Thrift, and try to keep some of that nastiness out of your hair.
-You can still get access to the underlying Thrift client objects, though: check out EvernoteSession's userStore and noteStore properties.
-
-
-
-
-
-
-
-Requires iOS 7 minimum
-
-MobileCoreServices
-SystemConfiguration
-Accelerate
-MapKit
-ImageIO
-CoreImage
-Security
-AssetsLibrary
-QuartzCore
-CFNetwork
-CoreGraphics
-
-libz.dylib
-libxml2.dylib
-libsqlite3.dylib
-
-
--ObjC
+You can also enable Facebook, Instagram, Google, and Flickr access in the Sources view. See the [Photo Sources](https://github.com/LifePics/iOS-SDK/Photo%20Sources.md) document for details.

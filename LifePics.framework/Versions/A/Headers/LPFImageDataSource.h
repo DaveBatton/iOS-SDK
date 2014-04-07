@@ -13,8 +13,9 @@
 @property (readonly, nonatomic) NSString *name;
 @property (readonly, nonatomic) UIImage *icon;
 
-- (void)imageRepresentationsCompleted:(void (^)(NSArray *imageRepresentations))completed;
-- (void)fetchThumbnailForImageRepresentation:(id)imageRepresentation completed:(void (^)(UIImage *thumbnailImage))completed;
-- (void)fetchFullSizeImageRepresentation:(id)imageRepresentation success:(void (^)(UIImage *fullImage))completed;
+- (void)imageRepresentations:(void (^)(NSArray *imageRepresentations))completion;
+- (CGSize)fullImageSizeForImageRepresentation:(id)imageRepresentation;
+- (void)fetchThumbnailForImageRepresentation:(id)imageRepresentation completion:(void (^)(UIImage *thumbnailImage))completion;
+- (void)fetchFullSizeImageRepresentation:(id)imageRepresentation completion:(void (^)(UIImage *fullImage))completion;
 
 @end

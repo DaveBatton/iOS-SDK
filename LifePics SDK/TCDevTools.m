@@ -2,7 +2,6 @@
 //  TCDevTools.m
 //  LifePics SDK
 //
-//  Created by Dave Batton on 2/12/14.
 //  Copyright (c) 2014 Taylor Corp. All rights reserved.
 //
 

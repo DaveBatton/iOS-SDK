@@ -37,7 +37,6 @@ typedef NS_ENUM(NSInteger, LPFImageOrientation) {
 @property (copy, nonatomic) NSURL *thumbnailURL;
 @property (copy, nonatomic) NSURL *fullURL;
 @property (strong, nonatomic) id userInfo;
-//@property (strong, nonatomic) UIImage *fullImage;
 @property (assign, nonatomic) CGSize fullImageSize;
 @property (readonly, nonatomic) LPFImageOrientation orientation;
 @property (weak, nonatomic) LPFFolder *folder;
