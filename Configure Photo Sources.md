@@ -7,7 +7,7 @@
 
 # Configuring Image Sources
 
-The LifePics framework presents a set of image sources that can retrieve users' favorite images to select for printing.  However, they'll only appear when they're properly configured.  The official list of supported image sources are:
+The LifePics framework presents a set of image sources that can retrieve users' favorite images to select for printing. However, they'll only appear when they're properly configured. The official list of supported image sources are:
 
 * Local Device Images (always presented)
 * Instagram
@@ -16,7 +16,7 @@ The LifePics framework presents a set of image sources that can retrieve users' 
 * Flickr
 * Seeded Images (developer-defined)
 
-To properly configure an image source, you generally need to provide a Public Key or options that are going to be unique to each one.  Configuration for each source is explained below.
+To properly configure an image source, you generally need to provide a Public Key or options that are going to be unique to each one. Configuration for each source is explained below.
 
 
 ### Instagram
@@ -27,13 +27,13 @@ To properly configure an image source, you generally need to provide a Public Ke
 4. In your app's Info.plist, add **ig[Your Instagram Client ID]** to the *URL Schemes* list under *URL types*.
 5. In your app's app delegate, add the following code to the *application:openURL:sourceApplication:annotation:* method:
 
-    // instagram handling
-    NSString *instagramKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"LPFInstagramKey"];
-    NSString *instagramUrlPrefix = [NSString stringWithFormat:@"ig%@://", instagramKey];
+Example:
 
-    if ([[url absoluteString] hasPrefix:instagramUrlPrefix]) {
-        return YES;
-    }
+     NSString *instagramKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"LPFInstagramKey"];
+     NSString *instagramUrlPrefix = [NSString stringWithFormat:@"ig%@://", instagramKey];
+     if ([[url absoluteString] hasPrefix:instagramUrlPrefix]) {
+         return [LPFOrderViewController openURL:url sourceApplication:sourceApplication];
+     }
 
 
 ### Facebook
@@ -45,12 +45,13 @@ To properly configure an image source, you generally need to provide a Public Ke
 5. In your app's Info.plist, add **fb[Your Facebook App ID]** to the *URL Schemes* list under *URL types*.
 6. In your app's app delegate, add the following code to the *application:openURL:sourceApplication:annotation:* method:
 
-    // facebook handling
+Example:
+
+    // Facebook handling
     NSString *facebookKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"FacebookAppID"];
     NSString *facebookUrlPrefix = [NSString stringWithFormat:@"fb%@://", facebookKey];
-    
     if ([[url absoluteString] hasPrefix:facebookUrlPrefix]) {
-        [LPFFBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+        return [LPFOrderViewController openURL:url sourceApplication:sourceApplication];
     }
 
 
@@ -69,49 +70,51 @@ To properly configure an image source, you generally need to provide a Public Ke
 3. In your app's Info.plist, add *LPFFlickrSecret* and set it to your *Flickr Secret*.
 4. In your app's app delegate, add the following code to the *application:openURL:sourceApplication:annotation:* method:
 
-    // flickr handling
+Example:
+
+    // Flickr handling
     NSString *flickrKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"LPFFlickrKey"];
     NSString *flickrUrlPrefix = [NSString stringWithFormat:@"flickr%@://", flickrKey];
-    
     if ([[url absoluteString] hasPrefix:flickrUrlPrefix]) {
-        [[LPFFlickrKit sharedLPFFlickrKit] completeAuthWithURL:url completion:nil];
-        
-        return YES;
+        return [LPFOrderViewController openURL:url sourceApplication:sourceApplication];
     }
 
 
 ### Seeded Images
 
-Seeded images are a special kind of image source that you define on your own.  You might use this image source to provide a set of images bundled in your own app, found on the web somewhere, or perhaps coming from your own in-app photo selection.
+Seeded images are a special kind of image source that you define on your own. You might use this image source to provide a set of images bundled in your own app, found on the web somewhere, or perhaps coming from your own in-app photo selection.
 
 To configure this image source, you'll only use code. What you'll need to do is create a class that implements the **LPFImageDataSource** protocol. Then, when beginning the print order flow, pass an instance in to the Order View Controller:
 
     TCSimpleImageDataSource *imageDataSource = [[TCSimpleImageDataSource alloc] init];
     LPFOrderViewController *vc = [[LPFOrderViewController alloc] initWithImageDataSource:imageDataSource];
-
     [self presentViewController:vc animated:YES completion:nil];
 
 An example is provided by the *TCSimpleImageDataSource* class. You'll need to implement the following methods:
 
 #### - (NSString *)name
 
-This should return the string you want displayed on the source selection screen.  It should represent where the images are coming from or your service name.
+This should return the string you want displayed on the source selection screen. It should represent where the images are coming from or your service name.
 
 #### - (UIImage *)icon
 
-This should return the image you want displayed on the source selection screen.  The ideal image size is 60pt x 60pt.
+This should return the image you want displayed on the source selection screen. The ideal image size is 60pt x 60pt.
 
-#### - (void)imageRepresentationsCompleted:(void (^)(NSArray *imageRepresentations))completed
+#### - (CGSize)fullImageSizeForImageRepresentation:(id)imageRepresentation
 
-This is an asynchronous method that should call the completion block with an array of *image representations* that represent each of your images.  The datatype is up to you and will be handed back to you in the next two methods.
+Return the size (width and height) in pixels of the full-sized image.
 
-You might provide an array of UIImage objects or an array of URL strings that point at images on the web.  In the sample implementation, it's an NSDictionary with filenames for both a thumbnail and full-size image that exist in the app bundle.
+#### - (void)imageRepresentations:(void (^)(NSArray *imageRepresentations))completion
 
-#### - (void)fetchThumbnailForImageRepresentation:(id)imageRepresentation completed:(void (^)(UIImage *thumbnailImage))completed
+This is an asynchronous method that should call the completion block with an array of *image representations* that represent each of your images. The datatype is up to you and will be handed back to you in the next two methods.
 
-This is an asynchronous method that passes one image representation to you (from the set you provided previously) and asks that you provide a thumbnail image for it.  if your image representation *is* a UIImage, you might pass it right back. In the sample implementation, a UIImage is created from the app bundle file it references.  You might also load an image from the web.
+You might provide an array of UIImage objects or an array of URL strings that point at images on the web. In the sample implementation, it's an NSDictionary with filenames for both a thumbnail and full-size image that exist in the app bundle.
 
-#### - (void)fetchFullSizeImageRepresentation:(id)imageRepresentation success:(void (^)(UIImage *fullImage))completed
+#### - (void)fetchThumbnailForImageRepresentation:(id)imageRepresentation completion:(void (^)(UIImage *thumbnailImage))completion
 
-This is also an asynchronous method that is identical to the above except it expects a full-size image appropriate for printing.  Note that the thumbnail can be this same full-size image, but you shouldn't use a small thumbnail as the full-size image.  Providing a low resolution image for printing will result in fuzzy printouts.
+This is an asynchronous method that passes one image representation to you (from the set you provided previously) and asks that you provide a thumbnail image for it. If your image representation *is* a UIImage, you might pass it right back. In the sample implementation, a UIImage is created from the app bundle file it references. You might also load an image from the web.
+
+#### - (void)fetchFullSizeImageRepresentation:(id)imageRepresentation completion:(void (^)(UIImage *fullImage))completion
+
+This is also an asynchronous method that is identical to the above except it expects a full-size image appropriate for printing. Note that the thumbnail can be this same full-size image, but you shouldn't use a small thumbnail as the full-size image. Providing a low resolution image for printing will result in fuzzy printouts.
 
