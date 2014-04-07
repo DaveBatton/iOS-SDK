@@ -112,4 +112,4 @@ You can customize the colors used by the LifePics Order View Controller by setti
 
 Further interface customizations can be made using the UIAppearance protocol.
 
-You can also enable Facebook, Instagram, Google, and Flickr access in the Sources view. See the [Photo Sources](https://github.com/LifePics/iOS-SDK/blob/master/Configure%20Photo%20Sources.md) document for details.
+You can also enable Facebook, Instagram, Google, and Flickr access in the Sources view. See the [Configure Photo Sources](https://github.com/LifePics/iOS-SDK/blob/master/Configure%20Photo%20Sources.md) document for details.
