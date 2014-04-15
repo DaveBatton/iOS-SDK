@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name         = "LifePics"
-  s.version      = "1.0.1"
+  s.version      = "1.0.0"
   s.homepage     = "https://github.com/LifePics/iOS-SDK"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.summary      = "The LifePics SDK allows your iPhone users to select images and have them printed locally at nearby photofinishers."
   s.authors      = { "Dave Batton" => "Dave@Batton.org", "John Blanco" => "john@raptureinvenice.com" }
   s.platform     = :ios, '7.0'
-  s.source       = { :git => "https://github.com/LifePics/iOS-SDK.git", :tag => "HEAD" }
+  s.source       = { :git => "https://github.com/LifePics/iOS-SDK.git", :tag => "1.0.0" }
 
   s.description  = <<-DESC
                    The LifePics SDK allows your iPhone users to select images and have them printed locally at nearby photofinishers.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 "https://camo.githubusercontent.com/f456199c1012eeb9a29106f1d8edde129e0f21df/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f4c696665506963732d694f532d53444b2f53637265656e73686f74732f73637265656e382e706e67"
 
   s.source_files  = 'LifePics.framework/**/*.h'
-  s.preserve_paths  = 'LifePics.framework/Versions/A/LifePics'
+  s.preserve_paths  = 'LifePics.framework'
 
   s.frameworks = 'Accelerate', 'AssetsLibrary', 'CFNetwork', 'CoreGraphics', 'CoreLocation', 'ImageIO', 'MapKit', 'MobileCoreServices', 'QuartzCore', 'Security', 'SystemConfiguration', 'UIKit'
   s.libraries = 'sqlite3', 'xml2', 'z'
   s.requires_arc = true
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => "$(SDKROOT)/usr/include/libxml2" }
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => "$(SDKROOT)/usr/include/libxml2", 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/LifePics/LifePics.framework"' }
 
 end
