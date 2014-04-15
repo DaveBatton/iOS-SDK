@@ -21,7 +21,8 @@ Pod::Spec.new do |s|
 "https://camo.githubusercontent.com/f456199c1012eeb9a29106f1d8edde129e0f21df/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f4c696665506963732d694f532d53444b2f53637265656e73686f74732f73637265656e382e706e67"
 
   s.source_files  = 'LifePics.framework/**/*.h'
-  s.preserve_paths  = 'LifePics.framework'
+  s.preserve_paths  = 'LifePics.framework', 'LifePics.bundle'
+  s.resources    = 'LifePics.bundle'
 
   s.frameworks = 'Accelerate', 'AssetsLibrary', 'CFNetwork', 'CoreGraphics', 'CoreLocation', 'ImageIO', 'MapKit', 'MobileCoreServices', 'QuartzCore', 'Security', 'SystemConfiguration', 'UIKit', 'LifePics'
   s.libraries = 'sqlite3', 'xml2', 'z'
