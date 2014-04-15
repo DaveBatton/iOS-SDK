@@ -26,6 +26,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'Accelerate', 'AssetsLibrary', 'CFNetwork', 'CoreGraphics', 'CoreLocation', 'ImageIO', 'MapKit', 'MobileCoreServices', 'QuartzCore', 'Security', 'SystemConfiguration', 'UIKit'
   s.libraries = 'sqlite3', 'xml2', 'z'
   s.requires_arc = true
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => "$(SDKROOT)/usr/include/libxml2", 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/LifePics/LifePics.framework"' }
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => "$(SDKROOT)/usr/include/libxml2", 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/LifePics"' }
 
 end
