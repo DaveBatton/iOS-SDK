@@ -101,7 +101,7 @@ Connect to the LifePics network by providing your Partner ID, Source ID, and pas
 
 Finally, present the LifePics Order View controller:
 
-    LPFOrderViewController *vc = [[LPFOrderViewController alloc] initWithImageDataSource:imageDataSource];
+    LPFOrderViewController *vc = [[LPFOrderViewController alloc] initWithImageDataSource:nil];
     [self presentViewController:vc animated:YES completion:NULL];
 
 
@@ -110,7 +110,7 @@ Customization
 
 You can customize the colors used by the LifePics Order View Controller by setting the primary and secondary colors before presenting it:
 
-    LPFOrderViewController *vc = [[LPFOrderViewController alloc] initWithImageDataSource:imageDataSource];
+    LPFOrderViewController *vc = [[LPFOrderViewController alloc] initWithImageDataSource:nil];
     vc.primaryColor = [UIColor blueColor];
     vc.secondaryColor = [UIColor purpleColor];
     [self presentViewController:vc animated:YES completion:NULL];
