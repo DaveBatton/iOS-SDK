@@ -9,7 +9,7 @@ LifePics is the market leader in providing retail photofinishers with the latest
 
 The LifePics OPEN (Open Photo Ecommerce Network) program allows app developers to drive consumer photo orders through the LifePics Network. We will allow you to link your app into our network, and we will pay you a revenue share percentage for every order your app generates.
 
-To learn more about developer revenue share please read the enclosed [LifePics Developer Agreement](https://github.com/LifePics/iOS-SDK/LifePics%20Developer%20Agreement.pdf)
+To learn more about developer revenue share please read the enclosed [LifePics Developer Agreement](https://github.com/LifePics/iOS-SDK/raw/master/LifePics%20Developer%20Agreement.pdf)
  and review Schedule 1.
 
 To request developer keys from LifePics please email a complete signed copy of the LifePics Developer Agreement to busdev@lifepics.com. LifePics will generate a set of developer keys and email them back to you. Please see Schedule 1 in the LifePics Developer Agreement on documents to send to LifePics to be eligible for developer revenue share payments.
@@ -76,6 +76,11 @@ And these libraries:
 Now switch to the Build Settings tab and find the Other Linker Flags setting. Add "-ObjC" here, for both Debug and Release.
 
 ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/OtherLinkerFlags.png)
+
+Add the LifePics.bundle to your target, by selecting Add Files in the Project Navigator.
+
+![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/AddFiles.png)<br>
+![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/AddBundle.png)
 
 
 Import the LifePics headers:
