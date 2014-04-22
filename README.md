@@ -2,6 +2,12 @@ LifePics iOS SDK Version 1.0
 ============================
 
 
+New in Version 1.0.1
+--------------------
+
+We've added a [CocoaPods](http://cocoapods.org) spec file.
+
+
 Overview
 --------
 
@@ -41,9 +47,17 @@ The SDK supports iOS 7.0 and later.
 Installation 
 ------------
 
-The easiest way to install the LifePics SDK is using [CocoaPods](http://cocoapods.org). Unfortunately the spec file is not yet complete. We'll make that available soon.
+**CocoaPods**
 
-For now, put a copy of the LifePics.framework and LifePics.bundle files anywhere in your project folder. 
+The easiest way to install the LifePics SDK is using [CocoaPods](http://cocoapods.org).
+
+    platform :ios, '7.0'
+    pod 'LifePics'
+
+
+**Manual Installation**
+
+Put a copy of the LifePics.framework and LifePics.bundle files anywhere in your project folder. 
 
 In Xcode, select your project in the Project Navigator.<br>
 Select your app target.<br>
