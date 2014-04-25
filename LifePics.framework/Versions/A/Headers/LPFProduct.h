@@ -38,7 +38,7 @@
 @property (nonatomic) double width;
 @property (nonatomic) double height;
 @property (nonatomic, readonly) NSDecimalNumber *basePriceNumber;
-@property (nonatomic) LPFImageOrientation imageOrientation;
+@property (nonatomic, readonly) LPFImageOrientation imageOrientation;
 @property (nonatomic, copy) NSDecimalNumber *matteFinishPriceOffset;
 @property (nonatomic, copy) NSDecimalNumber *glossyFinishPriceOffset;
 

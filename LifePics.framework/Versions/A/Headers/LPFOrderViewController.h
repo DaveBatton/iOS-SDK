@@ -25,6 +25,7 @@
 @property (nonatomic, copy) UIColor *primaryColor;  // Default is green.
 @property (nonatomic, copy) UIColor *secondaryColor;  // Default is orange.
 @property (nonatomic, readonly) BOOL canShipToHome;
+@property (nonatomic, readonly) LPFStore *genericStore;
 
 + (BOOL)openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication;
 

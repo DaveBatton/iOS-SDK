@@ -1,11 +1,27 @@
-LifePics iOS SDK Version 1.0
-============================
+LifePics iOS SDK Version 1.0.1
+==============================
 
 
 New in Version 1.0.1
 --------------------
 
-We've added a [CocoaPods](http://cocoapods.org) spec file.
+**Features**
+
+- We've added a [CocoaPods](http://cocoapods.org) spec file.
+- Added SmugMug as an image source.
+- Improved store finding when the user's current location can't be determined.
+- Now animates from thumbnail view to the single-image preview.
+- Updated the activity indicator.
+- Enabled the status bar network activity indicator.
+
+
+**Bug Fixes**
+
+- Fixed text wrap in the floating navigation buttons.
+- Fixed a photo rotation bug.
+- Fixed a photo source thumbnail aspect ratio bug.
+- Fixed the two crashing bugs.
+- Fixed an image upload bug.
 
 
 Overview
@@ -18,9 +34,9 @@ The LifePics OPEN (Open Photo Ecommerce Network) program allows app developers t
 To learn more about developer revenue share please read the enclosed [LifePics Developer Agreement](https://github.com/LifePics/iOS-SDK/raw/master/LifePics%20Developer%20Agreement.pdf)
  and review Schedule 1.
 
-To request developer keys from LifePics please email a complete signed copy of the LifePics Developer Agreement to busdev@lifepics.com. LifePics will generate a set of developer keys and email them back to you. Please see Schedule 1 in the LifePics Developer Agreement on documents to send to LifePics to be eligible for developer revenue share payments.
+To request developer keys from LifePics please email a complete signed copy of the LifePics Developer Agreement to [busdev@lifepics.com](mailto:busdev@lifepics.com). LifePics will generate a set of developer keys and email them back to you. Please see Schedule 1 in the [LifePics Developer Agreement](https://github.com/LifePics/iOS-SDK/blob/master/LifePics%20Developer%20Agreement.pdf) on documents to send to LifePics to be eligible for developer revenue share payments.
 
-Please email any questions about the OPEN program to busdev@lifepics.com.
+Please email any questions about the OPEN program to [busdev@lifepics.com](mailto:busdev@lifepics.com).
 
 
 The LifePics iOS SDK

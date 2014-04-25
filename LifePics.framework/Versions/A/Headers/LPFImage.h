@@ -13,6 +13,7 @@
 typedef NS_ENUM(NSInteger, LPFImageSourceType) {
     LPFImageSourceTypeNone = 0,
     LPFImageSourceTypeDevice,
+    LPFImageSourceTypeLifePics,
     LPFImageSourceTypeFacebook,
     LPFImageSourceTypeInstagram,
     LPFImageSourceTypeGoogle,
