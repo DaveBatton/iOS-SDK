@@ -23,7 +23,7 @@
 @property (nonatomic, copy) NSString *userEmail;
 @property (nonatomic, copy) NSString *userPassword;
 @property (nonatomic, copy) NSString *userFirstName;
-@property (nonatomic, copy) NSString *userLastName;  // Not currently used.
+@property (nonatomic, copy) NSString *userLastName;
 @property (nonatomic, copy) NSString *userPhoneNumber;
 @property (nonatomic, readonly) LPFMSActiveConfig *activeConfig;
 

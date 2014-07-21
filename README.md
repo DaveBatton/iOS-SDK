@@ -1,27 +1,18 @@
-LifePics iOS SDK Version 1.0.1
+LifePics iOS SDK Version 1.0.2
 ==============================
 
 
-New in Version 1.0.1
+New in Version 1.0.2
 --------------------
 
 **Features**
 
-- We've added a [CocoaPods](http://cocoapods.org) spec file.
-- Added SmugMug as an image source.
-- Improved store finding when the user's current location can't be determined.
-- Now animates from thumbnail view to the single-image preview.
-- Updated the activity indicator.
-- Enabled the status bar network activity indicator.
+- Instagram will now show paged results.
 
 
 **Bug Fixes**
 
-- Fixed text wrap in the floating navigation buttons.
-- Fixed a photo rotation bug.
-- Fixed a photo source thumbnail aspect ratio bug.
-- Fixed the two crashing bugs.
-- Fixed an image upload bug.
+- Fixed Facebook permissions error.
 
 
 Overview
