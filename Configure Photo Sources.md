@@ -1,10 +1,3 @@
-
-# App Configuration
-
-1. Add libxml2.dylib to the list of required frameworks for your app.
-2. Add *"${SDK_DIR}"/usr/include/libxml2* to your Header Search Paths.
-
-
 # Configuring Image Sources
 
 The LifePics framework presents a set of image sources that can retrieve users' favorite images to select for printing. However, they'll only appear when they're properly configured. The official list of supported image sources are:

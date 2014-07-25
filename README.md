@@ -88,6 +88,8 @@ Next, add the following system frameworks (if they're not already linked to your
 
 And these libraries:
 
+# App Configuration
+
 * libsqlite3.dylib
 * libxml2.dylib
 * libz.dylib
