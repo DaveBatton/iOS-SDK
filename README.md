@@ -1,18 +1,5 @@
-LifePics iOS SDK Version 1.0.2
+LifePics iOS SDK Version 1.0.3
 ==============================
-
-
-New in Version 1.0.2
---------------------
-
-**Features**
-
-- Instagram will now show paged results.
-
-
-**Bug Fixes**
-
-- Fixed Facebook permissions error.
 
 
 Overview
@@ -30,6 +17,23 @@ To request developer keys from LifePics please email a complete signed copy of t
 Please email any questions about the OPEN program to [busdev@lifepics.com](mailto:busdev@lifepics.com).
 
 
+* * *
+
+New in Version 1.0.3
+--------------------
+
+**Features**
+
+- Improved the animation when previewing photos.
+
+**Bug Fixes**
+
+- Fixed a bug in the 1.0.2 release that prevented compiling.
+- Removed CoreImage from the documentation as a system framework requirement.
+
+
+* * *
+
 The LifePics iOS SDK
 --------------------
 The LifePics SDK allows your iPhone users to select images and have them printed locally at nearby photofinishers.
@@ -43,6 +47,8 @@ Users can select images from their photo library, images provided by your applic
 ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen7.png) ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen8.png)
 
 
+* * *
+
 Prerequisites
 ------------
 
@@ -50,6 +56,8 @@ You will need a free LifePics developer key. Details are in the Overview section
 
 The SDK supports iOS 7.0 and later.
 
+
+* * *
 
 Installation 
 ------------
@@ -78,7 +86,6 @@ Next, add the following system frameworks (if they're not already linked to your
 * AssetsLibrary
 * CFNetwork
 * CoreGraphics
-* CoreImage
 * ImageIO
 * MapKit
 * MobileCoreServices
@@ -87,8 +94,6 @@ Next, add the following system frameworks (if they're not already linked to your
 * SystemConfiguration
 
 And these libraries:
-
-# App Configuration
 
 * libsqlite3.dylib
 * libxml2.dylib
@@ -128,6 +133,8 @@ Finally, present the LifePics Order View controller:
     [self presentViewController:vc animated:YES completion:NULL];
 
 
+* * *
+
 Customization
 -------------
 
@@ -141,3 +148,41 @@ You can customize the colors used by the LifePics Order View Controller by setti
 Further interface customizations can be made using the UIAppearance protocol.
 
 You can also enable Facebook, Instagram, Google, and Flickr access in the Sources view. See the [Configure Photo Sources](https://github.com/LifePics/iOS-SDK/blob/master/Configure%20Photo%20Sources.md) document for details.
+
+
+* * *
+
+Revision History
+----------------
+
+**Version 1.0.2**
+
+***Features***
+
+- Instagram will now show paged results.
+
+
+***Bug Fixes***
+
+- Fixed Facebook permissions error.
+
+
+**Version 1.0.1**
+
+***Features***
+
+- We've added a [CocoaPods](http://cocoapods.org) spec file.
+- Added SmugMug as an image source.
+- Improved store finding when the user's current location can't be determined.
+- Now animates from thumbnail view to the single-image preview.
+- Updated the activity indicator.
+- Enabled the status bar network activity indicator.
+
+
+***Bug Fixes***
+
+- Fixed text wrap in the floating navigation buttons.
+- Fixed a photo rotation bug.
+- Fixed a photo source thumbnail aspect ratio bug.
+- Fixed the two crashing bugs.
+- Fixed an image upload bug.
