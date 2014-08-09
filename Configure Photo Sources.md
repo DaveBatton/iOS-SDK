@@ -61,7 +61,8 @@ Example:
 1. Create a new project on [Flickr](https://www.flickr.com/services/apps/create/).
 2. In your app's Info.plist, add *LPFFlickrKey* and set it to your *Flickr Key*.
 3. In your app's Info.plist, add *LPFFlickrSecret* and set it to your *Flickr Secret*.
-4. In your app's app delegate, add the following code to the *application:openURL:sourceApplication:annotation:* method:
+4. In your app's Info.plist, add **flickr[Your Flickr Key]** to the *URL Schemes* list under *URL types*.
+5. In your app's app delegate, add the following code to the *application:openURL:sourceApplication:annotation:* method:
 
 Example:
 
