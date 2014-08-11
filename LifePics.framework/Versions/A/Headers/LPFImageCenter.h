@@ -21,7 +21,7 @@
 
 - (void)selectPhotosFromViewController:(UIViewController *)presentingViewController imageSource:(LPFImageSource *)imageSource imageGroup:(LPFImageSelectionGroup *)imagesForPrintOrder;
 - (void)uploadImages:(NSArray *)image
-           progress:(void (^)(double completed))progressBlock
+           progress:(void (^)(NSInteger imageInProgress, NSInteger totalImages))progressBlock
          completion:(void (^)(NSError *error))completionBlock;
 
 @end

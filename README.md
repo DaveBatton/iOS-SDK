@@ -1,4 +1,4 @@
-LifePics iOS SDK Version 1.0.4
+LifePics iOS SDK Version 1.0.5
 ==============================
 
 
@@ -19,16 +19,18 @@ Please email any questions about the OPEN program to [busdev@lifepics.com](mailt
 
 * * *
 
-New in Version 1.0.4
+New in Version 1.0.5
 --------------------
 
-**Bug Fixes**
+***Features***
 
-- Fixed instructions for configuring Flickr.
-- Fixed permissions request for Facebook so your FB app doesn't need to be in an approved/reviewed state to test it.
-- Flickr now supports https only.
-- Serialized image uploads to support larger orders.
+* Show detailed image upload progress when ordering.
+* Added the LPFOrderViewControllerDelgate to keep updated on current order status.
 
+
+***Bug Fixes***
+
+- Facebook required permissions minimized to photos only.
 
 
 * * *
@@ -154,15 +156,26 @@ You can also enable Facebook, Instagram, Google, and Flickr access in the Source
 Revision History
 ----------------
 
+## Version 1.0.4
+
+
+***Bug Fixes***
+
+- Fixed instructions for configuring Flickr.
+- Fixed permissions request for Facebook so your FB app doesn't need to be in an approved/reviewed state to test it.
+- Flickr now supports https only.
+- Serialized image uploads to support larger orders.
+
+
 ## Version 1.0.3
 
 
-**Features**
+***Features***
 
 - Improved the animation when previewing photos.
 
 
-**Bug Fixes**
+***Bug Fixes***
 
 - Fixed a bug in the 1.0.2 release that prevented compiling.
 - Removed CoreImage from the documentation as a system framework requirement.

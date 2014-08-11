@@ -15,6 +15,8 @@
 @class LPFImageSelectionGroup;
 @class LPFSizeQuantityViewController;
 
+@protocol LPFOrderViewControllerDelegate;
+
 @interface LPFOrderViewController : UINavigationController
 
 @property (nonatomic, strong) LPFFloatingNavigationView *floatingNavigationView;
@@ -26,12 +28,21 @@
 @property (nonatomic, copy) UIColor *secondaryColor;  // Default is orange.
 @property (nonatomic, readonly) BOOL canShipToHome;
 @property (nonatomic, readonly) LPFStore *genericStore;
+@property (nonatomic, weak) id<LPFOrderViewControllerDelegate> orderDelegate;
 
 + (BOOL)openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication;
 
-- (void)udpateFloatingNavigationView;
+- (void)updateFloatingNavigationView;
 - (LPFSizeQuantityViewController *)popToSizeQuantityViewControllerAnimated:(BOOL)animated;
 - (instancetype)initWithImageDataSource:(id<LPFImageDataSource>)imageDataSource;
 - (void)popToContinueShoppingViewControllerAnimated:(BOOL)animated;
 
 @end
+
+@protocol LPFOrderViewControllerDelegate
+
+- (void)orderViewController:(LPFOrderViewController *)orderViewController didSubmitOrderWithCart:(LPFCart *)cart;
+- (void)orderViewControllerDidCancel:(LPFOrderViewController *)orderViewController;
+
+@end
+
