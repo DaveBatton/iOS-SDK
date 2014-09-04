@@ -1,4 +1,4 @@
-LifePics iOS SDK Version 1.0.5
+LifePics iOS SDK Version 1.0.6
 ==============================
 
 
@@ -15,22 +15,6 @@ To learn more about developer revenue share please read the enclosed [LifePics D
 To request developer keys from LifePics please email a complete signed copy of the LifePics Developer Agreement to [busdev@lifepics.com](mailto:busdev@lifepics.com). LifePics will generate a set of developer keys and email them back to you. Please see Schedule 1 in the [LifePics Developer Agreement](https://github.com/LifePics/iOS-SDK/blob/master/LifePics%20Developer%20Agreement.pdf) on documents to send to LifePics to be eligible for developer revenue share payments.
 
 Please email any questions about the OPEN program to [busdev@lifepics.com](mailto:busdev@lifepics.com).
-
-
-* * *
-
-New in Version 1.0.5
---------------------
-
-***Features***
-
-* Show detailed image upload progress when ordering.
-* Added the LPFOrderViewControllerDelgate to keep updated on current order status.
-
-
-***Bug Fixes***
-
-- Facebook required permissions minimized to photos only.
 
 
 * * *
@@ -156,8 +140,26 @@ You can also enable Facebook, Instagram, Google, and Flickr access in the Source
 Revision History
 ----------------
 
-## Version 1.0.4
+## Version 1.0.6
 
+***Features***
+
+- We've removed a merchant that no longer wishes to participate in the mobile SDK program.
+
+
+## Version 1.0.5
+
+***Features***
+
+- Show detailed image upload progress when ordering.
+- Added the LPFOrderViewControllerDelgate to keep updated on current order status.
+
+***Bug Fixes***
+
+- Facebook required permissions minimized to photos only.
+
+
+## Version 1.0.4
 
 ***Bug Fixes***
 
@@ -169,11 +171,9 @@ Revision History
 
 ## Version 1.0.3
 
-
 ***Features***
 
 - Improved the animation when previewing photos.
-
 
 ***Bug Fixes***
 
@@ -186,7 +186,6 @@ Revision History
 ***Features***
 
 - Instagram will now show paged results.
-
 
 ***Bug Fixes***
 
@@ -203,7 +202,6 @@ Revision History
 - Now animates from thumbnail view to the single-image preview.
 - Updated the activity indicator.
 - Enabled the status bar network activity indicator.
-
 
 ***Bug Fixes***
 
