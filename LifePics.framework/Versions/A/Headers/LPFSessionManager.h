@@ -39,6 +39,7 @@
 - (void)loginWithEmail:(NSString *)email password:(NSString *)password completion:(void (^)(NSError *error))completionBlock;
 - (void)logOut;
 - (void)submitOrderForCart:(LPFCart *)cart completion:(void (^)(NSError *error))completionBlock;
+- (BOOL)isStagingServer;
 
 - (void)loadAlbumsCompletion:(void (^)(NSArray *albums, NSError *error))completion;
 - (void)loadAlbumImagesForAlbum:(NSString *)albumID completion:(void (^)(NSArray *images, NSError *error))completion;

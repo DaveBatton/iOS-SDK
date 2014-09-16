@@ -1,4 +1,4 @@
-LifePics iOS SDK Version 1.0.6
+LifePics iOS SDK Version 1.0.7
 ==============================
 
 
@@ -139,6 +139,27 @@ You can also enable Facebook, Instagram, Google, and Flickr access in the Source
 
 Revision History
 ----------------
+
+## Version 1.0.7
+
+***Features***
+
+- Photo sources are now dimmed until you log into them.
+
+- You can now log out of a photo source (use the Edit button).
+
+- The staging server will be used when building in DEBUG mode. Otherwise the production server will be used.
+
+- When starting a session, a message will be displayed in the Xcode console to let you know if you’re connected to the staging or production server.
+
+- The Submit Order button will now say “Submit Fake Order” when logged into the staging server.
+
+***Bug Fixes***
+
+- The list of photo sources no longer contains unwanted white space at the top when retuning from a photo source.
+
+- The dialog offering to submit a fake order has been removed.
+
 
 ## Version 1.0.6
 
