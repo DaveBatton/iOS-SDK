@@ -22,6 +22,7 @@
 @property (nonatomic, readonly) NSUInteger quantity;
 @property (nonatomic, readonly) NSDecimalNumber *subtotal;
 @property (nonatomic, readonly) NSString *itemsDescription;
+@property (nonatomic, copy) NSString *emailAddress;
 
 - (void)setStore:(LPFStore *)newStore itemsRemovedFromCart:(NSArray **)removedItems;
 - (void)emptyCart;

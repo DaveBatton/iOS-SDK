@@ -1,4 +1,4 @@
-LifePics iOS SDK Version 1.0.7
+LifePics iOS SDK Version 1.0.8
 ==============================
 
 
@@ -139,6 +139,17 @@ You can also enable Facebook, Instagram, Google, and Flickr access in the Source
 
 Revision History
 ----------------
+
+## Version 1.0.8
+
+***Features***
+
+- Added a required email address to the Confirm Order view.
+
+- Added Terms of Service and Privacy Policy links to the Confirm Order view.
+
+- Improved the error message if access to device photos has been denied.
+
 
 ## Version 1.0.7
 

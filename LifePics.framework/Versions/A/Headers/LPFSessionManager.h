@@ -16,6 +16,8 @@
 
 @interface LPFSessionManager : NSObject
 
+@property (nonatomic, copy) NSString *developerKey;
+@property (nonatomic, copy) NSString *appKey;
 @property (nonatomic, readonly) NSString *sessionID;
 @property (nonatomic, readonly) BOOL isLoggedIn;
 
