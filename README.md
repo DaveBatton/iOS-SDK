@@ -68,12 +68,15 @@ Click the + button, then Add Other, to select and add the LifePics.framework fil
 Next, add the following system frameworks (if they're not already linked to your project:
 
 * Accelerate
+* AddressBook
 * AssetsLibrary
+* AVFoundation
 * CFNetwork
 * CoreGraphics
 * ImageIO
 * MapKit
 * MobileCoreServices
+* PassKit
 * QuartzCore
 * Security
 * SystemConfiguration
