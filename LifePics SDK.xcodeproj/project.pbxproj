@@ -61,8 +61,8 @@
 		C31FE8881CA3B41600F6AFB0 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8871CA3B41600F6AFB0 /* PassKit.framework */; };
 		C31FE88A1CA3BD6D00F6AFB0 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8891CA3BD6D00F6AFB0 /* WebP.framework */; };
 		C31FE88C1CA3BE2800F6AFB0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE88B1CA3BE2800F6AFB0 /* StoreKit.framework */; };
-		C31FE88D1CA3C94D00F6AFB0 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60CA9CA18AC5519000812A5 /* CoreImage.framework */; };
 		C37524BE1CAB5FC2000287FE /* LifePics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37524BD1CAB5FC1000287FE /* LifePics.framework */; };
+		C37524C31CABB255000287FE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37524C21CABB255000287FE /* CoreMedia.framework */; };
 		C39603101CA8BE1400E6733A /* LPFConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C396030F1CA8BE1400E6733A /* LPFConfiguration.json */; };
 		C3FF55DB1CAA0FE60093F296 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FF55DA1CAA0FE60093F296 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
@@ -135,6 +135,7 @@
 		C31FE8891CA3BD6D00F6AFB0 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Frameworks/WebP.framework; sourceTree = "<group>"; };
 		C31FE88B1CA3BE2800F6AFB0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C37524BD1CAB5FC1000287FE /* LifePics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LifePics.framework; path = Frameworks/LifePics.framework; sourceTree = "<group>"; };
+		C37524C21CABB255000287FE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		C396030F1CA8BE1400E6733A /* LPFConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LPFConfiguration.json; sourceTree = "<group>"; };
 		C3FF55DA1CAA0FE60093F296 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -144,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37524C31CABB255000287FE /* CoreMedia.framework in Frameworks */,
 				C31FE88C1CA3BE2800F6AFB0 /* StoreKit.framework in Frameworks */,
 				C31FE8881CA3B41600F6AFB0 /* PassKit.framework in Frameworks */,
 				C31FE87F1CA38DF100F6AFB0 /* FBSDKCoreKit.framework in Frameworks */,
@@ -167,7 +169,6 @@
 				02FEDFD218B573CB0013FC07 /* MobileCoreServices.framework in Frameworks */,
 				C37524BE1CAB5FC2000287FE /* LifePics.framework in Frameworks */,
 				C31FE8681CA38B2800F6AFB0 /* OpenGLES.framework in Frameworks */,
-				C31FE88D1CA3C94D00F6AFB0 /* CoreImage.framework in Frameworks */,
 				C31FE88A1CA3BD6D00F6AFB0 /* WebP.framework in Frameworks */,
 				B60CA9C518AC5039000812A5 /* QuartzCore.framework in Frameworks */,
 				B60CA9C318AC492B000812A5 /* Security.framework in Frameworks */,
@@ -220,6 +221,7 @@
 		66F5F17E14DB420E0068FD20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C37524C21CABB255000287FE /* CoreMedia.framework */,
 				C37524BD1CAB5FC1000287FE /* LifePics.framework */,
 				C30D99E61CA0D6D2005EF9C4 /* LifePics.bundle */,
 				C31FE88B1CA3BE2800F6AFB0 /* StoreKit.framework */,
@@ -526,6 +528,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/CardIO",
 				);
 				ONLY_ACTIVE_ARCH = YES;
@@ -570,6 +573,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/CardIO",
 				);
 				ONLY_ACTIVE_ARCH = NO;

@@ -39,7 +39,7 @@ Prerequisites
 
 You will need a free LifePics developer key. Details are in the Overview section above.
 
-The SDK supports iOS 7.0 and later.
+The SDK supports iOS 8.1 and later.
 
 
 * * *
@@ -51,7 +51,7 @@ Installation
 
 The easiest way to install the LifePics SDK is using [CocoaPods](http://cocoapods.org).
 
-    platform :ios, '7.0'
+    platform :ios, '8.1'
     pod 'LifePics'
 
 
@@ -81,11 +81,30 @@ Next, add the following system frameworks (if they're not already linked to your
 * Security
 * SystemConfiguration
 
+* StoreKit
+* FBSDKCoreKit
+* FBSDKLoginKit
+* AdobeCreativeSDKCore
+* AdobeCreativeSDKImage
+* webP
+* CoreLocation
+* AudioToolbox
+* CoreVideo
+* OpenGLES
+* CoreMedia
+* Photos
+* MessageUI
+
+
+
 And these libraries:
 
-* libsqlite3.dylib
-* libxml2.dylib
-* libz.dylib
+* libsqlite3.tbd
+* libxml2.tbd
+* libz.tbd
+* libCardIO.a
+* libopencv_core.a
+* libopencv_imgproc.a
 
 ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/LinkBinaries.png)
 
