@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "725DFE9C9A0709B033FE4EB46F83811ADAA88723",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "725DFE9C9A0709B033FE4EB46F83811ADAA88723" : 0,
+    "E9A01E8C8676B3D33C22EF378D15E35405224D0D" : 0,
+    "4A4F7B451AEE4D6F7609FD5A00357C5D849E07C9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C00C35EA-3666-444C-A6C1-FD6CAD093A9C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "725DFE9C9A0709B033FE4EB46F83811ADAA88723" : "iOS-SDK\/",
+    "E9A01E8C8676B3D33C22EF378D15E35405224D0D" : "iOS-SDK-Source\/",
+    "4A4F7B451AEE4D6F7609FD5A00357C5D849E07C9" : "iOS-LifePics-Apps\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LifePics SDK",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LifePics SDK.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LifePics\/iOS-LifePics-Apps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A4F7B451AEE4D6F7609FD5A00357C5D849E07C9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LifePics\/iOS-SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "725DFE9C9A0709B033FE4EB46F83811ADAA88723"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LifePics\/iOS-SDK-Source.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E9A01E8C8676B3D33C22EF378D15E35405224D0D"
+    }
+  ]
+}

@@ -19,7 +19,7 @@
 
 @property (nonatomic, strong) LPFSessionManager *sessionManager;
 @property (nonatomic, strong) LPFOrderViewController *orderViewController;
-@property (nonatomic, strong) LPFImageCenter *imageCenter;
+//@property (nonatomic, strong) LPFImageCenter *imageCenter;
 
 @end
 
@@ -34,6 +34,12 @@
 {
     [super viewDidLoad];
 
+    
+    int forStaging = [[[[NSBundle mainBundle] infoDictionary] objectForKey:@"ForStaging"] intValue];
+    [LPFSessionManager sharedManager].useStagingServer = forStaging==0? NO:YES;
+    self.orderViewController = [[LPFOrderViewController alloc] init];
+    
+    
     self.versionLabel.text = [self version];
 
     UIColor * const defaultPrimaryColor = [UIColor colorWithRed:0.36f green:0.69f blue:0.13f alpha:1.0f];
@@ -117,11 +123,17 @@
 
 - (IBAction)orderPrints:(id)sender
 {
-    TCSimpleImageDataSource *imageDataSource = [[TCSimpleImageDataSource alloc] init];
-    LPFOrderViewController *vc = [[LPFOrderViewController alloc] initWithImageDataSource:imageDataSource];
-    vc.primaryColor = self.primaryColorButton.currentTitleColor;
-    vc.secondaryColor = self.secondaryColorButton.currentTitleColor;
-    [self presentViewController:vc animated:YES completion:NULL];
+    self.orderPrintsButton.backgroundColor = self.orderViewController.primaryColor;
+//    TCSimpleImageDataSource *imageDataSource = [[TCSimpleImageDataSource alloc] init];
+//    LPFOrderViewController *vc = [[LPFOrderViewController alloc] initWithImageDataSource:imageDataSource];
+//    vc.primaryColor = self.primaryColorButton.currentTitleColor;
+//    vc.secondaryColor = self.secondaryColorButton.currentTitleColor;
+//    [self presentViewController:vc animated:YES completion:NULL];
+    
+    LPFOrderViewController.slideMenuController.contentViewController = self.orderViewController;
+    self.orderViewController.primaryColor = self.primaryColorButton.currentTitleColor;
+    self.orderViewController.secondaryColor = self.secondaryColorButton.currentTitleColor;
+    ((UIWindow*)[[UIApplication sharedApplication].windows objectAtIndex:0]).rootViewController = self.orderViewController.slideMenuController;
 }
 
 

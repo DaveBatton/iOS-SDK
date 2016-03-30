@@ -1,0 +1,143 @@
+{
+    "meta": {
+        "format_version_string": "2.1",
+        "creation_time": "2014-12-04T15:30-0600",
+        "is_bootstrapped_configuration": true
+    },
+    "config_sections": {
+        "LPFPaymentManager": {
+            "settings": {
+                "base_url": {
+                    "value": "http://ec2-54-69-180-153.us-west-2.compute.amazonaws.com/lifepics/"
+                },
+            }
+        },
+        "LPFCart": {
+            "settings": {
+                "discount_codes_enabled": {
+                    "value": true
+                }
+            }
+        },
+        "LPFSessionManager": {
+            "settings": {
+                "hide_location_ids": {
+                    "value": [
+                              "5916",
+                              "5918",
+                              "5920",
+                              "5924",
+                              "13892",
+                              "13894"
+                              ]
+                }
+            }
+        },
+        "LPFOrderViewController": {
+            "settings": {
+                "primary_color": {
+                    "value": "#0badc5"
+                },
+                "secondary_color": {
+                    "value": "#555555"
+                },
+                "local_pickup_enabled": {
+                    "value": true
+                },
+                "ship_to_home_merchant_id": {
+                    "value": "458"
+                },
+                "categories": {
+                    "value": [
+                              {
+                              "name": "Prints",
+                              "image_url": "http://s3.amazonaws.com/LifePics-iOS-SDK/LifePics/categories/prints/category.jpg",
+                              "groups": [
+                                         {
+                                         "name": "Traditional Prints",
+                                         "description": "Landscape and portrait prints on high quality photo paper. Full bleed.",
+                                         "image_url": "https://s3.amazonaws.com/LifePics-iOS-SDK/LifePics/categories/prints/traditional@2x.png",
+                                         "image_height": 252,
+                                         "attributes": [
+                                                        {
+                                                        "GroupName": "Finish",
+                                                        "Value": "Glossy",
+                                                        "AttributeID": "1",
+                                                        "IsDefault": true
+                                                        },
+                                                        {
+                                                        "GroupName": "Finish",
+                                                        "Value": "Matte",
+                                                        "AttributeID": "2"
+                                                        }
+                                                        ],
+                                         "products": [
+                                                      {
+                                                      "Description": "4\" x 6\" Print",
+                                                      "Width": 4,
+                                                      "Height": 6,
+                                                      "SKU":"114"
+                                                      },
+                                                      {
+                                                      "Description": "5\" x 7\" Print",
+                                                      "Width": 5,
+                                                      "Height": 7,
+                                                      "SKU":"115"
+                                                      },
+                                                      {
+                                                      "Description": "8\" x 10\" Print",
+                                                      "Width": 8,
+                                                      "Height": 10,
+                                                      "SKU":"118"
+                                                      },
+                                                      {
+                                                      "Description": "8\" x 12\" Print",
+                                                      "Width": 8,
+                                                      "Height": 12,
+                                                      "SKU":"167",
+                                                      "ProductID":2127
+                                                      }
+                                                      ]
+                                         },
+                                         {
+                                         "name": "Square Prints",
+                                         "description": "Square prints on high quality photo paper. Full bleed (prints edge-to-edge).",
+                                         "image_url": "https://s3.amazonaws.com/LifePics-iOS-SDK/LifePics/categories/prints/square@2x.png",
+                                         "image_height": 252,
+                                         "attributes": [
+                                                        {
+                                                        "GroupName": "Finish",
+                                                        "Value": "Glossy",
+                                                        "AttributeID": "1",
+                                                        "IsDefault": true
+                                                        },
+                                                        {
+                                                        "GroupName": "Finish",
+                                                        "Value": "Matte",
+                                                        "AttributeID": "2"
+                                                        }
+                                                        ],
+                                         "products": [
+                                                      {
+                                                      "Description": "5\" x 5\" Print",
+                                                      "Width": 5,
+                                                      "Height": 5,
+                                                      "SKU":"557",
+                                                      "ProductID":5460
+                                                      },
+                                                      {
+                                                      "Description": "8\" x 8\" Print",
+                                                      "Width": 8,
+                                                      "Height": 8,
+                                                      "SKU":"199"
+                                                      }
+                                                      ]
+                                         }
+                                         ]
+                              }
+                              ]
+                }
+            }
+        }
+    }
+}
