@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name         = "LifePics"
-  s.version      = "1.0.8"
+  s.version      = "1.0.9"
   s.homepage     = "https://github.com/LifePics/iOS-SDK"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.summary      = "The LifePics SDK allows your iPhone users to select images and have them printed locally at nearby photofinishers."
   s.authors      = { "Dave Batton" => "Dave@Batton.org", "John Blanco" => "john@raptureinvenice.com" }
-  s.platform     = :ios, '7.0'
-  s.source       = { :git => "https://github.com/LifePics/iOS-SDK.git", :tag => "1.0.8" }
+  s.platform     = :ios, '8.1'
+  s.source       = { :git => "https://github.com/LifePics/iOS-SDK.git", :tag => "1.0.9" }
 
   s.description  = <<-DESC
                    The LifePics SDK allows your iPhone users to select images and have them printed locally at nearby photofinishers.

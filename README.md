@@ -1,4 +1,4 @@
-LifePics iOS SDK Version 1.0.8
+LifePics iOS SDK Version 1.0.9
 ==============================
 
 
@@ -80,13 +80,11 @@ Next, add the following system frameworks (if they're not already linked to your
 * QuartzCore
 * Security
 * SystemConfiguration
-
 * StoreKit
 * FBSDKCoreKit
 * FBSDKLoginKit
 * AdobeCreativeSDKCore
 * AdobeCreativeSDKImage
-* webP
 * CoreLocation
 * AudioToolbox
 * CoreVideo
@@ -121,24 +119,67 @@ Add the LifePics.bundle to your target, by selecting Add Files in the Project Na
 Import the LifePics headers:
 
     #import <LifePics/LifePics.h>
+    #import <LifePics/NSBundle+LPFAdditions.h>
+    #import <LifePics/LPFMenuViewController.h>
+    #import <LifePics/APLSlideMenuViewController.h>
+
+The Navigation Root ViewController of the App is a SlideMenuController, it includes a menu page and main display page.
+So init things for the slideMenuController first:
+
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [UIApplication sharedApplication].statusBarHidden = NO;
+    [self.window makeKeyAndVisible];
+    self.isRestoring = NO;
+    [self setSlideMenuController];
+    return YES;
+}
+
+- (void)setSlideMenuController
+{
+    APLSlideMenuViewController *slideMenuController = [[APLSlideMenuViewController alloc] init];
+    [LPFOrderViewController setSlideMenuController: slideMenuController];
+    slideMenuController.bouncing = YES;
+    slideMenuController.gestureSupport = APLSlideMenuGestureSupportDrag;
+    slideMenuController.separatorColor = [UIColor grayColor];
+    if ([LPFOrderViewController sharedInstance]!=nil) {
+        self.orderViewController = [LPFOrderViewController sharedInstance];
+        slideMenuController.contentViewController = self.orderViewController;
+    }
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"LPFMenu" bundle:[NSBundle lpfBundle]];
+    LPFMenuViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"LPFMenuViewController"];
+    slideMenuController.leftMenuViewController = vc;
+    slideMenuController.slideDelegate = vc;
+    self.slideMenuController = slideMenuController;
+}
 
 
-Connect to the LifePics network by providing your Partner ID, Source ID, and password:
+Set useStagingServer for session manager in didFinishLaunchingWithOptions method:
 
-    [[LPFSessionManager sharedManager] beginPartnerSessionWithID:@"partnerID"
-                                                        sourceID:@"sourceID"
-                                                        password:@"password"
-                                                      completion:^(NSError *error) {
-                                                          if ([error code] != 0) {
-                                                              // Handle error here.
-                                                          }
-                                                      }];
+    int forStaging = [[[[NSBundle mainBundle] infoDictionary] objectForKey:@"ForStaging"] intValue];
+    [LPFSessionManager sharedManager].useStagingServer = forStaging==0? NO:YES;
 
-Finally, present the LifePics Order View controller:
+Then, init orderViewController to relate with slideMenuController , Finally present the slideMenuController:
 
-    LPFOrderViewController *vc = [[LPFOrderViewController alloc] initWithImageDataSource:nil];
-    [self presentViewController:vc animated:YES completion:NULL];
+    self.orderViewController = [[LPFOrderViewController alloc] init];
+    self.orderViewController.shouldDisplayCancelButton = !displayOrderViewAtLaunch;
+    self.slideMenuController.contentViewController = self.orderViewController;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((0.0f) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 
+        self.window.rootViewController = self.slideMenuController;
+    });
+
+
+This SDK support to save cart info to local,
+
+    - (void)applicationWillResignActive:(UIApplication *)application
+    {
+        LPFOrderViewController* orderController = self.orderViewController;
+        orderController = orderController?orderController : [LPFOrderViewController sharedInstance];
+        if (orderController) {
+            [orderController saveCartPlist];
+        }
+    }
 
 * * *
 
@@ -150,17 +191,35 @@ You can customize the colors used by the LifePics Order View Controller by setti
     LPFOrderViewController *vc = [[LPFOrderViewController alloc] initWithImageDataSource:nil];
     vc.primaryColor = [UIColor blueColor];
     vc.secondaryColor = [UIColor purpleColor];
-    [self presentViewController:vc animated:YES completion:NULL];
+    LPFOrderViewController.slideMenuController.contentViewController = self.orderViewController;
+    ((UIWindow*)[[UIApplication sharedApplication].windows objectAtIndex:0]).rootViewController = self.orderViewController.slideMenuController;
 
 Further interface customizations can be made using the UIAppearance protocol.
 
 You can also enable Facebook, Instagram, Google, and Flickr access in the Sources view. See the [Configure Photo Sources](https://github.com/LifePics/iOS-SDK/blob/master/Configure%20Photo%20Sources.md) document for details.
 
+For using Adobe Creative Image Editor, Please request an acount on the website (https://creativesdk.adobe.com/) for your own Creative_CLIENT_ID & Creative_CLIENT_SECRET for your App.
 
 * * *
 
 Revision History
 ----------------
+## Version 1.0.9
+
+***Features***
+
+- Native iPad Support!
+
+- Added a side menu.
+
+- Rich Image Editor.
+
+- Added account create & login feature.
+
+- Cart info Serialization to device local. 
+
+- Misc Bugs.
+
 
 ## Version 1.0.8
 

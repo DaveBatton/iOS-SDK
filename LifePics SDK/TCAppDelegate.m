@@ -31,7 +31,7 @@
     LPFOrderViewController* orderController = self.orderViewController;
     orderController = orderController?orderController : [LPFOrderViewController sharedInstance];
     if (orderController) {
-        [orderController savePlist];
+        [orderController saveCartPlist];
     }
 }
 
@@ -75,17 +75,15 @@
     BOOL displayOrderViewAtLaunch = [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"TCDisplayOrderViewAtLaunch"] boolValue];
     
     if (self.isRestoring == NO) {
-        BOOL animated = [self animateSplashView];
         if (displayOrderViewAtLaunch) {
             self.orderViewController = [[LPFOrderViewController alloc] init];
             self.orderViewController.shouldDisplayCancelButton = !displayOrderViewAtLaunch;
             self.slideMenuController.contentViewController = self.orderViewController;
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((animated?0.6f:0.0f) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((0.0f) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 
                 self.window.rootViewController = self.slideMenuController;
             });
         }
-        
         
     }
     
@@ -162,12 +160,6 @@
     self.slideMenuController = slideMenuController;
 }
 
-- (BOOL)animateSplashView
-{
-
-    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
-    return NO;
-}
 
 
 @end

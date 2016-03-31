@@ -60,8 +60,8 @@ extern NSString * const LPFCanvasProductGroupsKey;
 - (void)addBasicLeftBarItems:(UIViewController*)controller;
 - (void)adjustSettingsPosition;
 
-- (void)savePlist;
-- (void)readPlist;
+- (void)saveCartPlist;
+- (void)readCartPlist;
 - (BOOL)setGroupForItem:(LPFCartItem*)item;
 
 - (void)updateFloatingNavigationView;

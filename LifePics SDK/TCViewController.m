@@ -65,34 +65,16 @@
     // If you get an error you'll need to relaunch the demo to enable the Order Prints button again.
 
     NSString *partnerID = @"Partner ID";
-    NSString *sourceID = @"Source ID";
-    NSString *password = @"Password";
     NSString *developerKey = @"Developer Key";
 
     
-    if ([partnerID isEqualToString:@"Partner ID"]) {
+    if ([partnerID isEqualToString:@"Partner ID"]||[developerKey isEqualToString:@"Developer Key"]) {
         [[[UIAlertView alloc] initWithTitle:@"LifePics Partner ID & Developer Key Required"
                                    message:@"To fully explore this demo, you'll first need to get a LifePics partner ID. Put it in the TCViewController.m file. Details are provided in the ReadMe.\n\nWe'll take you as far as we can without a partner ID and a developer Key, but you'll can't add items to cart when trying to make an order."
                                   delegate:nil
                          cancelButtonTitle:@"I’ll Get Right On That"
                          otherButtonTitles:nil] show];
     }
-//    else {
-//        [[LPFSessionManager sharedManager] beginPartnerSessionWithID:partnerID
-//                                                            sourceID:sourceID
-//                                                            password:password
-//                                                          completion:^(NSError *error) {
-//                                                              if ([error code] != 0) {
-//                                                                  self.orderPrintsButton.enabled = NO;
-//                                                                  self.orderPrintsButton.backgroundColor = [UIColor colorWithWhite:0.9f alpha:1.0f];  // Fake disabled look.
-//                                                                  [[[UIAlertView alloc] initWithTitle:[error localizedDescription]
-//                                                                                              message:nil
-//                                                                                             delegate:nil
-//                                                                                    cancelButtonTitle:@"OK"
-//                                                                                    otherButtonTitles:nil] show];
-//                                                              }
-//                                                          }];
-//    }
 }
 
 
@@ -126,12 +108,6 @@
 - (IBAction)orderPrints:(id)sender
 {
     self.orderPrintsButton.backgroundColor = self.orderViewController.primaryColor;
-//    TCSimpleImageDataSource *imageDataSource = [[TCSimpleImageDataSource alloc] init];
-//    LPFOrderViewController *vc = [[LPFOrderViewController alloc] initWithImageDataSource:imageDataSource];
-//    vc.primaryColor = self.primaryColorButton.currentTitleColor;
-//    vc.secondaryColor = self.secondaryColorButton.currentTitleColor;
-//    [self presentViewController:vc animated:YES completion:NULL];
-    
     LPFOrderViewController.slideMenuController.contentViewController = self.orderViewController;
     self.orderViewController.primaryColor = self.primaryColorButton.currentTitleColor;
     self.orderViewController.secondaryColor = self.secondaryColorButton.currentTitleColor;

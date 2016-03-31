@@ -43,10 +43,6 @@
 	<string>4cd91febb3f4408e9ef9ce3405f1d1ae</string>
 	<key>Creative_CLIENT_SECRET</key>
 	<string>cc5b7c23-5654-463b-bd4b-a5a136cdd250</string>
-	<key>FacebookAppID</key>
-	<string>490904617610161</string>
-	<key>FacebookDisplayName</key>
-	<string>LifePics</string>
 	<key>ForStaging</key>
 	<true/>
 	<key>LSApplicationQueriesSchemes</key>
