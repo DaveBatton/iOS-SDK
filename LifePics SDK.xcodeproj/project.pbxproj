@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		02B0C8E518D3A81000295A4A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60CA9CC18AC552E000812A5 /* ImageIO.framework */; };
-		02CD4EF018EE866500396677 /* TCSimpleImageDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CD4EEF18EE866500396677 /* TCSimpleImageDataSource.m */; };
 		02FEDFCF18B5738A0013FC07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FEDFCE18B5738A0013FC07 /* SystemConfiguration.framework */; };
 		02FEDFD218B573CB0013FC07 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FEDFD118B573CB0013FC07 /* MobileCoreServices.framework */; };
 		66F5F18014DB420E0068FD20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F5F17F14DB420E0068FD20 /* UIKit.framework */; };
@@ -23,12 +22,6 @@
 		B63D8AFA18AA016C00599514 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63D8AF918AA016C00599514 /* Images.xcassets */; };
 		B63D8B0018AA01D800599514 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63D8AFD18AA01D800599514 /* Main_iPhone.storyboard */; };
 		B64AB7C618AA91EE003A5218 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64AB7C518AA91EE003A5218 /* CFNetwork.framework */; };
-		B663887C18F1DB9600222B83 /* simple-one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887618F1DB9600222B83 /* simple-one.jpg */; };
-		B663887D18F1DB9600222B83 /* simple-three-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887718F1DB9600222B83 /* simple-three-thumb.jpg */; };
-		B663887E18F1DB9600222B83 /* simple-one-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887818F1DB9600222B83 /* simple-one-thumb.jpg */; };
-		B663887F18F1DB9600222B83 /* simple-three.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887918F1DB9600222B83 /* simple-three.jpg */; };
-		B663888018F1DB9600222B83 /* simple-two-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887A18F1DB9600222B83 /* simple-two-thumb.jpg */; };
-		B663888118F1DB9600222B83 /* simple-two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887B18F1DB9600222B83 /* simple-two.jpg */; };
 		B6A2142118EFBF4100B2EC4F /* ISColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A2141E18EFBF4100B2EC4F /* ISColorWheel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B6A2142218EFBF4100B2EC4F /* TCColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A2142018EFBF4100B2EC4F /* TCColorPickerViewController.m */; };
 		B6D37CE418A996F8008822FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6D37CE218A996F8008822FD /* InfoPlist.strings */; };
@@ -37,6 +30,7 @@
 		B6F31C6418ABFF4E00670AB1 /* TCDevTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F31C6318ABFF4E00670AB1 /* TCDevTools.m */; };
 		B6F31C6618AC02F500670AB1 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F31C6518AC02F500670AB1 /* AssetsLibrary.framework */; };
 		C30D99E71CA0D6D2005EF9C4 /* LifePics.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C30D99E61CA0D6D2005EF9C4 /* LifePics.bundle */; };
+		C3189A911CACE4EF006E70D5 /* LifePics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37524BD1CAB5FC1000287FE /* LifePics.framework */; };
 		C31FE8561CA3827900F6AFB0 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8551CA3827900F6AFB0 /* libxml2.tbd */; };
 		C31FE8581CA3828300F6AFB0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8571CA3828300F6AFB0 /* libz.tbd */; };
 		C31FE85A1CA3829500F6AFB0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8591CA3829500F6AFB0 /* libsqlite3.tbd */; };
@@ -59,17 +53,13 @@
 		C31FE8841CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C31FE8831CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle */; };
 		C31FE8861CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C31FE8851CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle */; };
 		C31FE8881CA3B41600F6AFB0 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8871CA3B41600F6AFB0 /* PassKit.framework */; };
-		C31FE88A1CA3BD6D00F6AFB0 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8891CA3BD6D00F6AFB0 /* WebP.framework */; };
 		C31FE88C1CA3BE2800F6AFB0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE88B1CA3BE2800F6AFB0 /* StoreKit.framework */; };
-		C37524BE1CAB5FC2000287FE /* LifePics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37524BD1CAB5FC1000287FE /* LifePics.framework */; };
 		C37524C31CABB255000287FE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37524C21CABB255000287FE /* CoreMedia.framework */; };
 		C39603101CA8BE1400E6733A /* LPFConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C396030F1CA8BE1400E6733A /* LPFConfiguration.json */; };
 		C3FF55DB1CAA0FE60093F296 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FF55DA1CAA0FE60093F296 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02CD4EEE18EE866500396677 /* TCSimpleImageDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSimpleImageDataSource.h; sourceTree = "<group>"; };
-		02CD4EEF18EE866500396677 /* TCSimpleImageDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSimpleImageDataSource.m; sourceTree = "<group>"; };
 		02FEDFCE18B5738A0013FC07 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		02FEDFD118B573CB0013FC07 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		66F5F17B14DB420E0068FD20 /* LifePics SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LifePics SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,12 +81,6 @@
 		B63D8AF918AA016C00599514 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B63D8AFE18AA01D800599514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		B64AB7C518AA91EE003A5218 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		B663887618F1DB9600222B83 /* simple-one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-one.jpg"; sourceTree = "<group>"; };
-		B663887718F1DB9600222B83 /* simple-three-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-three-thumb.jpg"; sourceTree = "<group>"; };
-		B663887818F1DB9600222B83 /* simple-one-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-one-thumb.jpg"; sourceTree = "<group>"; };
-		B663887918F1DB9600222B83 /* simple-three.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-three.jpg"; sourceTree = "<group>"; };
-		B663887A18F1DB9600222B83 /* simple-two-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-two-thumb.jpg"; sourceTree = "<group>"; };
-		B663887B18F1DB9600222B83 /* simple-two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-two.jpg"; sourceTree = "<group>"; };
 		B6A2141D18EFBF4100B2EC4F /* ISColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISColorWheel.h; sourceTree = "<group>"; };
 		B6A2141E18EFBF4100B2EC4F /* ISColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISColorWheel.m; sourceTree = "<group>"; };
 		B6A2141F18EFBF4100B2EC4F /* TCColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCColorPickerViewController.h; sourceTree = "<group>"; };
@@ -132,7 +116,6 @@
 		C31FE8831CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AdobeCreativeSDKCoreResources.bundle; path = Frameworks/CreativeSDK/AdobeCreativeSDKCore.framework/Versions/A/Resources/AdobeCreativeSDKCoreResources.bundle; sourceTree = "<group>"; };
 		C31FE8851CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AdobeCreativeSDKImageResources.bundle; path = Frameworks/CreativeSDK/AdobeCreativeSDKImage.framework/Versions/A/Resources/AdobeCreativeSDKImageResources.bundle; sourceTree = "<group>"; };
 		C31FE8871CA3B41600F6AFB0 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
-		C31FE8891CA3BD6D00F6AFB0 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = Frameworks/WebP.framework; sourceTree = "<group>"; };
 		C31FE88B1CA3BE2800F6AFB0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C37524BD1CAB5FC1000287FE /* LifePics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LifePics.framework; path = Frameworks/LifePics.framework; sourceTree = "<group>"; };
 		C37524C21CABB255000287FE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -145,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3189A911CACE4EF006E70D5 /* LifePics.framework in Frameworks */,
 				C37524C31CABB255000287FE /* CoreMedia.framework in Frameworks */,
 				C31FE88C1CA3BE2800F6AFB0 /* StoreKit.framework in Frameworks */,
 				C31FE8881CA3B41600F6AFB0 /* PassKit.framework in Frameworks */,
@@ -167,9 +151,7 @@
 				C31FE86C1CA38B8100F6AFB0 /* AVFoundation.framework in Frameworks */,
 				C31FE86A1CA38B7000F6AFB0 /* CoreVideo.framework in Frameworks */,
 				02FEDFD218B573CB0013FC07 /* MobileCoreServices.framework in Frameworks */,
-				C37524BE1CAB5FC2000287FE /* LifePics.framework in Frameworks */,
 				C31FE8681CA38B2800F6AFB0 /* OpenGLES.framework in Frameworks */,
-				C31FE88A1CA3BD6D00F6AFB0 /* WebP.framework in Frameworks */,
 				B60CA9C518AC5039000812A5 /* QuartzCore.framework in Frameworks */,
 				B60CA9C318AC492B000812A5 /* Security.framework in Frameworks */,
 				C31FE8661CA38ADE00F6AFB0 /* CoreData.framework in Frameworks */,
@@ -188,19 +170,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02CD4EF218EE8E5400396677 /* Simple Images */ = {
-			isa = PBXGroup;
-			children = (
-				B663887618F1DB9600222B83 /* simple-one.jpg */,
-				B663887818F1DB9600222B83 /* simple-one-thumb.jpg */,
-				B663887B18F1DB9600222B83 /* simple-two.jpg */,
-				B663887A18F1DB9600222B83 /* simple-two-thumb.jpg */,
-				B663887918F1DB9600222B83 /* simple-three.jpg */,
-				B663887718F1DB9600222B83 /* simple-three-thumb.jpg */,
-			);
-			name = "Simple Images";
-			sourceTree = "<group>";
-		};
 		66F5F17014DB420E0068FD20 = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +194,6 @@
 				C37524BD1CAB5FC1000287FE /* LifePics.framework */,
 				C30D99E61CA0D6D2005EF9C4 /* LifePics.bundle */,
 				C31FE88B1CA3BE2800F6AFB0 /* StoreKit.framework */,
-				C31FE8891CA3BD6D00F6AFB0 /* WebP.framework */,
 				C31FE8871CA3B41600F6AFB0 /* PassKit.framework */,
 				C31FE8851CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle */,
 				C31FE8831CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle */,
@@ -276,12 +244,9 @@
 				B63D8AF118AA010F00599514 /* TCAppDelegate.m */,
 				B63D8AF218AA010F00599514 /* TCViewController.h */,
 				B63D8AF318AA010F00599514 /* TCViewController.m */,
-				02CD4EEE18EE866500396677 /* TCSimpleImageDataSource.h */,
-				02CD4EEF18EE866500396677 /* TCSimpleImageDataSource.m */,
 				B6F31C6218ABFF4E00670AB1 /* TCDevTools.h */,
 				B6F31C6318ABFF4E00670AB1 /* TCDevTools.m */,
 				B6A2141C18EFBF2200B2EC4F /* Color Picker */,
-				02CD4EF218EE8E5400396677 /* Simple Images */,
 				66F5F18614DB420E0068FD20 /* Supporting Files */,
 				B63D8AF918AA016C00599514 /* Images.xcassets */,
 			);
@@ -378,19 +343,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B663887C18F1DB9600222B83 /* simple-one.jpg in Resources */,
 				B63D8AFA18AA016C00599514 /* Images.xcassets in Resources */,
 				C39603101CA8BE1400E6733A /* LPFConfiguration.json in Resources */,
-				B663888018F1DB9600222B83 /* simple-two-thumb.jpg in Resources */,
-				B663887E18F1DB9600222B83 /* simple-one-thumb.jpg in Resources */,
 				C3FF55DB1CAA0FE60093F296 /* Default-568h@2x.png in Resources */,
 				C30D99E71CA0D6D2005EF9C4 /* LifePics.bundle in Resources */,
 				C31FE8841CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle in Resources */,
-				B663887D18F1DB9600222B83 /* simple-three-thumb.jpg in Resources */,
 				C31FE8861CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle in Resources */,
 				B63D8B0018AA01D800599514 /* Main_iPhone.storyboard in Resources */,
-				B663887F18F1DB9600222B83 /* simple-three.jpg in Resources */,
-				B663888118F1DB9600222B83 /* simple-two.jpg in Resources */,
 				B6D37CE418A996F8008822FD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,7 +366,6 @@
 				B630650618A9834B00CCAA28 /* main.m in Sources */,
 				B6A2142218EFBF4100B2EC4F /* TCColorPickerViewController.m in Sources */,
 				B6F31C6418ABFF4E00670AB1 /* TCDevTools.m in Sources */,
-				02CD4EF018EE866500396677 /* TCSimpleImageDataSource.m in Sources */,
 				B63D8AF518AA010F00599514 /* TCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

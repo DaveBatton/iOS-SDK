@@ -36,10 +36,10 @@
         "LPFOrderViewController": {
             "settings": {
                 "primary_color": {
-                    "value": "#0badc5"
+                    "value": "#8EAA3F"
                 },
                 "secondary_color": {
-                    "value": "#555555"
+                    "value": "#000000"
                 },
                 "local_pickup_enabled": {
                     "value": true

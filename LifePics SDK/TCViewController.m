@@ -8,7 +8,7 @@
 #import "TCViewController.h"
 #import "TCColorPickerViewController.h"
 #import <LifePics/LifePics.h>
-#import "TCSimpleImageDataSource.h"
+//#import "TCSimpleImageDataSource.h"
 
 @interface TCViewController () <TCColorPickerViewControllerDelegate>
 
@@ -50,14 +50,14 @@
     [self.primaryColorButton setTitleColor:defaultPrimaryColor forState:UIControlStateNormal];
     [self.secondaryColorButton setTitleColor:defaultSecondaryColor forState:UIControlStateNormal];
 
-    [self connect];
+    [self showMessage];
 }
 
 
 #pragma mark - Private
 
 
-- (void)connect
+- (void)showMessage
 {
     // To keep this demo simple we're not going to properly handle errors here.
     // You should probably retry to connect when your application becomes active
@@ -67,30 +67,32 @@
     NSString *partnerID = @"Partner ID";
     NSString *sourceID = @"Source ID";
     NSString *password = @"Password";
+    NSString *developerKey = @"Developer Key";
 
+    
     if ([partnerID isEqualToString:@"Partner ID"]) {
-        [[[UIAlertView alloc] initWithTitle:@"LifePics Partner ID Required"
-                                   message:@"To fully explore this demo, you'll first need to get a LifePics partner ID. Put it in the TCViewController.m file. Details are provided in the ReadMe.\n\nWe'll take you as far as we can without a partner ID, but you'll see errors when trying to find photofinisher locations."
+        [[[UIAlertView alloc] initWithTitle:@"LifePics Partner ID & Developer Key Required"
+                                   message:@"To fully explore this demo, you'll first need to get a LifePics partner ID. Put it in the TCViewController.m file. Details are provided in the ReadMe.\n\nWe'll take you as far as we can without a partner ID and a developer Key, but you'll can't add items to cart when trying to make an order."
                                   delegate:nil
                          cancelButtonTitle:@"I’ll Get Right On That"
                          otherButtonTitles:nil] show];
     }
-    else {
-        [[LPFSessionManager sharedManager] beginPartnerSessionWithID:partnerID
-                                                            sourceID:sourceID
-                                                            password:password
-                                                          completion:^(NSError *error) {
-                                                              if ([error code] != 0) {
-                                                                  self.orderPrintsButton.enabled = NO;
-                                                                  self.orderPrintsButton.backgroundColor = [UIColor colorWithWhite:0.9f alpha:1.0f];  // Fake disabled look.
-                                                                  [[[UIAlertView alloc] initWithTitle:[error localizedDescription]
-                                                                                              message:nil
-                                                                                             delegate:nil
-                                                                                    cancelButtonTitle:@"OK"
-                                                                                    otherButtonTitles:nil] show];
-                                                              }
-                                                          }];
-    }
+//    else {
+//        [[LPFSessionManager sharedManager] beginPartnerSessionWithID:partnerID
+//                                                            sourceID:sourceID
+//                                                            password:password
+//                                                          completion:^(NSError *error) {
+//                                                              if ([error code] != 0) {
+//                                                                  self.orderPrintsButton.enabled = NO;
+//                                                                  self.orderPrintsButton.backgroundColor = [UIColor colorWithWhite:0.9f alpha:1.0f];  // Fake disabled look.
+//                                                                  [[[UIAlertView alloc] initWithTitle:[error localizedDescription]
+//                                                                                              message:nil
+//                                                                                             delegate:nil
+//                                                                                    cancelButtonTitle:@"OK"
+//                                                                                    otherButtonTitles:nil] show];
+//                                                              }
+//                                                          }];
+//    }
 }
 
 

@@ -55,7 +55,6 @@
     // If no main storyboard is specified, add a window for the restoration process to use.
     if (self.window == nil) {
         self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        //self.window.rootViewController = [[LPFOrderViewController alloc] init];
         self.orderViewController = [[LPFOrderViewController alloc] init];
         self.slideMenuController.contentViewController = self.orderViewController;
         self.window.rootViewController = self.slideMenuController;
@@ -82,9 +81,6 @@
             self.orderViewController.shouldDisplayCancelButton = !displayOrderViewAtLaunch;
             self.slideMenuController.contentViewController = self.orderViewController;
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((animated?0.6f:0.0f) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//                [self.window.rootViewController presentViewController:self.orderViewController
-//                                                             animated:NO
-//                                                           completion:NULL];
                 
                 self.window.rootViewController = self.slideMenuController;
             });
@@ -109,7 +105,6 @@
     NSString *facebookKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"FacebookAppID"];
     NSString *facebookUrlPrefix = [NSString stringWithFormat:@"fb%@://", facebookKey];
     if ([[url absoluteString] hasPrefix:facebookUrlPrefix]) {
-        //return [LPFOrderViewController openURL:url sourceApplication:sourceApplication];
         return [[FBSDKApplicationDelegate sharedInstance] application:application
                                                               openURL:url
                                                     sourceApplication:sourceApplication
