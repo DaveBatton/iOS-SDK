@@ -128,11 +128,11 @@ So init things for the slideMenuController first:
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [UIApplication sharedApplication].statusBarHidden = NO;
-    [self.window makeKeyAndVisible];
-    self.isRestoring = NO;
-    [self setSlideMenuController];
-    return YES;
+        [UIApplication sharedApplication].statusBarHidden = NO;
+        [self.window makeKeyAndVisible];
+        self.isRestoring = NO;
+        [self setSlideMenuController];
+        return YES;
 }
 
 - (void)setSlideMenuController
