@@ -30,7 +30,6 @@
 		B6F31C6418ABFF4E00670AB1 /* TCDevTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F31C6318ABFF4E00670AB1 /* TCDevTools.m */; };
 		B6F31C6618AC02F500670AB1 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F31C6518AC02F500670AB1 /* AssetsLibrary.framework */; };
 		C30D99E71CA0D6D2005EF9C4 /* LifePics.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C30D99E61CA0D6D2005EF9C4 /* LifePics.bundle */; };
-		C3189A911CACE4EF006E70D5 /* LifePics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37524BD1CAB5FC1000287FE /* LifePics.framework */; };
 		C31FE8561CA3827900F6AFB0 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8551CA3827900F6AFB0 /* libxml2.tbd */; };
 		C31FE8581CA3828300F6AFB0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8571CA3828300F6AFB0 /* libz.tbd */; };
 		C31FE85A1CA3829500F6AFB0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8591CA3829500F6AFB0 /* libsqlite3.tbd */; };
@@ -56,6 +55,7 @@
 		C31FE88C1CA3BE2800F6AFB0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE88B1CA3BE2800F6AFB0 /* StoreKit.framework */; };
 		C37524C31CABB255000287FE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37524C21CABB255000287FE /* CoreMedia.framework */; };
 		C39603101CA8BE1400E6733A /* LPFConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C396030F1CA8BE1400E6733A /* LPFConfiguration.json */; };
+		C3EF7AAF1CBCE25300ECE8B3 /* LifePics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EF7AAE1CBCE25300ECE8B3 /* LifePics.framework */; };
 		C3FF55DB1CAA0FE60093F296 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FF55DA1CAA0FE60093F296 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -117,9 +117,9 @@
 		C31FE8851CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AdobeCreativeSDKImageResources.bundle; path = Frameworks/CreativeSDK/AdobeCreativeSDKImage.framework/Versions/A/Resources/AdobeCreativeSDKImageResources.bundle; sourceTree = "<group>"; };
 		C31FE8871CA3B41600F6AFB0 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		C31FE88B1CA3BE2800F6AFB0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		C37524BD1CAB5FC1000287FE /* LifePics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LifePics.framework; path = Frameworks/LifePics.framework; sourceTree = "<group>"; };
 		C37524C21CABB255000287FE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		C396030F1CA8BE1400E6733A /* LPFConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LPFConfiguration.json; sourceTree = "<group>"; };
+		C3EF7AAE1CBCE25300ECE8B3 /* LifePics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LifePics.framework; path = Frameworks/LifePics.framework; sourceTree = "<group>"; };
 		C3FF55DA1CAA0FE60093F296 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -128,7 +128,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3189A911CACE4EF006E70D5 /* LifePics.framework in Frameworks */,
 				C37524C31CABB255000287FE /* CoreMedia.framework in Frameworks */,
 				C31FE88C1CA3BE2800F6AFB0 /* StoreKit.framework in Frameworks */,
 				C31FE8881CA3B41600F6AFB0 /* PassKit.framework in Frameworks */,
@@ -146,6 +145,7 @@
 				02FEDFCF18B5738A0013FC07 /* SystemConfiguration.framework in Frameworks */,
 				02B0C8E518D3A81000295A4A /* ImageIO.framework in Frameworks */,
 				C31FE8721CA38BE300F6AFB0 /* AddressBookUI.framework in Frameworks */,
+				C3EF7AAF1CBCE25300ECE8B3 /* LifePics.framework in Frameworks */,
 				C31FE8701CA38BC600F6AFB0 /* AddressBook.framework in Frameworks */,
 				C31FE86E1CA38BA300F6AFB0 /* AudioToolbox.framework in Frameworks */,
 				C31FE86C1CA38B8100F6AFB0 /* AVFoundation.framework in Frameworks */,
@@ -190,8 +190,8 @@
 		66F5F17E14DB420E0068FD20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3EF7AAE1CBCE25300ECE8B3 /* LifePics.framework */,
 				C37524C21CABB255000287FE /* CoreMedia.framework */,
-				C37524BD1CAB5FC1000287FE /* LifePics.framework */,
 				C30D99E61CA0D6D2005EF9C4 /* LifePics.bundle */,
 				C31FE88B1CA3BE2800F6AFB0 /* StoreKit.framework */,
 				C31FE8871CA3B41600F6AFB0 /* PassKit.framework */,

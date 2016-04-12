@@ -14,6 +14,8 @@ To learn more about developer revenue share please read the enclosed [LifePics D
 
 To request developer keys from LifePics please email a complete signed copy of the LifePics Developer Agreement to [busdev@lifepics.com](mailto:busdev@lifepics.com). LifePics will generate a set of developer keys and email them back to you. Please see Schedule 1 in the [LifePics Developer Agreement](https://github.com/LifePics/iOS-SDK/blob/master/LifePics%20Developer%20Agreement.pdf) on documents to send to LifePics to be eligible for developer revenue share payments.
 
+If you don't have developer keys and stripe publish key
+
 Please email any questions about the OPEN program to [busdev@lifepics.com](mailto:busdev@lifepics.com).
 
 
@@ -25,11 +27,11 @@ The LifePics SDK allows your iPhone users to select images and have them printed
 
 Users can select images from their photo library, images provided by your application, or, optionally, images from their Facebook, Instagram, Google, or Flickr accounts.
 
-![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen1.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen2.png)
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen1.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen2.png)
 ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen3.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen4.png)
 
-![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen5.png) ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen6.png)
-![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen7.png) ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen8.png)
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen5.png) ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen6.png)
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen7.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen8.png)
 
 
 * * *
@@ -104,16 +106,16 @@ And these libraries:
 * libopencv_core.a
 * libopencv_imgproc.a
 
-![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/LinkBinaries.png)
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/LinkBinaries.png)
 
 Now switch to the Build Settings tab and find the Other Linker Flags setting. Add "-ObjC" here, for both Debug and Release.
 
-![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/OtherLinkerFlags.png)
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/OtherLinkerFlags.png)
 
 Add the LifePics.bundle to your target, by selecting Add Files in the Project Navigator.
 
 ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/AddFiles.png)<br>
-![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/AddBundle.png)
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/AddBundle.png)
 
 
 Import the LifePics headers:
