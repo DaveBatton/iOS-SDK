@@ -25,9 +25,8 @@ The LifePics SDK allows your iPhone users to select images and have them printed
 
 Users can select images from their photo library, images provided by your application, or, optionally, images from their Facebook, Instagram, Google, or Flickr accounts.
 
-![](https://github.com/LifePics/iOS-SDK/blob/nl/Default-568h@2x.png)
-![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen1.png) ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen2.png)
-![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen3.png) ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen4.png)
+![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen1.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen2.png)
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen3.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen4.png)
 
 ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen5.png) ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen6.png)
 ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen7.png) ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen8.png)
