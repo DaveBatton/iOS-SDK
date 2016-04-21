@@ -30,8 +30,7 @@ Users can select images from their photo library, images provided by your applic
 ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen1.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen2.png)
 ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen3.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen4.png)
 
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen5.png) ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/screen6.png)
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen7.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen8.png)
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen5.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen7.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen8.png)
 
 
 * * *
