@@ -52,8 +52,9 @@ Installation
 
 The easiest way to install the LifePics SDK is using [CocoaPods](http://cocoapods.org).
 
+    source 'https://github.com/CocoaPods/Specs.git'
     platform :ios, '8.1'
-    pod 'LifePics'
+    pod 'LifePics', '~> 1.0.9'
 
 
 **Manual Installation**
@@ -93,6 +94,7 @@ Next, add the following system frameworks (if they're not already linked to your
 * CoreMedia
 * Photos
 * MessageUI
+* LifePics
 
 
 
