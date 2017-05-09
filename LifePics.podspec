@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.summary      = "The LifePics SDK allows your iPhone users to select images and have them printed locally at nearby photofinishers."
   s.authors      = { "Dave Batton" => "Dave@Batton.org", "John Blanco" => "john@raptureinvenice.com", "Liu, Hai Xia" => "hxliu@nltechdev.com" }
-  s.platform     = :ios, '8.1'
+  s.platform     = :ios, '9.0'
   s.source       = { :git => "https://github.com/LifePics/iOS-SDK.git", :tag => "1.0.9" }
 
   s.description  = <<-DESC
@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
   s.source_files  = 'Frameworks/LifePics.framework/**/*.h','Frameworks/FBSDKCoreKit.framework/**/*.h','Frameworks/FBSDKLoginKit.framework/**/*.h','Frameworks/AdobeCreativeSDKCore.framework/**/*.h','Frameworks/AdobeCreativeSDKImage.framework/**/*.h','Frameworks/Crashlytics.framework/**/*.h'
   s.preserve_paths  = 'LifePics.framework','LifePics.bundle','FBSDKCoreKit.framework','FBSDKLoginKit.framework','AdobeCreativeSDKCore.framework','AdobeCreativeSDKImage','Crashlytics.framework'
   s.resources    = 'Frameworks/LifePics.bundle'
-  s.frameworks = 'Accelerate','AddressBook','AssetsLibrary','AVFoundation','CFNetwork','CoreGraphics','CoreLocation','ImageIO','MapKit','MobileCoreServices','PassKit','QuartzCore','Security', 'SystemConfiguration','StoreKit','UIKit','LifePics','FBSDKCoreKit','FBSDKLoginKit','AdobeCreativeSDKCore','AdobeCreativeSDKImage','AudioToolbox','CoreVideo','OpenGLES','CoreMedia','Photos','MessageUI'
-  s.libraries = 'sqlite3', 'xml2', 'z', 'CardIO', 'opencv_core', 'opencv_imgproc'
+  s.frameworks = 'Accelerate','AddressBook','AssetsLibrary','AVFoundation','CFNetwork','CoreGraphics','CoreLocation','ImageIO','MapKit','MobileCoreServices','PassKit','QuartzCore','Security', 'SystemConfiguration','UIKit','LifePics','FBSDKCoreKit','FBSDKLoginKit','AdobeCreativeSDKCore','AdobeCreativeSDKImage','AudioToolbox','CoreVideo','OpenGLES','CoreMedia','Photos','MessageUI','WebKit','Contacts'
+  s.libraries = 'sqlite3', 'xml2', 'z', 'CardIO', 'opencv_core', 'opencv_imgproc','GoogleAnalyticsServices'
   s.requires_arc = true
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => "$(SDKROOT)/usr/include/libxml2", 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/LifePics"' }
   s.dependency "CardIO", "~> 5.3.0"

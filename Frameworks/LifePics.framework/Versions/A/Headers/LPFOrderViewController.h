@@ -25,6 +25,7 @@ extern NSString * const LPFCanvasProductGroupsKey;
 @class LPFProductGroup;
 @class LPFCanvasConfigureViewController;
 @class LPFCartItem;
+@class LPFProduct;
 
 @protocol LPFOrderViewControllerDelegate;
 
@@ -33,15 +34,19 @@ extern NSString * const LPFCanvasProductGroupsKey;
 @property (nonatomic, weak) id<LPFOrderViewControllerDelegate> delegate;
 @property (nonatomic, strong) LPFFloatingNavigationView *floatingNavigationView;
 @property (nonatomic, strong) LPFProductGroup *selectedProductGroup;
+@property (nonatomic, strong) LPFProduct *selectedProduct;
 @property (nonatomic, readonly) LPFCart *cart;
 @property (nonatomic, strong) LPFImageSelectionGroup *selectedImagesGroup;
 @property (nonatomic, readonly) UIEdgeInsets suggestedContentInset;
 @property (nonatomic, readonly) UIEdgeInsets suggestedLowerContentInset;
 @property (nonatomic, copy) UIColor *primaryColor;  // Default is green. Set to nil to restore default.
 @property (nonatomic, copy) UIColor *secondaryColor;  // Default is orange. Set to nil to restore default.
+@property (nonatomic, copy) UIColor *titleBarBackgroundColor;
+@property (nonatomic, copy) UIColor *titleBarTitleColor;
 @property (nonatomic, readonly) LPFStore *genericStore;
 @property (nonatomic, readonly) LPFStore *shipToHomeStore;
 @property (nonatomic, readonly) LPFStore *pickupInStore;
+@property (nonatomic, strong) NSString *pickuppayNowNote;
 @property (nonatomic, readonly) LPFPaymentManager *paymentManager;
 @property (nonatomic, readonly) BOOL canShipToHome;
 @property (nonatomic, readonly) BOOL canPickupLocally;
@@ -54,29 +59,36 @@ extern NSString * const LPFCanvasProductGroupsKey;
 + (LPFOrderViewController*)sharedInstance;
 + (void)setSlideMenuController:(APLSlideMenuViewController*)controller;
 + (APLSlideMenuViewController*)slideMenuController;
++ (BOOL)displayPayOption;
++ (BOOL)forceToUsePayNow;
++ (NSString *)configGroupKey;
 
 - (void)addRightBarItems:(UIViewController *)controller;
 - (void)addLeftBarItems:(UIViewController*)controller;
 - (void)addBasicLeftBarItems:(UIViewController*)controller;
-- (void)adjustSettingsPosition;
+
 
 - (void)saveCartPlist;
 - (void)readCartPlist;
+- (void)dealWithUserDataByUserDataVersion;
 - (BOOL)setGroupForItem:(LPFCartItem*)item;
 
 - (void)updateFloatingNavigationView;
+- (void)pushToOrderHistoryViewController:(BOOL)animated;
 - (void)pushToCartViewController:(BOOL)animated;
 - (LPFSizeQuantityViewController *)popToSizeQuantityViewControllerAnimated:(BOOL)animated;
 - (LPFCanvasConfigureViewController *)popToCanvasConfigureViewControllerAnimated:(BOOL)animated;
 - (void)popToContinueShoppingViewControllerAnimated:(BOOL)animated;
 - (void)popToMyPhotosViewControllerAnimated:(BOOL)animated;
 - (void)popToFeedbackControllerAnimated:(BOOL)animated;
+- (void)popToSettingsAnimated:(BOOL)animated;
 - (instancetype)initWithImageDataSource:(id<LPFImageDataSource>)imageDataSource;
 - (BOOL)isReadyToSubmit;
 - (void)submitOrderWithProgress:(void (^)(NSString *message, float progress))progressBlock completion:(void (^)(NSError *error))completionBlock;
 - (void)resetCart;
 - (void)cancel;
-
+- (void)loadConfiguration:(BOOL)onlyReadCategories;
+- (void)GAIonPurchaseCompleted;
 - (void)makeCanvasTheInitialScreenWithImage:(UIImage *) image;
 
 @end

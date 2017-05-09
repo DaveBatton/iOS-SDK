@@ -16,8 +16,6 @@
 @class LPFShippingMethod;
 @class LPFAddress;
 
-
-static NSDictionary *cartInfoDic;
 @interface LPFCart : NSObject <NSCopying, NSCoding>
 @property (nonatomic, copy) NSString *cartID;  // nil until assigned by the server.
 @property (nonatomic) BOOL needsUpload;
@@ -39,12 +37,16 @@ static NSDictionary *cartInfoDic;
 @property (nonatomic, copy) NSDecimalNumber *tax;  // Provided by the server after the cart is uploaded.
 @property (nonatomic, copy) NSDecimalNumber *total;  // Provided by the server after the cart is uploaded. We guess at it before that happens.
 @property (nonatomic, copy) NSDecimalNumber *minimumOrderFee;
+@property BOOL payNowUnderPickupInStore;
+@property BOOL useApplePay;
+
 
 - (void)setStore:(LPFStore *)newStore itemsRemovedFromCart:(NSArray **)removedItems;
 - (void)emptyCart;
 - (LPFCartItem *)addItemWithProduct:(LPFProduct *)product quantity:(NSUInteger)quantity attributes:(NSArray *)attributes images:(NSArray *)images;
 - (void)removeItem:(LPFCartItem *)item;
 - (void)findCompatibleStoresWithPostalCode:(NSString *)postalCode completion:(void (^)(NSArray *stores, NSError *error))completion;  // Pass a nil postalCode to use current location.
+- (void)findAllCompatibleStoresAndCompletion:(void (^)(NSArray *stores, NSError *error))completion;
 - (BOOL)mustUploadCartToLoadShipMethods;
 - (void)loadAvailableShipMethods:(void (^)(NSError *error))completion;
 - (BOOL)acceptsDiscountCode;
@@ -55,5 +57,6 @@ static NSDictionary *cartInfoDic;
 - (BOOL)isShipToHome;
 - (void)setItems:(NSArray *)items;
 - (void)addItems:(NSArray*)items;
-+ (NSDecimalNumber *)caculateSubtotalInLocal:(NSArray*)cartItems;
++ (NSDecimalNumber *)caculateSubtotalInLocal:(NSArray*)cartItems withShipToHomeProduct:(BOOL)withShipToHomeProduct shipToHomeStore:(LPFStore*)store;
++ (BOOL)onlySupportUSShipping;
 @end

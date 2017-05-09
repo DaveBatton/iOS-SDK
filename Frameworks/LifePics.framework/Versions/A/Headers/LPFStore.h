@@ -40,11 +40,14 @@ extern NSString * const LPFStoreDidLoadProductsNotification;
 @property (nonatomic, strong) NSArray *products;  // nil until -loadProducts: is called.
 @property (nonatomic, readonly) UIImage *betterMerchantLogo;
 @property BOOL isDefaultShipToHomeStore;
-
+@property BOOL isDefaultPickupStore;
 // MKAnnotation
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (nonatomic, readonly, copy) NSString *title;
 @property (nonatomic, readonly, copy) NSString *subtitle;
+
+//it not a value from server,  exists in client only
+@property (nonatomic) BOOL isFetchingProducts;
 
 - (void)loadProducts:(void (^)(NSError *error))completionBlock;
 //For development only
@@ -61,5 +64,7 @@ extern NSString * const LPFStoreDidLoadProductsNotification;
 - (LPFProduct*)canFulfillItemForGenericApp:(LPFCartItem*)item;//only for generic app when searching store.
 - (NSDecimalNumber *)subtotalForCart:(LPFCart *)cart;
 
+
++ (NSString*)getRadiusInMiles;
 
 @end

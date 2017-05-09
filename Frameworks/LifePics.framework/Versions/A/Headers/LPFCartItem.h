@@ -29,6 +29,7 @@
 - (NSString *)imagesXML;
 - (NSString *)attributesXML;
 - (NSArray *)imageIDs;
+- (NSArray *)imagePrintInfos;
 - (NSArray *)attributeIDs;
 - (NSComparisonResult)caseInsensitiveCompare:(LPFCartItem *)anotherCartItem;
 

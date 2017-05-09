@@ -111,5 +111,33 @@
 	</array>
 	<key>isGenericApp</key>
 	<true/>
+	<key>FacebookAppID</key>
+	<string>490904617610161</string>
+	<key>FacebookDisplayName</key>
+	<string>PictureLife</string>
+	<key>LPFFlickrKey</key>
+	<string>43dbd0bf00331150a735292a76b41c18</string>
+	<key>LPFFlickrSecret</key>
+	<string>effa803bc63e0f1c</string>
+	<key>LPFGoogleClientID</key>
+	<string>559965550772-8ppj6p45rbbh5p48sd5t5a4da3g8kcif.apps.googleusercontent.com</string>
+	<key>LPFGoogleClientSecret</key>
+	<string>hNANZucyd198jhih21RqdJAD</string>
+	<key>LPFInstagramKey</key>
+	<string>648fab4222104a96aa88ac06e4ced060</string>
+	<key>LPFSmugMugKey</key>
+	<string>Gn0jDPWDeWPHWtU3aZSj5MkYrw73Vd4h</string>
+	<key>LPFDeveloperKey</key>
+	<string>4D36708AA517F94C0E71596E38B803B9</string>
+	<key>LPFStripeTestPublishableKey</key>
+	<string>pk_test_21cBhFbWDKDJu0h4zLvM2FQJ</string>
+	<key>LPFPartnerSourceID</key>
+	<string>11</string>
+	<key>LPFAppKey</key>
+	<string>ED3E6DA945DE7E5FE7BE3018DC8EAE03</string>
+	<key>LPFPassword</key>
+	<string>y4tg21c5</string>
+	<key>LPFPartnerID</key>
+	<string>28</string>
 </dict>
 </plist>

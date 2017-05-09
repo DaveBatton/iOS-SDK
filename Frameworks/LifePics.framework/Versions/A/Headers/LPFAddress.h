@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <AddressBook/AddressBook.h>
+#import <Contacts/Contacts.h>
+#import<passkit/passkit.h>
 
 typedef NS_ENUM(NSInteger, LPFAddressType) {
     LPFAddressTypeUnknown = 0,
@@ -15,25 +17,25 @@ typedef NS_ENUM(NSInteger, LPFAddressType) {
     LPFAddressTypeBilling
 };
 
-@class APContact;
-@class APAddress;
+//@class APContact;
+//@class APAddress;
 @class LPFCard;
 
 @interface LPFAddress : NSObject
 
-@property (nonatomic, copy) NSString *addressID;  // nil until uploaded to the server.
-@property (nonatomic, copy) NSString *label;
-@property (nonatomic, copy) NSString *firstName;
-@property (nonatomic, copy) NSString *lastName;
-@property (nonatomic, copy) NSString *addressOne;
-@property (nonatomic, copy) NSString *addressTwo;
-@property (nonatomic, copy) NSString *city;
-@property (nonatomic, copy) NSString *state;
-@property (nonatomic, copy) NSString *postalCode;
-@property (nonatomic, copy) NSString *country;
+@property (nonatomic, strong) NSString *addressID;  // nil until uploaded to the server.
+@property (nonatomic, strong) NSString *label;
+@property (nonatomic, strong) NSString *firstName;
+@property (nonatomic, strong) NSString *lastName;
+@property (nonatomic, strong) NSString *addressOne;
+@property (nonatomic, strong) NSString *addressTwo;
+@property (nonatomic, strong) NSString *city;
+@property (nonatomic, strong) NSString *state;
+@property (nonatomic, strong) NSString *postalCode;
+@property (nonatomic, strong) NSString *country;
 @property (nonatomic, readonly) NSString *countryCode;
-@property (nonatomic, copy) NSString *phone;
-@property (nonatomic, copy) NSString *email;
+@property (nonatomic, strong) NSString *phone;
+@property (nonatomic, strong) NSString *email;
 
 // Class Methods
 + (NSMutableArray *)parseUserAddressesResponse:(NSArray*)dicArray;
@@ -42,12 +44,18 @@ typedef NS_ENUM(NSInteger, LPFAddressType) {
 + (void)setMostRecentAddress:(LPFAddress *)address;
 + (NSArray *)savedAddresses;
 + (BOOL)stringRepresentsUnitedStates:(NSString *)string;
++ (NSArray*)stateArray;
+//access Contacts or Addressbook framework
++ (void)accessContactsOrAddressbookWithBlock:(void (^)())block;
+
 
 // Public
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
-- (instancetype)initWithRecordRef:(ABRecordRef)recordRef;
-- (instancetype)initWithContact:(APContact *)contact address:(APAddress *)address;
+//- (instancetype)initWithRecordRef:(ABRecordRef)recordRef;
+//- (instancetype)initWithContact:(APContact *)contact address:(APAddress *)address;
 - (instancetype)initWithCreditCard:(LPFCard *)creditCard;
+- (instancetype)initWithCNContact:(CNContact *)contact;
+- (instancetype)initWithPKContact:(PKContact*)contact;
 - (BOOL)hasText;
 - (BOOL)isSufficient;
 - (BOOL)isSufficient:(NSString **)details;
@@ -59,6 +67,6 @@ typedef NS_ENUM(NSInteger, LPFAddressType) {
 - (void)save;
 - (void)delete;
 - (NSDictionary *)dictionaryValue;
-- (ABRecordRef)recordRef;
+//- (ABRecordRef)recordRef;
 
 @end

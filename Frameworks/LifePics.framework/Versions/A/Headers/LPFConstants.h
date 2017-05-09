@@ -16,10 +16,8 @@
 #define kPassword			@"LPPassword"
 #define kCustomer			@"LPCustomerID"
 #define kCustName			@"LPCustomerName"
-#define kLastUserName		@"LPLastUserName"
-#define kLastPassword		@"LPLastPassword"
 #define kCameraInUse		@"LPCameraInUse"
-#define kMerchantID			@"LPMerchantID"
+//#define kMerchantID			@"LPMerchantID"
 #define kCartLocID			@"LPCartLocID"
 #define kCartMerchantID		@"LPCartMerchantID"
 #define kExpressOrder		@"LPExpressOrder"
@@ -29,8 +27,8 @@
 #define kChangeStore		@"LPChangeStore"
 #define kPaymentType		@"LPPaymentType"
 #define LPFLifePicsUserIDKey  @"LPFLifePicsUserIDKey"
-#define LPFLifePicsUserIDIsTemporaryUser  @"LPFLifePicsUserIDIsTemporaryUser"
 
+#define kLPFUserDataVersion      @"LPFUserDataVersion"
 #define kuserCartItemsInfo @"CartItemsInfo.plist"
 #define kcartItemsInfo @"lifepicsCartItemsInfo.plist"
 #define kNotifyFinishReadCartItemsInfoPlist @"kNotifyFinishReadCartItemsInfoPlist"
@@ -54,7 +52,8 @@ static NSString *LPFDefaultsUserLastNameKey = @"LPFDefaultsUserLastNameKey";
 static NSString *LPFDefaultsUserPhoneNumberKey = @"LPFDefaultsUserPhoneNumberKey";
 static NSString *LPFDefaultsUserEmailAddressKey = @"LPFDefaultsUserEmailAddressKey";
 static NSString *LPFDefaultsMerchantIDKey = @"LPFDefaultsMerchantIDKey";
-static NSString *LPFDefaultsBillingEmailAddressKey = @"LPFDefaultsBillingEmailAddressKey";
+static NSString *LPFDefaultsContactFirstNameKey = @"LPFDefaultsContactFirstNameKey";
+static NSString *LPFDefaultsContactLastNameKey = @"LPFDefaultsContactLastNameKey";
 static NSString *LPFLocalConfigurationFileName = @"LPFConfiguration.json";
 
 static NSString *LPFImageSourceDidAuthenticateNotification = @"LPFImageSourceDidAuthenticateNotification";
@@ -121,6 +120,9 @@ static int LPFImageMaxSize = 1024;
 #define kWhite @"White"
 #define kBlack @"Black"
 #define kWrap @"Wrap"
+
+//iOS Version
+#define iOS9_LATER [[UIDevice currentDevice].systemVersion floatValue] >= 9.0 ? YES : NO
 
 // Merchant IDs for branding
 enum

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Photos/Photos.h>
 
+
 extern NSString * const LPFImageDidCacheSmallCroppedImageNotification;
 
 typedef NS_ENUM(NSInteger, LPFImageSourceType) {
@@ -33,6 +34,7 @@ typedef NS_ENUM(NSInteger, LPFImageOrientation) {
 };
 
 @class LPFFolder;
+@class LPFImagePrintInfo;
 
 @interface LPFImage : NSObject
 @property (copy, nonatomic) NSString *imageID;
@@ -51,6 +53,7 @@ typedef NS_ENUM(NSInteger, LPFImageOrientation) {
 @property (nonatomic, readonly) UIImage *smallCroppedImage;  // A 300 x 300 max image. Will return nil until -croppedImageFromFullSizeImage: is called. That caches the cropped image.
 @property (nonatomic, readonly) UIImage *croppedThumbnail;  // A 120 x 120 max image. Generated after -croppedImageFromFullSizeImage: has been called. Returns nil if that's not available.
 @property (nonatomic, readonly) UIImage *croppedRealImage;
+@property BOOL LPFImageDidCacheSmallCroppedImageNotify ;
 /*
  Modified by: NL, hxliu,   add sameImageRefArray property and setUploadedImageIdForSameImageRefArrayItems method.
  Analysis result: same images will be upload once, but they should share one uploadedImageId once upload successful.
@@ -61,6 +64,8 @@ typedef NS_ENUM(NSInteger, LPFImageOrientation) {
 @property (strong, nonatomic) NSMutableArray *sameImageRefArray;
 @property CGFloat compressQuality;
 @property (strong, nonatomic) NSString *logicalUUID;
+@property BOOL lowResolution;
+@property LPFImagePrintInfo *userPrintInfo;
 // Public
 - (UIImage *)croppedImageFromFullSizeImage:(UIImage *)fullSizeImage;
 - (UIImage *)croppedImageFromRealImage:(UIImage *)realImage;
@@ -70,8 +75,15 @@ typedef NS_ENUM(NSInteger, LPFImageOrientation) {
 - (void)setUploadedImageIdForSameImageRefArrayItems;
 - (CGFloat)uploadCompressQuality;
 - (NSString *)getImageID;
+// Create a smaller version (300x300 * scale (or smaller - don't enlarge the image))
+- (UIImage *)getSmallCroppedImageFromCroppedImage:(UIImage *)croppedImage;
 - (UIImage *)smallCroppedImageFromCroppedImage:(UIImage *)croppedImage;
-- (BOOL)isLowResolution:(CGSize)productSize;
+
+- (void)removeSmallCroppedImage;
+- (void)removeCroppedImage;
+
+
+//- (NSString *)smallCroppedImageCacheKey;
 @end
 
 //suit for Photes.Framework

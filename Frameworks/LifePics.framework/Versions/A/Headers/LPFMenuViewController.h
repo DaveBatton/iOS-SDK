@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "APLSlideMenuViewController.h"
+#import <LocalAuthentication/LocalAuthentication.h>
+
 @class LPFOrderViewController;
 
 @interface LPFMenuAccountCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *accountImg;
 @property (weak, nonatomic) IBOutlet UIButton *btnSignIn;
+@property (weak, nonatomic) IBOutlet UILabel *line;
+@property (weak, nonatomic) IBOutlet UIView *view;
 
 @end
 

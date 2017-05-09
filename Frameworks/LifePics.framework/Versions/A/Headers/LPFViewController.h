@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <LifePics/LifePics.h>
+#import "UIFont+LPFAdditions.h"
+#import "GAI.h"
+#import "GAIDictionaryBuilder.h"
+#import "GAIFields.h"
+#import "LPFGoogleAnalyticsHelper.h"
 
 @class LPFProgressMessageView;
 
@@ -22,6 +27,7 @@
 @property (strong, nonatomic, readonly) NSString *resourceName;
 @property (strong, nonatomic) UIView *popoverView;
 @property (nonatomic, weak) id<LPFNavigationItemsCustomInSideDelegate> navigationItemsCustomInSideDelegate;
+@property (strong, nonatomic) NSString *screenName;
 
 //hxliu from NL added for bug #4087
 @property (nonatomic, strong) UIActivityIndicatorView *activity;
@@ -45,5 +51,5 @@
 - (void)presentInfoView:(UIView *)view inViewController:(UIViewController *)viewController withFixFrame:(CGRect)rect;
 
 - (BOOL)supportAPLSlideMenuGestureSupportDrag;
-//- (BOOL)dontMakeOrdersWithMessage:(BOOL)showMessage;
+-(void)login:(void (^)()) acceptedBlock  deniedBlock:(void (^)()) deniedBlock;
 @end

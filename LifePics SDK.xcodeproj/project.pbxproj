@@ -40,8 +40,7 @@
 		C31FE86A1CA38B7000F6AFB0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8691CA38B7000F6AFB0 /* CoreVideo.framework */; };
 		C31FE86C1CA38B8100F6AFB0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE86B1CA38B8100F6AFB0 /* AVFoundation.framework */; };
 		C31FE86E1CA38BA300F6AFB0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE86D1CA38BA300F6AFB0 /* AudioToolbox.framework */; };
-		C31FE8701CA38BC600F6AFB0 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE86F1CA38BC600F6AFB0 /* AddressBook.framework */; };
-		C31FE8721CA38BE300F6AFB0 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8711CA38BE300F6AFB0 /* AddressBookUI.framework */; };
+		C31FE8701CA38BC600F6AFB0 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE86F1CA38BC600F6AFB0 /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C31FE8761CA38D4000F6AFB0 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8731CA38D4000F6AFB0 /* libCardIO.a */; };
 		C31FE8771CA38D4000F6AFB0 /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8741CA38D4000F6AFB0 /* libopencv_core.a */; };
 		C31FE8781CA38D4000F6AFB0 /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8751CA38D4000F6AFB0 /* libopencv_imgproc.a */; };
@@ -51,9 +50,13 @@
 		C31FE8801CA38DF100F6AFB0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE87E1CA38DF100F6AFB0 /* FBSDKLoginKit.framework */; };
 		C31FE8841CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C31FE8831CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle */; };
 		C31FE8861CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C31FE8851CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle */; };
-		C31FE8881CA3B41600F6AFB0 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8871CA3B41600F6AFB0 /* PassKit.framework */; };
-		C31FE88C1CA3BE2800F6AFB0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE88B1CA3BE2800F6AFB0 /* StoreKit.framework */; };
+		C361DF2A1EC1A58700658DDF /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C361DF291EC1A58700658DDF /* libGoogleAnalyticsServices.a */; };
+		C361DF2C1EC1A87600658DDF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C361DF2B1EC1A87600658DDF /* WebKit.framework */; };
+		C361DF2E1EC1AC7A00658DDF /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C361DF2D1EC1AC7A00658DDF /* LocalAuthentication.framework */; };
+		C361DF301EC1AF3100658DDF /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C361DF2F1EC1AF3100658DDF /* Contacts.framework */; };
+		C361DF331EC1B4D300658DDF /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8871CA3B41600F6AFB0 /* PassKit.framework */; };
 		C37524C31CABB255000287FE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37524C21CABB255000287FE /* CoreMedia.framework */; };
+		C380F4EC1EC0387500659C7D /* LifePics SDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B630650218A9834B00CCAA28 /* LifePics SDK-Info.plist */; };
 		C39603101CA8BE1400E6733A /* LPFConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C396030F1CA8BE1400E6733A /* LPFConfiguration.json */; };
 		C3EF7AAF1CBCE25300ECE8B3 /* LifePics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EF7AAE1CBCE25300ECE8B3 /* LifePics.framework */; };
 		C3FF55DB1CAA0FE60093F296 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FF55DA1CAA0FE60093F296 /* Default-568h@2x.png */; };
@@ -95,8 +98,6 @@
 		C31FE8551CA3827900F6AFB0 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		C31FE8571CA3828300F6AFB0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		C31FE8591CA3829500F6AFB0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		C31FE85B1CA382A700F6AFB0 /* libcommonCrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcommonCrypto.tbd; path = usr/lib/system/libcommonCrypto.tbd; sourceTree = SDKROOT; };
-		C31FE85D1CA382C600F6AFB0 /* libcorecrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcorecrypto.tbd; path = usr/lib/system/libcorecrypto.tbd; sourceTree = SDKROOT; };
 		C31FE8611CA38A8400F6AFB0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		C31FE8631CA38AB400F6AFB0 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		C31FE8651CA38ADE00F6AFB0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -116,7 +117,11 @@
 		C31FE8831CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AdobeCreativeSDKCoreResources.bundle; path = Frameworks/CreativeSDK/AdobeCreativeSDKCore.framework/Versions/A/Resources/AdobeCreativeSDKCoreResources.bundle; sourceTree = "<group>"; };
 		C31FE8851CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AdobeCreativeSDKImageResources.bundle; path = Frameworks/CreativeSDK/AdobeCreativeSDKImage.framework/Versions/A/Resources/AdobeCreativeSDKImageResources.bundle; sourceTree = "<group>"; };
 		C31FE8871CA3B41600F6AFB0 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
-		C31FE88B1CA3BE2800F6AFB0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C361DF291EC1A58700658DDF /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = Frameworks/GoogleAnalytics/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		C361DF2B1EC1A87600658DDF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C361DF2D1EC1AC7A00658DDF /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		C361DF2F1EC1AF3100658DDF /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		C361DF311EC1B33800658DDF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C37524C21CABB255000287FE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		C396030F1CA8BE1400E6733A /* LPFConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LPFConfiguration.json; sourceTree = "<group>"; };
 		C3EF7AAE1CBCE25300ECE8B3 /* LifePics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LifePics.framework; path = Frameworks/LifePics.framework; sourceTree = "<group>"; };
@@ -128,9 +133,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C361DF331EC1B4D300658DDF /* PassKit.framework in Frameworks */,
+				C361DF301EC1AF3100658DDF /* Contacts.framework in Frameworks */,
+				C361DF2E1EC1AC7A00658DDF /* LocalAuthentication.framework in Frameworks */,
+				C361DF2C1EC1A87600658DDF /* WebKit.framework in Frameworks */,
 				C37524C31CABB255000287FE /* CoreMedia.framework in Frameworks */,
-				C31FE88C1CA3BE2800F6AFB0 /* StoreKit.framework in Frameworks */,
-				C31FE8881CA3B41600F6AFB0 /* PassKit.framework in Frameworks */,
 				C31FE87F1CA38DF100F6AFB0 /* FBSDKCoreKit.framework in Frameworks */,
 				C31FE8801CA38DF100F6AFB0 /* FBSDKLoginKit.framework in Frameworks */,
 				C31FE87B1CA38DA300F6AFB0 /* AdobeCreativeSDKCore.framework in Frameworks */,
@@ -144,7 +151,6 @@
 				B6E76F2718AD9268006C936D /* CoreLocation.framework in Frameworks */,
 				02FEDFCF18B5738A0013FC07 /* SystemConfiguration.framework in Frameworks */,
 				02B0C8E518D3A81000295A4A /* ImageIO.framework in Frameworks */,
-				C31FE8721CA38BE300F6AFB0 /* AddressBookUI.framework in Frameworks */,
 				C3EF7AAF1CBCE25300ECE8B3 /* LifePics.framework in Frameworks */,
 				C31FE8701CA38BC600F6AFB0 /* AddressBook.framework in Frameworks */,
 				C31FE86E1CA38BA300F6AFB0 /* AudioToolbox.framework in Frameworks */,
@@ -160,6 +166,7 @@
 				B6F31C6618AC02F500670AB1 /* AssetsLibrary.framework in Frameworks */,
 				66F5F18414DB420E0068FD20 /* CoreGraphics.framework in Frameworks */,
 				66F5F18014DB420E0068FD20 /* UIKit.framework in Frameworks */,
+				C361DF2A1EC1A58700658DDF /* libGoogleAnalyticsServices.a in Frameworks */,
 				C31FE8561CA3827900F6AFB0 /* libxml2.tbd in Frameworks */,
 				C31FE85A1CA3829500F6AFB0 /* libsqlite3.tbd in Frameworks */,
 				C31FE8581CA3828300F6AFB0 /* libz.tbd in Frameworks */,
@@ -190,10 +197,14 @@
 		66F5F17E14DB420E0068FD20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C361DF311EC1B33800658DDF /* StoreKit.framework */,
+				C361DF2F1EC1AF3100658DDF /* Contacts.framework */,
+				C361DF2D1EC1AC7A00658DDF /* LocalAuthentication.framework */,
+				C361DF2B1EC1A87600658DDF /* WebKit.framework */,
+				C361DF291EC1A58700658DDF /* libGoogleAnalyticsServices.a */,
 				C3EF7AAE1CBCE25300ECE8B3 /* LifePics.framework */,
 				C37524C21CABB255000287FE /* CoreMedia.framework */,
 				C30D99E61CA0D6D2005EF9C4 /* LifePics.bundle */,
-				C31FE88B1CA3BE2800F6AFB0 /* StoreKit.framework */,
 				C31FE8871CA3B41600F6AFB0 /* PassKit.framework */,
 				C31FE8851CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle */,
 				C31FE8831CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle */,
@@ -213,8 +224,6 @@
 				C31FE8651CA38ADE00F6AFB0 /* CoreData.framework */,
 				C31FE8631CA38AB400F6AFB0 /* Photos.framework */,
 				C31FE8611CA38A8400F6AFB0 /* MessageUI.framework */,
-				C31FE85D1CA382C600F6AFB0 /* libcorecrypto.tbd */,
-				C31FE85B1CA382A700F6AFB0 /* libcommonCrypto.tbd */,
 				C31FE8591CA3829500F6AFB0 /* libsqlite3.tbd */,
 				C31FE8571CA3828300F6AFB0 /* libz.tbd */,
 				C31FE8551CA3827900F6AFB0 /* libxml2.tbd */,
@@ -348,6 +357,7 @@
 				C3FF55DB1CAA0FE60093F296 /* Default-568h@2x.png in Resources */,
 				C30D99E71CA0D6D2005EF9C4 /* LifePics.bundle in Resources */,
 				C31FE8841CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle in Resources */,
+				C380F4EC1EC0387500659C7D /* LifePics SDK-Info.plist in Resources */,
 				C31FE8861CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle in Resources */,
 				B63D8B0018AA01D800599514 /* Main_iPhone.storyboard in Resources */,
 				B6D37CE418A996F8008822FD /* InfoPlist.strings in Resources */,
@@ -482,12 +492,13 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "LifePics SDK/LifePics SDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/CardIO",
+					"$(PROJECT_DIR)/Frameworks/GoogleAnalytics",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -527,12 +538,13 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "LifePics SDK/LifePics SDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/CardIO",
+					"$(PROJECT_DIR)/Frameworks/GoogleAnalytics",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
