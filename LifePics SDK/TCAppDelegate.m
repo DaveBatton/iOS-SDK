@@ -8,7 +8,6 @@
 #import "TCAppDelegate.h"
 #import "TCDevTools.h"
 
-#import <Crashlytics/Crashlytics.h>
 #import <Foundation/NSKeyedArchiver.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
@@ -65,9 +64,6 @@
     [TCDevTools offerToAddTestPhotos];
 #endif
     
-#ifndef DEBUG
-    [Crashlytics startWithAPIKey:@"65adba999dd811077ed451dfdb405b965c5a21bb"];
-#endif
     
     [LPFOrderViewController prefetchImages];
     

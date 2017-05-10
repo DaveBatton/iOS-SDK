@@ -8,7 +8,7 @@
         "LPFPaymentManager": {
             "settings": {
                 "base_url": {
-                    "value": "http://ec2-54-69-180-153.us-west-2.compute.amazonaws.com/lifepics/"
+                    "value": "http://ec2-52-27-165-202.us-west-2.compute.amazonaws.com/lifepics/"
                 },
             }
         },
@@ -36,10 +36,10 @@
         "LPFOrderViewController": {
             "settings": {
                 "primary_color": {
-                    "value": "#8EAA3F"
+                    "value": "#0badc5"
                 },
                 "secondary_color": {
-                    "value": "#000000"
+                    "value": "#555555"
                 },
                 "local_pickup_enabled": {
                     "value": true
@@ -76,26 +76,29 @@
                                                       "Description": "4\" x 6\" Print",
                                                       "Width": 4,
                                                       "Height": 6,
+                                                      "ProductID": 1398080,
                                                       "SKU":"114"
                                                       },
                                                       {
                                                       "Description": "5\" x 7\" Print",
                                                       "Width": 5,
                                                       "Height": 7,
+                                                      "ProductID": 1398082,
                                                       "SKU":"115"
                                                       },
                                                       {
                                                       "Description": "8\" x 10\" Print",
                                                       "Width": 8,
                                                       "Height": 10,
+                                                      "ProductID": 1398084,
                                                       "SKU":"118"
                                                       },
                                                       {
                                                       "Description": "8\" x 12\" Print",
                                                       "Width": 8,
                                                       "Height": 12,
-                                                      "SKU":"167",
-                                                      "ProductID":2127
+                                                      "ProductID": 1469509,
+                                                      "SKU":"167"
                                                       }
                                                       ]
                                          },
@@ -122,13 +125,14 @@
                                                       "Description": "5\" x 5\" Print",
                                                       "Width": 5,
                                                       "Height": 5,
-                                                      "SKU":"557",
-                                                      "ProductID":5460
+                                                      "ProductID":4915641,
+                                                      "SKU":"557"
                                                       },
                                                       {
                                                       "Description": "8\" x 8\" Print",
                                                       "Width": 8,
                                                       "Height": 8,
+                                                      "ProductID": 4931219,
                                                       "SKU":"199"
                                                       }
                                                       ]

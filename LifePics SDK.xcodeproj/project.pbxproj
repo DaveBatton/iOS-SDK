@@ -121,7 +121,6 @@
 		C361DF2B1EC1A87600658DDF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C361DF2D1EC1AC7A00658DDF /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		C361DF2F1EC1AF3100658DDF /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
-		C361DF311EC1B33800658DDF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C37524C21CABB255000287FE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		C396030F1CA8BE1400E6733A /* LPFConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LPFConfiguration.json; sourceTree = "<group>"; };
 		C3EF7AAE1CBCE25300ECE8B3 /* LifePics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LifePics.framework; path = Frameworks/LifePics.framework; sourceTree = "<group>"; };
@@ -197,7 +196,6 @@
 		66F5F17E14DB420E0068FD20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C361DF311EC1B33800658DDF /* StoreKit.framework */,
 				C361DF2F1EC1AF3100658DDF /* Contacts.framework */,
 				C361DF2D1EC1AC7A00658DDF /* LocalAuthentication.framework */,
 				C361DF2B1EC1A87600658DDF /* WebKit.framework */,

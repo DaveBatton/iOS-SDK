@@ -92,6 +92,18 @@
 			</dict>
 		</dict>
 	</dict>
+    <key>NSCameraUsageDescription</key>
+    <string>Your camera will be accessed to scan your credit card for payment.</string>
+    <key>NSContactsUsageDescription</key>
+    <string>Your address book will be accessed so you can select a shipping or billing address</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Your location is used to find nearby photofinishers.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Your location is used to find nearby photofinishers.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Your local photos will be accessed so they can be selected for your prints</string>
+    <key>TCDisplaySimpleImages</key>
+    <true/>
 	<key>TCDisplayOrderViewAtLaunch</key>
 	<false/>
 	<key>UIMainStoryboardFile</key>
