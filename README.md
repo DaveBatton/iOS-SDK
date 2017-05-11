@@ -139,7 +139,7 @@ The Navigation Root ViewController of the App is a SlideMenuController, it inclu
 So init things for the slideMenuController first:
 
 
-
+```
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
         [UIApplication sharedApplication].statusBarHidden = NO;
@@ -168,7 +168,7 @@ So init things for the slideMenuController first:
     self.slideMenuController = slideMenuController;
 }
 
-
+```
 Set useStagingServer for session manager in didFinishLaunchingWithOptions method:
 
     int forStaging = [[[[NSBundle mainBundle] infoDictionary] objectForKey:@"ForStaging"] intValue];
