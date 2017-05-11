@@ -19,8 +19,8 @@ Pod::Spec.new do |s|
 "https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen7.png",
 "https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen8.png"
 
-  s.source_files  = 'Frameworks/LifePics.framework/**/*.h','Frameworks/FBSDKCoreKit.framework/**/*.h','Frameworks/FBSDKLoginKit.framework/**/*.h','Frameworks/AdobeCreativeSDKCore.framework/**/*.h','Frameworks/AdobeCreativeSDKImage.framework/**/*.h','Frameworks/Crashlytics.framework/**/*.h'
-  s.preserve_paths  = 'LifePics.framework','LifePics.bundle','FBSDKCoreKit.framework','FBSDKLoginKit.framework','AdobeCreativeSDKCore.framework','AdobeCreativeSDKImage','Crashlytics.framework'
+  s.source_files  = 'Frameworks/LifePics.framework/**/*.h','Frameworks/FBSDKCoreKit.framework/**/*.h','Frameworks/FBSDKLoginKit.framework/**/*.h','Frameworks/AdobeCreativeSDKCore.framework/**/*.h','Frameworks/AdobeCreativeSDKImage.framework/**/*.h'
+  s.preserve_paths  = 'LifePics.framework','LifePics.bundle','FBSDKCoreKit.framework','FBSDKLoginKit.framework','AdobeCreativeSDKCore.framework','AdobeCreativeSDKImage'
   s.resources    = 'Frameworks/LifePics.bundle'
   s.frameworks = 'Accelerate','AddressBook','AssetsLibrary','AVFoundation','CFNetwork','CoreGraphics','CoreLocation','ImageIO','MapKit','MobileCoreServices','PassKit','QuartzCore','Security', 'SystemConfiguration','UIKit','LifePics','FBSDKCoreKit','FBSDKLoginKit','AdobeCreativeSDKCore','AdobeCreativeSDKImage','AudioToolbox','CoreVideo','OpenGLES','CoreMedia','Photos','MessageUI','WebKit','Contacts'
   s.libraries = 'sqlite3', 'xml2', 'z', 'CardIO', 'opencv_core', 'opencv_imgproc','GoogleAnalyticsServices'

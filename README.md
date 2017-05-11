@@ -40,7 +40,7 @@ Prerequisites
 
 You will need a free LifePics developer key. Details are in the Overview section above.
 
-The SDK supports iOS 8.1 and later.
+The SDK supports iOS 9.0 and later.
 
 
 * * *
@@ -53,7 +53,7 @@ Installation
 The easiest way to install the LifePics SDK is using [CocoaPods](http://cocoapods.org).
 
     source 'https://github.com/CocoaPods/Specs.git'
-    platform :ios, '8.1'
+    platform :ios, '9.0'
     pod 'LifePics', '~> 1.0.9'
 
 
