@@ -138,6 +138,8 @@ Import the LifePics headers:
 The Navigation Root ViewController of the App is a SlideMenuController, it includes a menu page and main display page.
 So init things for the slideMenuController first:
 
+
+
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
         [UIApplication sharedApplication].statusBarHidden = NO;
@@ -146,6 +148,7 @@ So init things for the slideMenuController first:
         [self setSlideMenuController];
         return YES;
 }
+
 
 - (void)setSlideMenuController
 {
