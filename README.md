@@ -75,6 +75,7 @@ Next, add the following system frameworks (if they're not already linked to your
 * AVFoundation
 * CFNetwork
 * CoreGraphics
+* Contacts
 * ImageIO
 * MapKit
 * MobileCoreServices
@@ -82,11 +83,7 @@ Next, add the following system frameworks (if they're not already linked to your
 * QuartzCore
 * Security
 * SystemConfiguration
-* StoreKit
-* FBSDKCoreKit
-* FBSDKLoginKit
-* AdobeCreativeSDKCore
-* AdobeCreativeSDKImage
+* WebKit
 * CoreLocation
 * AudioToolbox
 * CoreVideo
@@ -94,8 +91,13 @@ Next, add the following system frameworks (if they're not already linked to your
 * CoreMedia
 * Photos
 * MessageUI
+* UIKit
+* LocalAuthentication
 * LifePics
-
+* FBSDKCoreKit
+* FBSDKLoginKit
+* AdobeCreativeSDKCore
+* AdobeCreativeSDKImage
 
 
 And these libraries:
@@ -106,6 +108,7 @@ And these libraries:
 * libCardIO.a
 * libopencv_core.a
 * libopencv_imgproc.a
+* libGoogleAnalyticsServices
 
 ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/LinkBinaries.png)
 
@@ -118,6 +121,11 @@ Add the LifePics.bundle to your target, by selecting Add Files in the Project Na
 ![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/AddFiles.png)<br>
 ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/AddBundle.png)
 
+Add the AdobeCreativeSDKImageResources.bundle to your target 
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/AddAdobeCreativeSDKImageResources.png)
+
+Add the AddAdobeCreativeSDKCoreResources.bundle to your target 
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/AddAdobeCreativeSDKCoreResources.png)
 
 Import the LifePics headers:
 
@@ -125,6 +133,7 @@ Import the LifePics headers:
     #import <LifePics/NSBundle+LPFAdditions.h>
     #import <LifePics/LPFMenuViewController.h>
     #import <LifePics/APLSlideMenuViewController.h>
+    #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 The Navigation Root ViewController of the App is a SlideMenuController, it includes a menu page and main display page.
 So init things for the slideMenuController first:
