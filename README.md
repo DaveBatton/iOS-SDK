@@ -59,13 +59,14 @@ The easiest way to install the LifePics SDK is using [CocoaPods](http://cocoapod
 
 **Manual Installation**
 
-Put a copy of the LifePics.framework and LifePics.bundle files anywhere in your project folder. 
+Put a copy of the Frameworks folder from this demo's root folder to your project folder, and then reference  LifePics.framework & LifePics.bundle, CreativeSDK related frameworks & bundles, FaceBook related frameworks, CardIO libraries as well as libGoogleAnalyticsServices to your project.
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/FrameworksFolder.png)
 
 In Xcode, select your project in the Project Navigator.<br>
 Select your app target.<br>
 Select the Build Phases tab.<br>
 Expand Link Binary With Libraries.<br>
-Click the + button, then Add Other, to select and add the LifePics.framework file.
+Click the + button, then Add Other, to select and add the LifePics.framework file etc.
 
 Next, add the following system frameworks (if they're not already linked to your project:
 
@@ -215,6 +216,35 @@ You can also enable Facebook, Instagram, Google, and Flickr access in the Source
 
 For using Adobe Creative Image Editor, Please request an acount on the website (https://creativesdk.adobe.com/) for your own Creative_CLIENT_ID & Creative_CLIENT_SECRET for your App.
 
+
+To customize product comparison rule used on finding available stores to deliver current order, you can realize LPFProduct (Comparison) category in your target, for example,
+
+```
+//LPFProduct+Comparison.h as below
+
+#import <LifePics/LifePics.h>
+
+@interface LPFProduct (Comparison)
+
+- (BOOL)isSimilarToProduct4PickupInStore:(LPFProduct *)anotherProduct;
+
+@end
+```
+```
+
+//LPFProduct+Comparison.m as below
+
+#import "LPFProduct+Comparison.h"
+
+@implementation LPFProduct (Comparison)
+- (BOOL)isSimilarToProduct4PickupInStore:(LPFProduct *)anotherProduct
+{
+return [self.productID isEqualToString:anotherProduct.productID4PickupInStore] || [self.productID4PickupInStore isEqualToString:anotherProduct.productID];
+}
+@end
+
+
+```
 * * *
 
 Revision History
@@ -222,6 +252,14 @@ Revision History
 ## Version 1.0.9
 
 ***Features***
+
+- To sign In using your Touch ID.
+
+- Using Apple Pay for ship-to-home or pickup-in-store.
+
+- Product comparison rule customization on searching available stores.
+
+- A preliminary Work Flow customization.
 
 - Native iPad Support!
 
