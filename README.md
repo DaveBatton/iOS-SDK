@@ -253,7 +253,7 @@ Revision History
 
 ***Features***
 
-- To sign In using your Touch ID.
+- To sign In this App using your Touch ID.
 
 - Using Apple Pay for ship-to-home or pickup-in-store.
 
