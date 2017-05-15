@@ -83,22 +83,29 @@
                                                       "Description": "5\" x 7\" Print",
                                                       "Width": 5,
                                                       "Height": 7,
-                                                      "ProductID": 1398082,
-                                                      "SKU":"115"
+                                                      "ProductID": 5268114,
+                                                      "SKU":"LPP5X7"
                                                       },
                                                       {
                                                       "Description": "8\" x 10\" Print",
                                                       "Width": 8,
                                                       "Height": 10,
-                                                      "ProductID": 1398084,
-                                                      "SKU":"118"
+                                                      "ProductID": 5269443,
+                                                      "SKU":"LPP8X10"
                                                       },
                                                       {
                                                       "Description": "8\" x 12\" Print",
                                                       "Width": 8,
                                                       "Height": 12,
-                                                      "ProductID": 1469509,
-                                                      "SKU":"167"
+                                                      "ProductID": 5269607,
+                                                      "SKU":"LPP8X12"
+                                                      },
+                                                      {
+                                                      "Description": "11\" x 14\" Print",
+                                                      "Width": 11,
+                                                      "Height": 14,
+                                                      "ProductID": 5268459,
+                                                      "SKU":"LPP11X14"
                                                       }
                                                       ]
                                          },
@@ -122,18 +129,39 @@
                                                         ],
                                          "products": [
                                                       {
+                                                      "Description": "4\" x 4\" Print",
+                                                      "Width": 4,
+                                                      "Height": 4,
+                                                      "ProductID": 5241367,
+                                                      "SKU":"528"
+                                                      },
+                                                      {
                                                       "Description": "5\" x 5\" Print",
                                                       "Width": 5,
                                                       "Height": 5,
-                                                      "ProductID":4915641,
-                                                      "SKU":"557"
+                                                      "ProductID": 5269279,
+                                                      "SKU":"LPP5X5"
                                                       },
                                                       {
                                                       "Description": "8\" x 8\" Print",
                                                       "Width": 8,
                                                       "Height": 8,
-                                                      "ProductID": 4931219,
-                                                      "SKU":"199"
+                                                      "ProductID": 5269771,
+                                                      "SKU":"LPP8X8"
+                                                      },
+                                                      {
+                                                      "Description": "10\" x 10\" Print",
+                                                      "Width": 10,
+                                                      "Height": 10,
+                                                      "ProductID": 5268295,
+                                                      "SKU":"LPP10X10"
+                                                      },
+                                                      {
+                                                      "Description": "12\" x 12\" Print",
+                                                      "Width": 12,
+                                                      "Height": 12,
+                                                      "ProductID": 5268623,
+                                                      "SKU":"LPP12X12"
                                                       }
                                                       ]
                                          }

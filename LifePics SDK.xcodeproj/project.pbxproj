@@ -316,6 +316,7 @@
 				TargetAttributes = {
 					66F5F17A14DB420E0068FD20 = {
 						DevelopmentTeam = WVY42TF9RV;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.DataProtection = {
 								enabled = 0;
@@ -355,8 +356,8 @@
 				C3FF55DB1CAA0FE60093F296 /* Default-568h@2x.png in Resources */,
 				C30D99E71CA0D6D2005EF9C4 /* LifePics.bundle in Resources */,
 				C31FE8841CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle in Resources */,
-				C380F4EC1EC0387500659C7D /* LifePics SDK-Info.plist in Resources */,
 				C31FE8861CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle in Resources */,
+				C380F4EC1EC0387500659C7D /* LifePics SDK-Info.plist in Resources */,
 				B63D8B0018AA01D800599514 /* Main_iPhone.storyboard in Resources */,
 				B6D37CE418A996F8008822FD /* InfoPlist.strings in Resources */,
 			);
@@ -474,6 +475,7 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WVY42TF9RV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,7 +506,8 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "LifePics SDK";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b1d9ffec-c873-42a1-ad23-5ddca2689eca";
+				PROVISIONING_PROFILE_SPECIFIER = HelloWorld;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -520,6 +523,7 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WVY42TF9RV;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -550,7 +554,8 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "LifePics SDK";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b1d9ffec-c873-42a1-ad23-5ddca2689eca";
+				PROVISIONING_PROFILE_SPECIFIER = HelloWorld;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;

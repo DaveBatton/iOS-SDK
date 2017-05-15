@@ -25,7 +25,7 @@ The LifePics iOS SDK
 --------------------
 The LifePics SDK allows your iPhone users to select images and have them printed locally at nearby photofinishers.
 
-Users can select images from their photo library, images provided by your application, or, optionally, images from their Facebook, Instagram, Google, or Flickr accounts.
+Users can select images from their photo library, images provided by your application, or, optionally, images from their Facebook, Instagram, Google, or Flickr accounts. About Image source Configuration, Please reference to [Configure Photo Sources](https://github.com/LifePics/iOS-SDK/blob/master/Configure%20Photo%20Sources.md), and the products infomation is configured in the document [LPFConfiguration.json](https://github.com/LifePics/iOS-SDK/blob/nl/LifePics%20SDK/LPFConfiguration.json).
 
 ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen1.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen2.png)
 ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen3.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen4.png)
