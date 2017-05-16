@@ -64,13 +64,13 @@
     // or use Reachability to detect if the network settings have changed.
     // If you get an error you'll need to relaunch the demo to enable the Order Prints button again.
 
-    NSString *partnerID = @"Partner ID";
+    NSString *partnerID = @"Partner Source ID";
     NSString *developerKey = @"Developer Key";
 
     
-    if ([partnerID isEqualToString:@"Partner ID"]||[developerKey isEqualToString:@"Developer Key"]) {
-        [[[UIAlertView alloc] initWithTitle:@"LifePics Partner ID & Developer Key Required"
-                                   message:@"To fully explore this demo, you'll first need to get a LifePics partner ID. Put it in the TCViewController.m file. Details are provided in the ReadMe.\n\nWe'll take you as far as we can without a partner ID and a developer Key, but you'll can't add items to cart when trying to make an order."
+    if ([partnerID isEqualToString:@"Partner Source ID"]||[developerKey isEqualToString:@"Developer Key"]) {
+        [[[UIAlertView alloc] initWithTitle:@"LifePics Partner Source ID & Developer Key Required"
+                                   message:@"To fully explore this demo, you'll first need to get a LifePics partner source ID and Developer Key. Put them in the TCViewController.m file. Details are provided in the ReadMe.\n\nWe'll take you as far as we can without a partner source ID and a developer Key, but you'll can't add items to cart when trying to make an order."
                                   delegate:nil
                          cancelButtonTitle:@"I’ll Get Right On That"
                          otherButtonTitles:nil] show];

@@ -25,7 +25,9 @@ The LifePics iOS SDK
 --------------------
 The LifePics SDK allows your iPhone users to select images and have them printed locally at nearby photofinishers.
 
-Users can select images from their photo library, images provided by your application, or, optionally, images from their Facebook, Instagram, Google, or Flickr accounts. About Image source Configuration, Please reference to [Configure Photo Sources](https://github.com/LifePics/iOS-SDK/blob/master/Configure%20Photo%20Sources.md), and the products infomation is configured in the document [LPFConfiguration.json](https://github.com/LifePics/iOS-SDK/blob/nl/LifePics%20SDK/LPFConfiguration.json).
+Users can select images from their photo library, images provided by your application, or, optionally, images from their Facebook, Instagram, Google, or Flickr accounts. About Image source Configuration, Please reference to [Configure Photo Sources](https://github.com/LifePics/iOS-SDK/blob/master/Configure%20Photo%20Sources.md).20Photo
+
+The products infomation is configured in the document [LPFConfiguration.json] locally (https://github.com/LifePics/iOS-SDK/blob/nl/LifePics%20SDK/LPFConfiguration.json), this Lifepics SDK also supports a remote configuration JSON file, about the detail when you need, please email [busdev@lifepics.com](mailto:busdev@lifepics.com).
 
 ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen1.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen2.png)
 ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen3.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen4.png)
@@ -243,8 +245,34 @@ return [self.productID isEqualToString:anotherProduct.productID4PickupInStore] |
 }
 @end
 
-
 ```
+
+Some settings introduction of Info.Plist 
+----------------------------------------
+
+isGenericApp: a boolean. It is only used in this demo, you should delete this item in your real app.
+ForStaging: a boolean. If it is equal to Yes then representing this app is for development or tester, otherwise it is for production on store.
+LPFStripeTestPublishableKey: a string. Get it from stripe. The charge for order is based on Stripe API in Lifepics SDK, If this app is not for production, then it will make fake orders using this setting.
+LPFStripeLivePublishableKey: a string. Get it from stripe too and similar to the LPFStripeTestPublishableKey item. But it is for production, users will make real orders using this setting.
+LPFRemoteConfigurationURL: a string. If you want to config product infomation online, you can make a copy on local [LPFConfiguration.json](https://github.com/LifePics/iOS-SDK/blob/nl/LifePics%20SDK/LPFConfiguration.json) and put it on a website like s3.amazonaws.com and then set the url address of this remote LPFConfiguration.json to this setting. [Notice]: If there isn't a remote JSON file or this JSON file downloaded fail, this app will whow a message like: "Product load failed..." while starting up. 
+TCDisplayOrderViewAtLaunch: a boolean. If no main storyboard is specified, start with the LifePics order view controller then set this value to YES.
+radiusInMiles: a number. It is used for searching stores to pick up according to your location or your postal code.
+displayPayOption: a boolean. The default value is NO and this item is not required. Payment option page allows user to decide to Pay-Now or Pay-In-Store for pick-up-in-store orders. If you want to show this page when user wants to make a pick-up-in-store order, please set this value to YES, otherwise set to NO.
+forceToUsePayNow: a boolean. The default value is NO and this item is not required. If your app supports pickup-in-store orders and only allow user pay it online not in store, you can set this value to YES, otherwise set to NO.
+devPhoneNumber: a string. It is used for developer to set contact phone number of feedback page dynamically. If your feedback phone number is Lifepics service phone number, you can remove this item.
+Contactus: a string. The default value is support@lifepics.com and this item is not required, If your app have another email displayed on feedback page, you can set it.
+devContactusEmailTitle: a string. The default value is "Lifepics for iPhone" and this item is not required, If your app have another email title displayed on feedback page, you can set it.
+appleMerchantIdentifier: a string. This item is not required if your app doesn't support apple pay. apple merchant identifier will be displayed on apple pay payment page.
+LPFPartnerSourceID: a string. Get it from Lifepics, The application should use the stated value when consuming Lifepics API.  
+LPFDeveloperKey: a string. Get it from Lifepics, The application should use the stated value when consuming Lifepics API. 
+
+
+Google Analytics 
+----------------
+
+Lifepics.SDK is using Google Analytics to track screens and payment transaction. If you want to use this feature, just get your GoogleService-Info.plist from google analytics Official website and then put it to your app folder as well as reference it to your target.
+
+
 * * *
 
 Revision History
