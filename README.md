@@ -119,15 +119,12 @@ Now switch to the Build Settings tab and find the Other Linker Flags setting. Ad
 
 ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/OtherLinkerFlags.png)
 
-Add the LifePics.bundle to your target, by selecting Add Files in the Project Navigator.
+Add Lifepics.bundle AdobeCreativeSDKImageResources.bundle AddAdobeCreativeSDKCoreResources.bundle to [Copy Bundle Resources of Build Phases]
 
-![](https://s3.amazonaws.com/LifePics-iOS-SDK/Screenshots/AddFiles.png)<br>
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/AddBundle.png)
-
-Add the AdobeCreativeSDKImageResources.bundle to your target 
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/AddAdobeCreativeSDKImageResources.png)
-
-Add the AddAdobeCreativeSDKCoreResources.bundle to your target 
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/CopyBundleResources.png)<br>
+Their locations are as below<br>
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/AddBundle.png)<br>
+![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/AddAdobeCreativeSDKImageResources.png)<br>
 ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/AddAdobeCreativeSDKCoreResources.png)
 
 Import the LifePics headers:
