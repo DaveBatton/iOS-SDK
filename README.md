@@ -96,6 +96,9 @@ Next, add the following system frameworks (if they're not already linked to your
 * MessageUI
 * UIKit
 * LocalAuthentication
+
+And other frameworks from demo's Frameworks Folder:
+
 * LifePics
 * FBSDKCoreKit
 * FBSDKLoginKit
