@@ -16,10 +16,10 @@ Pod::Spec.new do |s|
 				Users can select images from their photo library, images provided by your application, or, optionally, images from their Facebook, Instagram, Google, or Flickr accounts.
                    DESC
 
-  s.screenshots  = "https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen1.png", "https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen2.png", "https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen3.png", "https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen4.png",
-"https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen5.png",
-"https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen7.png",
-"https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen8.png"
+  s.screenshots  = "https://github.com/LifePics/iOS-SDK/raw/master/DemoImages/screen1.png", "https://github.com/LifePics/iOS-SDK/raw/master/DemoImages/screen2.png", "https://github.com/LifePics/iOS-SDK/raw/master/DemoImages/screen3.png", "https://github.com/LifePics/iOS-SDK/raw/master/DemoImages/screen4.png",
+"https://github.com/LifePics/iOS-SDK/raw/master/DemoImages/screen5.png",
+"https://github.com/LifePics/iOS-SDK/raw/master/DemoImages/screen7.png",
+"https://github.com/LifePics/iOS-SDK/raw/master/DemoImages/screen8.png"
 
   s.source_files  = 'Frameworks/LifePics.framework/**/*.h','Frameworks/FBSDKCoreKit.framework/**/*.h','Frameworks/FBSDKLoginKit.framework/**/*.h','Frameworks/AdobeCreativeSDKCore.framework/**/*.h','Frameworks/AdobeCreativeSDKImage.framework/**/*.h'
   s.preserve_paths  = 'Frameworks/LifePics.framework','Frameworks/LifePics.bundle','Frameworks/FBSDKCoreKit.framework','Frameworks/FBSDKLoginKit.framework','Frameworks/AdobeCreativeSDKCore.framework','Frameworks/AdobeCreativeSDKImage.framework'
