@@ -27,12 +27,12 @@ The LifePics SDK allows your iPhone users to select images and have them printed
 
 Users can select images from their photo library, images provided by your application, or, optionally, images from their Facebook, Instagram, Google, or Flickr accounts. About Image source Configuration, Please reference to [Configure Photo Sources](https://github.com/LifePics/iOS-SDK/blob/master/Configure%20Photo%20Sources.md).
 
-The products infomation is configured in the document [LPFConfiguration.json] locally (https://github.com/LifePics/iOS-SDK/blob/nl/LifePics%20SDK/LPFConfiguration.json), this Lifepics SDK also supports a remote configuration JSON file, about the detail when you need, please email [busdev@lifepics.com](mailto:busdev@lifepics.com).
+The products infomation is configured in the document [LPFConfiguration.json] locally (https://github.com/LifePics/iOS-SDK/blob/master/LifePics%20SDK/LPFConfiguration.json), this Lifepics SDK also supports a remote configuration JSON file, about the detail when you need, please email [busdev@lifepics.com](mailto:busdev@lifepics.com).
 
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen1.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen2.png)
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen3.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen4.png)
+![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/screen1.png) ![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/screen2.png)
+![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/screen3.png) ![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/screen4.png)
 
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen5.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen7.png) ![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/screen8.png)
+![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/screen5.png) ![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/screen7.png) ![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/screen8.png)
 
 
 * * *
@@ -62,7 +62,7 @@ The easiest way to install the LifePics SDK is using [CocoaPods](http://cocoapod
 **Manual Installation**
 
 Put a copy of the Frameworks folder from this demo's root folder to your project folder, and then reference  LifePics.framework & LifePics.bundle, CreativeSDK related frameworks & bundles, FaceBook related frameworks, CardIO libraries as well as libGoogleAnalyticsServices to your project.
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/FrameworksFolder.png)
+![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/FrameworksFolder.png)
 
 In Xcode, select your project in the Project Navigator.<br>
 Select your app target.<br>
@@ -116,19 +116,19 @@ And these libraries:
 * libopencv_imgproc.a
 * libGoogleAnalyticsServices
 
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/LinkBinaries.png)
+![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/LinkBinaries.png)
 
 Now switch to the Build Settings tab and find the Other Linker Flags setting. Add "-ObjC" here, for both Debug and Release.
 
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/OtherLinkerFlags.png)
+![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/OtherLinkerFlags.png)
 
 Add Lifepics.bundle AdobeCreativeSDKImageResources.bundle AddAdobeCreativeSDKCoreResources.bundle to [Copy Bundle Resources of Build Phases]
 
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/CopyBundleResources.png)<br>
+![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/CopyBundleResources.png)<br>
 Their locations are as below<br>
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/AddBundle.png)<br>
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/AddAdobeCreativeSDKImageResources.png)<br>
-![](https://github.com/LifePics/iOS-SDK/blob/nl/DemoImages/AddAdobeCreativeSDKCoreResources.png)
+![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/AddBundle.png)<br>
+![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/AddAdobeCreativeSDKImageResources.png)<br>
+![](https://github.com/LifePics/iOS-SDK/blob/master/DemoImages/AddAdobeCreativeSDKCoreResources.png)
 
 Import the LifePics headers:
 
@@ -254,7 +254,7 @@ Some settings introduction of Info.Plist
 * ForStaging : <br>a boolean. If it is equal to Yes then representing this app is for development or tester, otherwise it is for production on store.
 * LPFStripeTestPublishableKey : <br>a string. Get it from stripe. The charge for order is based on Stripe API in Lifepics SDK, If this app is not for production, then it will make fake orders using this setting.
 * LPFStripeLivePublishableKey : <br>a string. Get it from stripe too and similar to the LPFStripeTestPublishableKey item. But it is for production, users will make real orders using this setting.
-* LPFRemoteConfigurationURL : <br>a string. If you want to config product infomation online, you can make a copy on local [LPFConfiguration.json](https://github.com/LifePics/iOS-SDK/blob/nl/LifePics%20SDK/LPFConfiguration.json) and put it on a website like s3.amazonaws.com and then set the url address of this remote LPFConfiguration.json to this setting. <br> [Notice]: If there isn't a remote JSON file or this JSON file downloaded fail, this app will show a message like : "Product load failed..." while starting up. 
+* LPFRemoteConfigurationURL : <br>a string. If you want to config product infomation online, you can make a copy on local [LPFConfiguration.json](https://github.com/LifePics/iOS-SDK/blob/master/LifePics%20SDK/LPFConfiguration.json) and put it on a website like s3.amazonaws.com and then set the url address of this remote LPFConfiguration.json to this setting. <br> [Notice]: If there isn't a remote JSON file or this JSON file downloaded fail, this app will show a message like : "Product load failed..." while starting up. 
 * TCDisplayOrderViewAtLaunch : <br>a boolean. If no main storyboard is specified, start with the LifePics order view controller then set this value to YES.
 * radiusInMiles : <br>a number. It is used for searching stores to pick up according to your location or your postal code.
 * displayPayOption : <br>a boolean. The default value is NO and this item is not required. Payment option page allows user to decide to Pay-Now or Pay-In-Store for pick-up-in-store orders. If you want to show this page when user wants to make a pick-up-in-store order, please set this value to YES, otherwise set to NO.
