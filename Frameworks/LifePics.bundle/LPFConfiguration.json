@@ -1,0 +1,108 @@
+{
+    "meta": {
+        "format_version_string": "2.1",
+        "creation_time": "2014-12-04T15:30-0600",
+        "is_bootstrapped_configuration": true
+    },
+    "config_sections": {
+        "LPFOrderViewController": {
+            "settings": {
+                "primary_color": {
+                    "value": "#5cb021"
+                },
+                "secondary_color": {
+                    "value": "#f9691d"
+                },
+                "local_pickup_enabled": {
+                    "value": true
+                },
+                "local_pickup_merchant_id": {
+                    "value": ""
+                },
+                "ship_to_home_merchant_id": {
+                    "value": ""
+                },
+                "categories": {
+                    "value": [
+                              {
+                              "name": "Prints",
+                              "image_url": "http://s3.amazonaws.com/LifePics-iOS-SDK/LifePics/categories/prints/category.jpg",
+                              "groups": [
+                                           {
+                                           "name": "Square Prints",
+                                           "description": "Square prints on high quality photo paper. Full bleed (prints edge-to-edge).",
+                                           "image_url": "http://s3.amazonaws.com/LifePics-iOS-SDK/LifePics/categories/prints/square.jpg",
+                                           "attributes": [
+                                                          {
+                                                          "GroupName": "Finish",
+                                                          "Value": "Glossy",
+                                                          "AttributeID": "1",
+                                                          "IsDefault": true
+                                                          },
+                                                          {
+                                                          "GroupName": "Finish",
+                                                          "Value": "Matte",
+                                                          "AttributeID": "2"
+                                                          }
+                                                          ],
+                                           "products": [
+                                                        {
+                                                        "Description": "4\" x 4\" Print",
+                                                        "Width": 4,
+                                                        "Height": 4
+                                                        },
+                                                        {
+                                                        "Description": "8\" x 8\" Print",
+                                                        "Width": 8,
+                                                        "Height": 8
+                                                        }
+                                                        ]
+                                           },
+                                           {
+                                           "name": "Traditional Prints",
+                                           "description": "Landscape and portrait prints on high quality photo paper. Full bleed.",
+                                           "image_url": "http://s3.amazonaws.com/LifePics-iOS-SDK/LifePics/categories/prints/traditional.jpg",
+                                           "attributes": [
+                                                          {
+                                                          "GroupName": "Finish",
+                                                          "Value": "Glossy",
+                                                          "AttributeID": "1",
+                                                          "IsDefault": true
+                                                          },
+                                                          {
+                                                          "GroupName": "Finish",
+                                                          "Value": "Matte",
+                                                          "AttributeID": "2"
+                                                          }
+                                                          ],
+                                           "products": [
+                                                        {
+                                                        "Description": "4\" x 6\" Print",
+                                                        "Width": 4,
+                                                        "Height": 6
+                                                        },
+                                                        {
+                                                        "Description": "5\" x 7\" Print",
+                                                        "Width": 5,
+                                                        "Height": 7
+                                                        },
+                                                        {
+                                                        "Description": "8\" x 10\" Print",
+                                                        "Width": 8,
+                                                        "Height": 10
+                                                        },
+                                                        {
+                                                        "Description": "8\" x 12\" Print",
+                                                        "Width": 8,
+                                                        "Height": 12
+                                                        }
+                                                        ]
+                                           }
+                                           ]
+                              }
+                              ]
+                }
+            }
+        }
+    }
+}

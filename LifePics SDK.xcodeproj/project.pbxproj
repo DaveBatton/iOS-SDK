@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		02B0C8E518D3A81000295A4A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60CA9CC18AC552E000812A5 /* ImageIO.framework */; };
-		02B4560418C69BF30034C6D9 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 020D1AA418C5258B00509F43 /* libxml2.dylib */; };
-		02CD4EF018EE866500396677 /* TCSimpleImageDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CD4EEF18EE866500396677 /* TCSimpleImageDataSource.m */; };
 		02FEDFCF18B5738A0013FC07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FEDFCE18B5738A0013FC07 /* SystemConfiguration.framework */; };
 		02FEDFD218B573CB0013FC07 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FEDFD118B573CB0013FC07 /* MobileCoreServices.framework */; };
 		66F5F18014DB420E0068FD20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F5F17F14DB420E0068FD20 /* UIKit.framework */; };
@@ -24,16 +22,6 @@
 		B63D8AFA18AA016C00599514 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63D8AF918AA016C00599514 /* Images.xcassets */; };
 		B63D8B0018AA01D800599514 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63D8AFD18AA01D800599514 /* Main_iPhone.storyboard */; };
 		B64AB7C618AA91EE003A5218 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64AB7C518AA91EE003A5218 /* CFNetwork.framework */; };
-		B64AB7CB18AA9226003A5218 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B64AB7CA18AA9226003A5218 /* libz.dylib */; };
-		B64EB50518B81DE000516A97 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B64EB50418B81DE000516A97 /* libsqlite3.dylib */; };
-		B663887C18F1DB9600222B83 /* simple-one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887618F1DB9600222B83 /* simple-one.jpg */; };
-		B663887D18F1DB9600222B83 /* simple-three-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887718F1DB9600222B83 /* simple-three-thumb.jpg */; };
-		B663887E18F1DB9600222B83 /* simple-one-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887818F1DB9600222B83 /* simple-one-thumb.jpg */; };
-		B663887F18F1DB9600222B83 /* simple-three.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887918F1DB9600222B83 /* simple-three.jpg */; };
-		B663888018F1DB9600222B83 /* simple-two-thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887A18F1DB9600222B83 /* simple-two-thumb.jpg */; };
-		B663888118F1DB9600222B83 /* simple-two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B663887B18F1DB9600222B83 /* simple-two.jpg */; };
-		B694A9FB18F0BD3D007D3D4D /* LifePics.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B694A9FA18F0BD3D007D3D4D /* LifePics.bundle */; };
-		B6A2141B18EFBE6E00B2EC4F /* LifePics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A2141A18EFBE6E00B2EC4F /* LifePics.framework */; };
 		B6A2142118EFBF4100B2EC4F /* ISColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A2141E18EFBF4100B2EC4F /* ISColorWheel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B6A2142218EFBF4100B2EC4F /* TCColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A2142018EFBF4100B2EC4F /* TCColorPickerViewController.m */; };
 		B6D37CE418A996F8008822FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6D37CE218A996F8008822FD /* InfoPlist.strings */; };
@@ -41,14 +29,40 @@
 		B6E76F2718AD9268006C936D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E76F2618AD9268006C936D /* CoreLocation.framework */; };
 		B6F31C6418ABFF4E00670AB1 /* TCDevTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F31C6318ABFF4E00670AB1 /* TCDevTools.m */; };
 		B6F31C6618AC02F500670AB1 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F31C6518AC02F500670AB1 /* AssetsLibrary.framework */; };
+		C30D99E71CA0D6D2005EF9C4 /* LifePics.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C30D99E61CA0D6D2005EF9C4 /* LifePics.bundle */; };
+		C31FE8561CA3827900F6AFB0 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8551CA3827900F6AFB0 /* libxml2.tbd */; };
+		C31FE8581CA3828300F6AFB0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8571CA3828300F6AFB0 /* libz.tbd */; };
+		C31FE85A1CA3829500F6AFB0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8591CA3829500F6AFB0 /* libsqlite3.tbd */; };
+		C31FE8621CA38A8400F6AFB0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8611CA38A8400F6AFB0 /* MessageUI.framework */; };
+		C31FE8641CA38AB400F6AFB0 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8631CA38AB400F6AFB0 /* Photos.framework */; };
+		C31FE8661CA38ADE00F6AFB0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8651CA38ADE00F6AFB0 /* CoreData.framework */; };
+		C31FE8681CA38B2800F6AFB0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8671CA38B2800F6AFB0 /* OpenGLES.framework */; };
+		C31FE86A1CA38B7000F6AFB0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8691CA38B7000F6AFB0 /* CoreVideo.framework */; };
+		C31FE86C1CA38B8100F6AFB0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE86B1CA38B8100F6AFB0 /* AVFoundation.framework */; };
+		C31FE86E1CA38BA300F6AFB0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE86D1CA38BA300F6AFB0 /* AudioToolbox.framework */; };
+		C31FE8701CA38BC600F6AFB0 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE86F1CA38BC600F6AFB0 /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C31FE8761CA38D4000F6AFB0 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8731CA38D4000F6AFB0 /* libCardIO.a */; };
+		C31FE8771CA38D4000F6AFB0 /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8741CA38D4000F6AFB0 /* libopencv_core.a */; };
+		C31FE8781CA38D4000F6AFB0 /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8751CA38D4000F6AFB0 /* libopencv_imgproc.a */; };
+		C31FE87B1CA38DA300F6AFB0 /* AdobeCreativeSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8791CA38DA300F6AFB0 /* AdobeCreativeSDKCore.framework */; };
+		C31FE87C1CA38DA300F6AFB0 /* AdobeCreativeSDKImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE87A1CA38DA300F6AFB0 /* AdobeCreativeSDKImage.framework */; };
+		C31FE87F1CA38DF100F6AFB0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE87D1CA38DF100F6AFB0 /* FBSDKCoreKit.framework */; };
+		C31FE8801CA38DF100F6AFB0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE87E1CA38DF100F6AFB0 /* FBSDKLoginKit.framework */; };
+		C31FE8841CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C31FE8831CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle */; };
+		C31FE8861CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C31FE8851CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle */; };
+		C361DF2A1EC1A58700658DDF /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C361DF291EC1A58700658DDF /* libGoogleAnalyticsServices.a */; };
+		C361DF2C1EC1A87600658DDF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C361DF2B1EC1A87600658DDF /* WebKit.framework */; };
+		C361DF2E1EC1AC7A00658DDF /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C361DF2D1EC1AC7A00658DDF /* LocalAuthentication.framework */; };
+		C361DF301EC1AF3100658DDF /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C361DF2F1EC1AF3100658DDF /* Contacts.framework */; };
+		C361DF331EC1B4D300658DDF /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FE8871CA3B41600F6AFB0 /* PassKit.framework */; };
+		C37524C31CABB255000287FE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37524C21CABB255000287FE /* CoreMedia.framework */; };
+		C380F4EC1EC0387500659C7D /* LifePics SDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B630650218A9834B00CCAA28 /* LifePics SDK-Info.plist */; };
+		C39603101CA8BE1400E6733A /* LPFConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C396030F1CA8BE1400E6733A /* LPFConfiguration.json */; };
+		C3EF7AAF1CBCE25300ECE8B3 /* LifePics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EF7AAE1CBCE25300ECE8B3 /* LifePics.framework */; };
+		C3FF55DB1CAA0FE60093F296 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FF55DA1CAA0FE60093F296 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		020D1AA418C5258B00509F43 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		02107ADB18D779EC000AD220 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
-		02107ADE18D77A89000AD220 /* libcorecrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcorecrypto.dylib; path = usr/lib/system/libcorecrypto.dylib; sourceTree = SDKROOT; };
-		02CD4EEE18EE866500396677 /* TCSimpleImageDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSimpleImageDataSource.h; sourceTree = "<group>"; };
-		02CD4EEF18EE866500396677 /* TCSimpleImageDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSimpleImageDataSource.m; sourceTree = "<group>"; };
 		02FEDFCE18B5738A0013FC07 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		02FEDFD118B573CB0013FC07 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		66F5F17B14DB420E0068FD20 /* LifePics SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LifePics SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,16 +84,6 @@
 		B63D8AF918AA016C00599514 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B63D8AFE18AA01D800599514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		B64AB7C518AA91EE003A5218 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		B64AB7CA18AA9226003A5218 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		B64EB50418B81DE000516A97 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		B663887618F1DB9600222B83 /* simple-one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-one.jpg"; sourceTree = "<group>"; };
-		B663887718F1DB9600222B83 /* simple-three-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-three-thumb.jpg"; sourceTree = "<group>"; };
-		B663887818F1DB9600222B83 /* simple-one-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-one-thumb.jpg"; sourceTree = "<group>"; };
-		B663887918F1DB9600222B83 /* simple-three.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-three.jpg"; sourceTree = "<group>"; };
-		B663887A18F1DB9600222B83 /* simple-two-thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-two-thumb.jpg"; sourceTree = "<group>"; };
-		B663887B18F1DB9600222B83 /* simple-two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "simple-two.jpg"; sourceTree = "<group>"; };
-		B694A9FA18F0BD3D007D3D4D /* LifePics.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LifePics.bundle; sourceTree = SOURCE_ROOT; };
-		B6A2141A18EFBE6E00B2EC4F /* LifePics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LifePics.framework; sourceTree = "<group>"; };
 		B6A2141D18EFBF4100B2EC4F /* ISColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISColorWheel.h; sourceTree = "<group>"; };
 		B6A2141E18EFBF4100B2EC4F /* ISColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISColorWheel.m; sourceTree = "<group>"; };
 		B6A2141F18EFBF4100B2EC4F /* TCColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCColorPickerViewController.h; sourceTree = "<group>"; };
@@ -90,6 +94,37 @@
 		B6F31C6218ABFF4E00670AB1 /* TCDevTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDevTools.h; sourceTree = "<group>"; };
 		B6F31C6318ABFF4E00670AB1 /* TCDevTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDevTools.m; sourceTree = "<group>"; };
 		B6F31C6518AC02F500670AB1 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		C30D99E61CA0D6D2005EF9C4 /* LifePics.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = LifePics.bundle; path = Frameworks/LifePics.bundle; sourceTree = "<group>"; };
+		C31FE8551CA3827900F6AFB0 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		C31FE8571CA3828300F6AFB0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		C31FE8591CA3829500F6AFB0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C31FE8611CA38A8400F6AFB0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C31FE8631CA38AB400F6AFB0 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		C31FE8651CA38ADE00F6AFB0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C31FE8671CA38B2800F6AFB0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C31FE8691CA38B7000F6AFB0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		C31FE86B1CA38B8100F6AFB0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C31FE86D1CA38BA300F6AFB0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C31FE86F1CA38BC600F6AFB0 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C31FE8711CA38BE300F6AFB0 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		C31FE8731CA38D4000F6AFB0 /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCardIO.a; path = Frameworks/CardIO/libCardIO.a; sourceTree = "<group>"; };
+		C31FE8741CA38D4000F6AFB0 /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_core.a; path = Frameworks/CardIO/libopencv_core.a; sourceTree = "<group>"; };
+		C31FE8751CA38D4000F6AFB0 /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_imgproc.a; path = Frameworks/CardIO/libopencv_imgproc.a; sourceTree = "<group>"; };
+		C31FE8791CA38DA300F6AFB0 /* AdobeCreativeSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdobeCreativeSDKCore.framework; path = "../iOS-LifePics-Apps/Frameworks/CreativeSDK/AdobeCreativeSDKCore.framework"; sourceTree = "<group>"; };
+		C31FE87A1CA38DA300F6AFB0 /* AdobeCreativeSDKImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdobeCreativeSDKImage.framework; path = "../iOS-LifePics-Apps/Frameworks/CreativeSDK/AdobeCreativeSDKImage.framework"; sourceTree = "<group>"; };
+		C31FE87D1CA38DF100F6AFB0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Frameworks/FaceBook/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		C31FE87E1CA38DF100F6AFB0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Frameworks/FaceBook/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		C31FE8831CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AdobeCreativeSDKCoreResources.bundle; path = Frameworks/CreativeSDK/AdobeCreativeSDKCore.framework/Versions/A/Resources/AdobeCreativeSDKCoreResources.bundle; sourceTree = "<group>"; };
+		C31FE8851CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AdobeCreativeSDKImageResources.bundle; path = Frameworks/CreativeSDK/AdobeCreativeSDKImage.framework/Versions/A/Resources/AdobeCreativeSDKImageResources.bundle; sourceTree = "<group>"; };
+		C31FE8871CA3B41600F6AFB0 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		C361DF291EC1A58700658DDF /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = Frameworks/GoogleAnalytics/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		C361DF2B1EC1A87600658DDF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C361DF2D1EC1AC7A00658DDF /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		C361DF2F1EC1AF3100658DDF /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		C37524C21CABB255000287FE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C396030F1CA8BE1400E6733A /* LPFConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LPFConfiguration.json; sourceTree = "<group>"; };
+		C3EF7AAE1CBCE25300ECE8B3 /* LifePics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LifePics.framework; path = Frameworks/LifePics.framework; sourceTree = "<group>"; };
+		C3FF55DA1CAA0FE60093F296 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,42 +132,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A2141B18EFBE6E00B2EC4F /* LifePics.framework in Frameworks */,
-				B60CA9CF18AC5554000812A5 /* Accelerate.framework in Frameworks */,
-				B6F31C6618AC02F500670AB1 /* AssetsLibrary.framework in Frameworks */,
+				C361DF331EC1B4D300658DDF /* PassKit.framework in Frameworks */,
+				C361DF301EC1AF3100658DDF /* Contacts.framework in Frameworks */,
+				C361DF2E1EC1AC7A00658DDF /* LocalAuthentication.framework in Frameworks */,
+				C361DF2C1EC1A87600658DDF /* WebKit.framework in Frameworks */,
+				C37524C31CABB255000287FE /* CoreMedia.framework in Frameworks */,
+				C31FE87F1CA38DF100F6AFB0 /* FBSDKCoreKit.framework in Frameworks */,
+				C31FE8801CA38DF100F6AFB0 /* FBSDKLoginKit.framework in Frameworks */,
+				C31FE87B1CA38DA300F6AFB0 /* AdobeCreativeSDKCore.framework in Frameworks */,
+				C31FE87C1CA38DA300F6AFB0 /* AdobeCreativeSDKImage.framework in Frameworks */,
+				C31FE8761CA38D4000F6AFB0 /* libCardIO.a in Frameworks */,
+				C31FE8771CA38D4000F6AFB0 /* libopencv_core.a in Frameworks */,
+				C31FE8781CA38D4000F6AFB0 /* libopencv_imgproc.a in Frameworks */,
 				B64AB7C618AA91EE003A5218 /* CFNetwork.framework in Frameworks */,
-				66F5F18414DB420E0068FD20 /* CoreGraphics.framework in Frameworks */,
-				B6E76F2718AD9268006C936D /* CoreLocation.framework in Frameworks */,
-				66F5F18214DB420E0068FD20 /* Foundation.framework in Frameworks */,
-				02B0C8E518D3A81000295A4A /* ImageIO.framework in Frameworks */,
+				B60CA9CF18AC5554000812A5 /* Accelerate.framework in Frameworks */,
 				B6E76F2418AD743D006C936D /* MapKit.framework in Frameworks */,
+				B6E76F2718AD9268006C936D /* CoreLocation.framework in Frameworks */,
+				02FEDFCF18B5738A0013FC07 /* SystemConfiguration.framework in Frameworks */,
+				02B0C8E518D3A81000295A4A /* ImageIO.framework in Frameworks */,
+				C3EF7AAF1CBCE25300ECE8B3 /* LifePics.framework in Frameworks */,
+				C31FE8701CA38BC600F6AFB0 /* AddressBook.framework in Frameworks */,
+				C31FE86E1CA38BA300F6AFB0 /* AudioToolbox.framework in Frameworks */,
+				C31FE86C1CA38B8100F6AFB0 /* AVFoundation.framework in Frameworks */,
+				C31FE86A1CA38B7000F6AFB0 /* CoreVideo.framework in Frameworks */,
 				02FEDFD218B573CB0013FC07 /* MobileCoreServices.framework in Frameworks */,
+				C31FE8681CA38B2800F6AFB0 /* OpenGLES.framework in Frameworks */,
 				B60CA9C518AC5039000812A5 /* QuartzCore.framework in Frameworks */,
 				B60CA9C318AC492B000812A5 /* Security.framework in Frameworks */,
-				02FEDFCF18B5738A0013FC07 /* SystemConfiguration.framework in Frameworks */,
+				C31FE8661CA38ADE00F6AFB0 /* CoreData.framework in Frameworks */,
+				C31FE8641CA38AB400F6AFB0 /* Photos.framework in Frameworks */,
+				C31FE8621CA38A8400F6AFB0 /* MessageUI.framework in Frameworks */,
+				B6F31C6618AC02F500670AB1 /* AssetsLibrary.framework in Frameworks */,
+				66F5F18414DB420E0068FD20 /* CoreGraphics.framework in Frameworks */,
 				66F5F18014DB420E0068FD20 /* UIKit.framework in Frameworks */,
-				B64EB50518B81DE000516A97 /* libsqlite3.dylib in Frameworks */,
-				02B4560418C69BF30034C6D9 /* libxml2.dylib in Frameworks */,
-				B64AB7CB18AA9226003A5218 /* libz.dylib in Frameworks */,
+				C361DF2A1EC1A58700658DDF /* libGoogleAnalyticsServices.a in Frameworks */,
+				C31FE8561CA3827900F6AFB0 /* libxml2.tbd in Frameworks */,
+				C31FE85A1CA3829500F6AFB0 /* libsqlite3.tbd in Frameworks */,
+				C31FE8581CA3828300F6AFB0 /* libz.tbd in Frameworks */,
+				66F5F18214DB420E0068FD20 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02CD4EF218EE8E5400396677 /* Simple Images */ = {
-			isa = PBXGroup;
-			children = (
-				B663887618F1DB9600222B83 /* simple-one.jpg */,
-				B663887818F1DB9600222B83 /* simple-one-thumb.jpg */,
-				B663887B18F1DB9600222B83 /* simple-two.jpg */,
-				B663887A18F1DB9600222B83 /* simple-two-thumb.jpg */,
-				B663887918F1DB9600222B83 /* simple-three.jpg */,
-				B663887718F1DB9600222B83 /* simple-three-thumb.jpg */,
-			);
-			name = "Simple Images";
-			sourceTree = "<group>";
-		};
 		66F5F17014DB420E0068FD20 = {
 			isa = PBXGroup;
 			children = (
@@ -153,11 +196,35 @@
 		66F5F17E14DB420E0068FD20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B6A2141A18EFBE6E00B2EC4F /* LifePics.framework */,
-				02107ADE18D77A89000AD220 /* libcorecrypto.dylib */,
-				02107ADB18D779EC000AD220 /* libcommonCrypto.dylib */,
-				020D1AA418C5258B00509F43 /* libxml2.dylib */,
-				B64EB50418B81DE000516A97 /* libsqlite3.dylib */,
+				C361DF2F1EC1AF3100658DDF /* Contacts.framework */,
+				C361DF2D1EC1AC7A00658DDF /* LocalAuthentication.framework */,
+				C361DF2B1EC1A87600658DDF /* WebKit.framework */,
+				C361DF291EC1A58700658DDF /* libGoogleAnalyticsServices.a */,
+				C3EF7AAE1CBCE25300ECE8B3 /* LifePics.framework */,
+				C37524C21CABB255000287FE /* CoreMedia.framework */,
+				C30D99E61CA0D6D2005EF9C4 /* LifePics.bundle */,
+				C31FE8871CA3B41600F6AFB0 /* PassKit.framework */,
+				C31FE8851CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle */,
+				C31FE8831CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle */,
+				C31FE87D1CA38DF100F6AFB0 /* FBSDKCoreKit.framework */,
+				C31FE87E1CA38DF100F6AFB0 /* FBSDKLoginKit.framework */,
+				C31FE8791CA38DA300F6AFB0 /* AdobeCreativeSDKCore.framework */,
+				C31FE87A1CA38DA300F6AFB0 /* AdobeCreativeSDKImage.framework */,
+				C31FE8731CA38D4000F6AFB0 /* libCardIO.a */,
+				C31FE8741CA38D4000F6AFB0 /* libopencv_core.a */,
+				C31FE8751CA38D4000F6AFB0 /* libopencv_imgproc.a */,
+				C31FE8711CA38BE300F6AFB0 /* AddressBookUI.framework */,
+				C31FE86F1CA38BC600F6AFB0 /* AddressBook.framework */,
+				C31FE86D1CA38BA300F6AFB0 /* AudioToolbox.framework */,
+				C31FE86B1CA38B8100F6AFB0 /* AVFoundation.framework */,
+				C31FE8691CA38B7000F6AFB0 /* CoreVideo.framework */,
+				C31FE8671CA38B2800F6AFB0 /* OpenGLES.framework */,
+				C31FE8651CA38ADE00F6AFB0 /* CoreData.framework */,
+				C31FE8631CA38AB400F6AFB0 /* Photos.framework */,
+				C31FE8611CA38A8400F6AFB0 /* MessageUI.framework */,
+				C31FE8591CA3829500F6AFB0 /* libsqlite3.tbd */,
+				C31FE8571CA3828300F6AFB0 /* libz.tbd */,
+				C31FE8551CA3827900F6AFB0 /* libxml2.tbd */,
 				02FEDFD118B573CB0013FC07 /* MobileCoreServices.framework */,
 				02FEDFCE18B5738A0013FC07 /* SystemConfiguration.framework */,
 				B6E76F2618AD9268006C936D /* CoreLocation.framework */,
@@ -168,7 +235,6 @@
 				B60CA9C418AC5039000812A5 /* QuartzCore.framework */,
 				B60CA9C218AC492B000812A5 /* Security.framework */,
 				B6F31C6518AC02F500670AB1 /* AssetsLibrary.framework */,
-				B64AB7CA18AA9226003A5218 /* libz.dylib */,
 				B64AB7C518AA91EE003A5218 /* CFNetwork.framework */,
 				66F5F17F14DB420E0068FD20 /* UIKit.framework */,
 				66F5F18114DB420E0068FD20 /* Foundation.framework */,
@@ -185,13 +251,9 @@
 				B63D8AF118AA010F00599514 /* TCAppDelegate.m */,
 				B63D8AF218AA010F00599514 /* TCViewController.h */,
 				B63D8AF318AA010F00599514 /* TCViewController.m */,
-				02CD4EEE18EE866500396677 /* TCSimpleImageDataSource.h */,
-				02CD4EEF18EE866500396677 /* TCSimpleImageDataSource.m */,
 				B6F31C6218ABFF4E00670AB1 /* TCDevTools.h */,
 				B6F31C6318ABFF4E00670AB1 /* TCDevTools.m */,
-				B694A9FA18F0BD3D007D3D4D /* LifePics.bundle */,
 				B6A2141C18EFBF2200B2EC4F /* Color Picker */,
-				02CD4EF218EE8E5400396677 /* Simple Images */,
 				66F5F18614DB420E0068FD20 /* Supporting Files */,
 				B63D8AF918AA016C00599514 /* Images.xcassets */,
 			);
@@ -201,6 +263,8 @@
 		66F5F18614DB420E0068FD20 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3FF55DA1CAA0FE60093F296 /* Default-568h@2x.png */,
+				C396030F1CA8BE1400E6733A /* LPFConfiguration.json */,
 				B630650218A9834B00CCAA28 /* LifePics SDK-Info.plist */,
 				B630650318A9834B00CCAA28 /* LifePics SDK-Prefix.pch */,
 				B630650418A9834B00CCAA28 /* main.m */,
@@ -251,8 +315,13 @@
 				ORGANIZATIONNAME = "Taylor Corp";
 				TargetAttributes = {
 					66F5F17A14DB420E0068FD20 = {
+						DevelopmentTeam = WVY42TF9RV;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
 								enabled = 0;
 							};
 						};
@@ -282,15 +351,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B663887C18F1DB9600222B83 /* simple-one.jpg in Resources */,
 				B63D8AFA18AA016C00599514 /* Images.xcassets in Resources */,
-				B663888018F1DB9600222B83 /* simple-two-thumb.jpg in Resources */,
-				B663887E18F1DB9600222B83 /* simple-one-thumb.jpg in Resources */,
-				B663887D18F1DB9600222B83 /* simple-three-thumb.jpg in Resources */,
+				C39603101CA8BE1400E6733A /* LPFConfiguration.json in Resources */,
+				C3FF55DB1CAA0FE60093F296 /* Default-568h@2x.png in Resources */,
+				C30D99E71CA0D6D2005EF9C4 /* LifePics.bundle in Resources */,
+				C31FE8841CA3AF0800F6AFB0 /* AdobeCreativeSDKCoreResources.bundle in Resources */,
+				C31FE8861CA3AF2F00F6AFB0 /* AdobeCreativeSDKImageResources.bundle in Resources */,
+				C380F4EC1EC0387500659C7D /* LifePics SDK-Info.plist in Resources */,
 				B63D8B0018AA01D800599514 /* Main_iPhone.storyboard in Resources */,
-				B663887F18F1DB9600222B83 /* simple-three.jpg in Resources */,
-				B694A9FB18F0BD3D007D3D4D /* LifePics.bundle in Resources */,
-				B663888118F1DB9600222B83 /* simple-two.jpg in Resources */,
 				B6D37CE418A996F8008822FD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,7 +375,6 @@
 				B630650618A9834B00CCAA28 /* main.m in Sources */,
 				B6A2142218EFBF4100B2EC4F /* TCColorPickerViewController.m in Sources */,
 				B6F31C6418ABFF4E00670AB1 /* TCDevTools.m in Sources */,
-				02CD4EF018EE866500396677 /* TCSimpleImageDataSource.m in Sources */,
 				B63D8AF518AA010F00599514 /* TCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
@@ -391,7 +458,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -406,10 +474,16 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WVY42TF9RV;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks/FaceBook",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/CreativeSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LifePics SDK/LifePics SDK-Prefix.pch";
@@ -418,16 +492,24 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "LifePics SDK/LifePics SDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/CardIO",
+					"$(PROJECT_DIR)/Frameworks/GoogleAnalytics",
 				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_NAME = "LifePics SDK";
-				PROVISIONING_PROFILE = "96573C8F-BCCF-4B7E-96E9-627E7235AD82";
-				TARGETED_DEVICE_FAMILY = 1;
+				PROVISIONING_PROFILE = "b1d9ffec-c873-42a1-ad23-5ddca2689eca";
+				PROVISIONING_PROFILE_SPECIFIER = HelloWorld;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -440,10 +522,16 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WVY42TF9RV;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks/FaceBook",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/CreativeSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LifePics SDK/LifePics SDK-Prefix.pch";
@@ -452,15 +540,24 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "LifePics SDK/LifePics SDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/CardIO",
+					"$(PROJECT_DIR)/Frameworks/GoogleAnalytics",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_NAME = "LifePics SDK";
-				PROVISIONING_PROFILE = "A64A2265-4733-4E52-A910-ADF3523BAF6C";
-				TARGETED_DEVICE_FAMILY = 1;
+				PROVISIONING_PROFILE = "b1d9ffec-c873-42a1-ad23-5ddca2689eca";
+				PROVISIONING_PROFILE_SPECIFIER = HelloWorld;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
